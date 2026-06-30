@@ -1,0 +1,62 @@
+[
+  {
+    "run": "p1_real_nogauge",
+    "dataset": "real",
+    "mode": "nogauge",
+    "psnr": 15.602279742558798,
+    "ssim": 0.6876361891627312,
+    "lee": 0.28441611242791015,
+    "nai": 3.750326653321584,
+    "input_psnr": 7.014954408009847,
+    "identity_drop": 8.58732533454895,
+    "q_ece": 0.5703164388736089,
+    "over": 0.0,
+    "under": 0.0,
+    "run_dir": "/home/user/a1_rlef_project/experiments/p1_real_nogauge_seed3407"
+  },
+  {
+    "run": "p1_real_fixed0p02",
+    "dataset": "real",
+    "mode": "fixed0p02",
+    "psnr": 17.17582090695699,
+    "ssim": 0.6993949860334396,
+    "lee": 0.23145724584658942,
+    "nai": 3.7822466691335044,
+    "input_psnr": 7.014954408009847,
+    "identity_drop": 10.160866498947144,
+    "q_ece": 0.5669657215476036,
+    "over": 0.0,
+    "under": 0.0,
+    "run_dir": "/home/user/a1_rlef_project/experiments/p1_real_fixed0p02_seed3407"
+  },
+  {
+    "run": "p1_synthetic_nogauge",
+    "dataset": "synthetic",
+    "mode": "nogauge",
+    "psnr": 14.318288564682007,
+    "ssim": 0.5326357757051786,
+    "lee": 0.3375032749027014,
+    "nai": 2.134170984228452,
+    "input_psnr": 11.565215746561686,
+    "identity_drop": 2.753072818120321,
+    "q_ece": 0.6040343940258026,
+    "over": 0.0,
+    "under": 4.219714416346202e-05,
+    "run_dir": "/home/user/a1_rlef_project/experiments/p1_synthetic_nogauge_seed3407"
+  },
+  {
+    "run": "p1_synthetic_fixed0p02",
+    "dataset": "synthetic",
+    "mode": "fixed0p02",
+    "psnr": 14.732435862223307,
+    "ssim": 0.5400590399901072,
+    "lee": 0.2991328698893388,
+    "nai": 2.178470621506373,
+    "input_psnr": 11.565215746561686,
+    "identity_drop": 3.167220115661621,
+    "q_ece": 0.5826196198662122,
+    "over": 6.028163625160232e-06,
+    "under": 0.0,
+    "run_dir": "/home/user/a1_rlef_project/experiments/p1_synthetic_fixed0p02_seed3407"
+  }
+]

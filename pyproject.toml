@@ -1,0 +1,8 @@
+[project]
+name = "a1-rlef-v2"
+version = "0.1.0"
+description = "RLEF v2 low-light enhancement research scaffold"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]

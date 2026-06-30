@@ -1,0 +1,41 @@
+seed: 3407
+model:
+  base_channels: 24
+  exposure_branch: true
+  adaptive_gauge: false
+  fixed_gauge: 0.02
+  physics_branch: true
+  gate_branch: false
+  q_branch: false
+training:
+  batch_size: 8
+  max_steps: 30
+  lr: 0.0002
+  crop_size: 64
+  log_every: 10
+  num_workers: 0
+eval:
+  batch_size: 1
+data:
+  train:
+    type: paired_rgb
+    low_dir: /home/user/a1_rlef_project/data/LOL-v2/Real_captured/Train/Low
+    high_dir: /home/user/a1_rlef_project/data/LOL-v2/Real_captured/Train/Normal
+    crop_size: 64
+    augment: true
+    max_images: 64
+    name: LOL-v2-real-train
+  val:
+    type: paired_rgb
+    low_dir: /home/user/a1_rlef_project/data/LOL-v2/Real_captured/Test/Low
+    high_dir: /home/user/a1_rlef_project/data/LOL-v2/Real_captured/Test/Normal
+    crop_size: 96
+    augment: false
+    max_images: 12
+    name: LOL-v2-real-val
+loss:
+  rec: 1.0
+  phys: 0.1
+  poisson: 0.03
+  gauge: 0.05
+  wtv: 0.01

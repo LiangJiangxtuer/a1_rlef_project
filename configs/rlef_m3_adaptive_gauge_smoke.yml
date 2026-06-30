@@ -1,0 +1,33 @@
+seed: 3407
+model:
+  base_channels: 24
+  exposure_branch: true
+  adaptive_gauge: true
+  physics_branch: true
+  gate_branch: false
+  q_branch: false
+training:
+  batch_size: 8
+  max_steps: 30
+  lr: 0.0002
+  crop_size: 64
+  log_every: 10
+  num_workers: 0
+eval:
+  batch_size: 1
+data:
+  train:
+    type: uefb
+    root: /home/user/a1_rlef_project/data/UEFB-v2-smoke/train
+    crop_size: 64
+    augment: true
+  val:
+    type: uefb
+    root: /home/user/a1_rlef_project/data/UEFB-v2-smoke/test
+    crop_size: 96
+loss:
+  rec: 1.0
+  phys: 0.15
+  poisson: 0.05
+  gauge: 0.1
+  wtv: 0.02
