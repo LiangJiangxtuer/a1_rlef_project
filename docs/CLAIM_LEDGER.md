@@ -29,3 +29,19 @@ This ledger separates executed evidence from pending protocols and hypotheses.
 - Full-resolution paired benchmark against official baselines.
 - Unpaired real visual/no-reference evaluation.
 - 3-seed mean±std and significance tests.
+
+
+## P1 formal 1000-step update — 2026-07-01
+
+Executed six full-train/full-test LOL-v2 gauge runs with seed 3407:
+
+| Dataset | nogauge PSNR | fixed0p02 PSNR | adaptive PSNR | Decision |
+|---|---:|---:|---:|---|
+| LOL-v2-real | 18.748 | 18.734 | 19.050 | fixed real gain did not reproduce; adaptive best |
+| LOL-v2-synthetic | 20.116 | 19.906 | 20.269 | fixed anchor hurts; adaptive best PSNR |
+
+Claim calibration after this update:
+
+- Supported at single-seed P1 formal level: fixed gauge is domain-fragile on synthetic; adaptive gauge is a better candidate than fixed anchor.
+- Not supported: fixed `e_mean=0.02` as a main positive contribution; SOTA/Retinexformer-level claims; physical E spatial correctness.
+- Next required evidence: UEFB-v2 formal E/A/Q metrics and M0-M5 ablation.

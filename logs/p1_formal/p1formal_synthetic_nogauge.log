@@ -1,0 +1,89 @@
++ /home/user/miniconda3/envs/cutler_dinov3/bin/python scripts/train.py --config /home/user/a1_rlef_project/configs/p1_formal/p1formal_synthetic_nogauge.yml --output_dir /home/user/a1_rlef_project/experiments/p1formal_synthetic_nogauge_seed3407 --device cuda --max_steps 1000  # CUDA_VISIBLE_DEVICES=1
+{"step": 1, "loss": 0.4575238525867462, "rec": 0.41119688749313354, "phys": 0.34541571140289307, "poisson": 0.33924102783203125, "wtv": 0.1608174443244934}
+{"step": 100, "loss": 0.21947135031223297, "rec": 0.19790780544281006, "phys": 0.13467749953269958, "poisson": 0.24234814941883087, "wtv": 0.08253618329763412}
+{"step": 200, "loss": 0.19011248648166656, "rec": 0.1682562381029129, "phys": 0.11422022432088852, "poisson": 0.3322675824165344, "wtv": 0.04662046954035759}
+{"step": 300, "loss": 0.15196365118026733, "rec": 0.13529981672763824, "phys": 0.10057006776332855, "poisson": 0.20457008481025696, "wtv": 0.04697335511445999}
+{"step": 400, "loss": 0.16702833771705627, "rec": 0.14765754342079163, "phys": 0.10420399904251099, "poisson": 0.29115527868270874, "wtv": 0.021574296057224274}
+{"step": 500, "loss": 0.12803703546524048, "rec": 0.11191435158252716, "phys": 0.0874553918838501, "poisson": 0.2332783192396164, "wtv": 0.037880606949329376}
+{"step": 600, "loss": 0.18259593844413757, "rec": 0.16154655814170837, "phys": 0.13077080249786377, "poisson": 0.2557942569255829, "wtv": 0.029847674071788788}
+{"step": 700, "loss": 0.17007918655872345, "rec": 0.15478013455867767, "phys": 0.12426847219467163, "poisson": 0.08150295913219452, "wtv": 0.042711809277534485}
+{"step": 800, "loss": 0.1216302141547203, "rec": 0.10608120262622833, "phys": 0.07785002142190933, "poisson": 0.2485215663909912, "wtv": 0.030836094170808792}
+{"step": 900, "loss": 0.12146329879760742, "rec": 0.10409929603338242, "phys": 0.07810510694980621, "poisson": 0.3102525472640991, "wtv": 0.024591173976659775}
+{"step": 1000, "loss": 0.1452162265777588, "rec": 0.13083358108997345, "phys": 0.10554826259613037, "poisson": 0.11865170300006866, "wtv": 0.026827380061149597}
+{
+  "DONE": true,
+  "run_id": "p1formal_synthetic_nogauge_seed3407",
+  "command": "scripts/train.py --config /home/user/a1_rlef_project/configs/p1_formal/p1formal_synthetic_nogauge.yml --output_dir /home/user/a1_rlef_project/experiments/p1formal_synthetic_nogauge_seed3407 --device cuda --max_steps 1000",
+  "steps": 1000,
+  "elapsed_sec": 134.20601987838745,
+  "config": {
+    "seed": 3407,
+    "protocol": {
+      "stage": "P1 formal",
+      "dataset": "synthetic",
+      "mode": "nogauge",
+      "notes": "1000-step full-train/full-test gauge replication; val crop_size=None means full-resolution test images."
+    },
+    "model": {
+      "base_channels": 24,
+      "exposure_branch": true,
+      "adaptive_gauge": false,
+      "fixed_gauge": null,
+      "physics_branch": true,
+      "gate_branch": false,
+      "q_branch": false
+    },
+    "training": {
+      "batch_size": 8,
+      "max_steps": 1000,
+      "lr": 0.0002,
+      "weight_decay": 0.0001,
+      "crop_size": 128,
+      "log_every": 100,
+      "num_workers": 0,
+      "grad_clip": 1.0
+    },
+    "eval": {
+      "batch_size": 1
+    },
+    "data": {
+      "train": {
+        "type": "paired_rgb",
+        "low_dir": "/home/user/a1_rlef_project/data/LOL-v2/Synthetic/Train/Low",
+        "high_dir": "/home/user/a1_rlef_project/data/LOL-v2/Synthetic/Train/Normal",
+        "crop_size": 128,
+        "augment": true,
+        "max_images": null,
+        "name": "LOL-v2-synthetic-train-formal"
+      },
+      "val": {
+        "type": "paired_rgb",
+        "low_dir": "/home/user/a1_rlef_project/data/LOL-v2/Synthetic/Test/Low",
+        "high_dir": "/home/user/a1_rlef_project/data/LOL-v2/Synthetic/Test/Normal",
+        "crop_size": null,
+        "augment": false,
+        "max_images": null,
+        "name": "LOL-v2-synthetic-val-formal"
+      }
+    },
+    "loss": {
+      "rec": 1.0,
+      "phys": 0.1,
+      "poisson": 0.03,
+      "gauge": 0.0,
+      "wtv": 0.01
+    }
+  },
+  "metrics": {
+    "psnr": 20.115571641921996,
+    "ssim": 0.8523249250650405,
+    "lee": 0.2053494193404913,
+    "nai": 1.9718280613422394,
+    "input_psnr": 11.220927743911743,
+    "identity_drop": 8.894643869400024,
+    "q_ece": 0.5413233569264412,
+    "over": 0.0020305944611482118,
+    "under": 4.114221633244597e-06
+  },
+  "checkpoint": "/home/user/a1_rlef_project/experiments/p1formal_synthetic_nogauge_seed3407/checkpoints/last.pth"
+}

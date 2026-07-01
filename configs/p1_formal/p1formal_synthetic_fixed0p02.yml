@@ -1,0 +1,49 @@
+seed: 3407
+protocol:
+  stage: P1 formal
+  dataset: synthetic
+  mode: fixed0p02
+  notes: 1000-step full-train/full-test gauge replication; val crop_size=None means
+    full-resolution test images.
+model:
+  base_channels: 24
+  exposure_branch: true
+  adaptive_gauge: false
+  fixed_gauge: 0.02
+  physics_branch: true
+  gate_branch: false
+  q_branch: false
+training:
+  batch_size: 8
+  max_steps: 1000
+  lr: 0.0002
+  weight_decay: 0.0001
+  crop_size: 128
+  log_every: 100
+  num_workers: 0
+  grad_clip: 1.0
+eval:
+  batch_size: 1
+data:
+  train:
+    type: paired_rgb
+    low_dir: /home/user/a1_rlef_project/data/LOL-v2/Synthetic/Train/Low
+    high_dir: /home/user/a1_rlef_project/data/LOL-v2/Synthetic/Train/Normal
+    crop_size: 128
+    augment: true
+    max_images: null
+    name: LOL-v2-synthetic-train-formal
+  val:
+    type: paired_rgb
+    low_dir: /home/user/a1_rlef_project/data/LOL-v2/Synthetic/Test/Low
+    high_dir: /home/user/a1_rlef_project/data/LOL-v2/Synthetic/Test/Normal
+    crop_size: null
+    augment: false
+    max_images: null
+    name: LOL-v2-synthetic-val-formal
+loss:
+  rec: 1.0
+  phys: 0.1
+  poisson: 0.03
+  gauge: 0.05
+  wtv: 0.01

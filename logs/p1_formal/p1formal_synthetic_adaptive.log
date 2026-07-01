@@ -1,0 +1,89 @@
++ /home/user/miniconda3/envs/cutler_dinov3/bin/python scripts/train.py --config /home/user/a1_rlef_project/configs/p1_formal/p1formal_synthetic_adaptive.yml --output_dir /home/user/a1_rlef_project/experiments/p1formal_synthetic_adaptive_seed3407 --device cuda --max_steps 1000  # CUDA_VISIBLE_DEVICES=1
+{"step": 1, "loss": 0.6171285510063171, "rec": 0.41119688749313354, "phys": 0.2997698187828064, "poisson": 0.33924102783203125, "gauge": 1.6416921615600586, "wtv": 0.1608174592256546}
+{"step": 100, "loss": 0.2660118341445923, "rec": 0.21314916014671326, "phys": 0.14689865708351135, "poisson": 0.2424386441707611, "gauge": 0.30029624700546265, "wtv": 0.08700389415025711}
+{"step": 200, "loss": 0.16731856763362885, "rec": 0.13003554940223694, "phys": 0.08904968947172165, "poisson": 0.33493572473526, "gauge": 0.17378607392311096, "wtv": 0.09513695538043976}
+{"step": 300, "loss": 0.17060714960098267, "rec": 0.13617534935474396, "phys": 0.09575452655553818, "poisson": 0.19053006172180176, "gauge": 0.18429797887802124, "wtv": 0.07106318324804306}
+{"step": 400, "loss": 0.16713576018810272, "rec": 0.1193457841873169, "phys": 0.09176221489906311, "poisson": 0.28970736265182495, "gauge": 0.29591530561447144, "wtv": 0.033099912106990814}
+{"step": 500, "loss": 0.15082141757011414, "rec": 0.11510278284549713, "phys": 0.0848483070731163, "poisson": 0.2276315838098526, "gauge": 0.1998375654220581, "wtv": 0.0421101376414299}
+{"step": 600, "loss": 0.2107284963130951, "rec": 0.16200514137744904, "phys": 0.12006261944770813, "poisson": 0.2514154613018036, "gauge": 0.28844165802001953, "wtv": 0.03304673358798027}
+{"step": 700, "loss": 0.24863363802433014, "rec": 0.19749894738197327, "phys": 0.15818049013614655, "poisson": 0.08199010044336319, "gauge": 0.3244067430496216, "wtv": 0.04162609204649925}
+{"step": 800, "loss": 0.14816656708717346, "rec": 0.11943923681974411, "phys": 0.09942923486232758, "poisson": 0.24029764533042908, "gauge": 0.11098329722881317, "wtv": 0.04771524295210838}
+{"step": 900, "loss": 0.14821109175682068, "rec": 0.10305008292198181, "phys": 0.07635648548603058, "poisson": 0.3091455399990082, "gauge": 0.27967435121536255, "wtv": 0.028357014060020447}
+{"step": 1000, "loss": 0.1710430532693863, "rec": 0.1325191855430603, "phys": 0.11033129692077637, "poisson": 0.11611101776361465, "gauge": 0.23588159680366516, "wtv": 0.04192420095205307}
+{
+  "DONE": true,
+  "run_id": "p1formal_synthetic_adaptive_seed3407",
+  "command": "scripts/train.py --config /home/user/a1_rlef_project/configs/p1_formal/p1formal_synthetic_adaptive.yml --output_dir /home/user/a1_rlef_project/experiments/p1formal_synthetic_adaptive_seed3407 --device cuda --max_steps 1000",
+  "steps": 1000,
+  "elapsed_sec": 90.6921317577362,
+  "config": {
+    "seed": 3407,
+    "protocol": {
+      "stage": "P1 formal",
+      "dataset": "synthetic",
+      "mode": "adaptive",
+      "notes": "1000-step full-train/full-test gauge replication; val crop_size=None means full-resolution test images."
+    },
+    "model": {
+      "base_channels": 24,
+      "exposure_branch": true,
+      "adaptive_gauge": true,
+      "fixed_gauge": null,
+      "physics_branch": true,
+      "gate_branch": false,
+      "q_branch": false
+    },
+    "training": {
+      "batch_size": 8,
+      "max_steps": 1000,
+      "lr": 0.0002,
+      "weight_decay": 0.0001,
+      "crop_size": 128,
+      "log_every": 100,
+      "num_workers": 0,
+      "grad_clip": 1.0
+    },
+    "eval": {
+      "batch_size": 1
+    },
+    "data": {
+      "train": {
+        "type": "paired_rgb",
+        "low_dir": "/home/user/a1_rlef_project/data/LOL-v2/Synthetic/Train/Low",
+        "high_dir": "/home/user/a1_rlef_project/data/LOL-v2/Synthetic/Train/Normal",
+        "crop_size": 128,
+        "augment": true,
+        "max_images": null,
+        "name": "LOL-v2-synthetic-train-formal"
+      },
+      "val": {
+        "type": "paired_rgb",
+        "low_dir": "/home/user/a1_rlef_project/data/LOL-v2/Synthetic/Test/Low",
+        "high_dir": "/home/user/a1_rlef_project/data/LOL-v2/Synthetic/Test/Normal",
+        "crop_size": null,
+        "augment": false,
+        "max_images": null,
+        "name": "LOL-v2-synthetic-val-formal"
+      }
+    },
+    "loss": {
+      "rec": 1.0,
+      "phys": 0.1,
+      "poisson": 0.03,
+      "gauge": 0.1,
+      "wtv": 0.01
+    }
+  },
+  "metrics": {
+    "psnr": 20.269366455078124,
+    "ssim": 0.8430935746431351,
+    "lee": 0.2113592628762126,
+    "nai": 1.8714958387613296,
+    "input_psnr": 11.220927743911743,
+    "identity_drop": 9.048438692092896,
+    "q_ece": 0.5412053775787353,
+    "over": 4.017017519799992e-05,
+    "under": 5.04105191475901e-05
+  },
+  "checkpoint": "/home/user/a1_rlef_project/experiments/p1formal_synthetic_adaptive_seed3407/checkpoints/last.pth"
+}

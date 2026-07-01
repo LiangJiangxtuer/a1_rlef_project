@@ -1,0 +1,89 @@
++ /home/user/miniconda3/envs/cutler_dinov3/bin/python scripts/train.py --config /home/user/a1_rlef_project/configs/p1_formal/p1formal_real_adaptive.yml --output_dir /home/user/a1_rlef_project/experiments/p1formal_real_adaptive_seed3407 --device cuda --max_steps 1000  # CUDA_VISIBLE_DEVICES=0
+{"step": 1, "loss": 0.601524829864502, "rec": 0.28821897506713867, "phys": 0.18062198162078857, "poisson": 0.7749654054641724, "gauge": 2.6951775550842285, "wtv": 0.2476935088634491}
+{"step": 100, "loss": 0.27936282753944397, "rec": 0.21000581979751587, "phys": 0.1340891718864441, "poisson": 0.8188275694847107, "gauge": 0.30636072158813477, "wtv": 0.07471691817045212}
+{"step": 200, "loss": 0.23504681885242462, "rec": 0.1650410294532776, "phys": 0.11118551343679428, "poisson": 1.0357139110565186, "gauge": 0.2697688937187195, "wtv": 0.08389484137296677}
+{"step": 300, "loss": 0.3025764226913452, "rec": 0.21392866969108582, "phys": 0.1458006650209427, "poisson": 0.7297587394714355, "gauge": 0.5116668343544006, "wtv": 0.10082550346851349}
+{"step": 400, "loss": 0.28233468532562256, "rec": 0.2036631554365158, "phys": 0.1373128741979599, "poisson": 0.7508816123008728, "gauge": 0.41000598669052124, "wtv": 0.14131957292556763}
+{"step": 500, "loss": 0.2290738970041275, "rec": 0.1720237284898758, "phys": 0.12673896551132202, "poisson": 0.6587204933166504, "gauge": 0.22589853405952454, "wtv": 0.202480286359787}
+{"step": 600, "loss": 0.2502017915248871, "rec": 0.18515440821647644, "phys": 0.13041044771671295, "poisson": 0.5918619632720947, "gauge": 0.31422358751296997, "wtv": 0.28280988335609436}
+{"step": 700, "loss": 0.12388089299201965, "rec": 0.09173436462879181, "phys": 0.06818701326847076, "poisson": 0.2552744746208191, "gauge": 0.15724894404411316, "wtv": 0.19446927309036255}
+{"step": 800, "loss": 0.24887557327747345, "rec": 0.174288809299469, "phys": 0.11739253997802734, "poisson": 0.768595814704895, "gauge": 0.3673827350139618, "wtv": 0.30513572692871094}
+{"step": 900, "loss": 0.2870730757713318, "rec": 0.2062104046344757, "phys": 0.1497797966003418, "poisson": 0.793254017829895, "gauge": 0.40227532386779785, "wtv": 0.18595431745052338}
+{"step": 1000, "loss": 0.25656062364578247, "rec": 0.17969322204589844, "phys": 0.1191444844007492, "poisson": 0.5762729048728943, "gauge": 0.45852339267730713, "wtv": 0.18124321103096008}
+{
+  "DONE": true,
+  "run_id": "p1formal_real_adaptive_seed3407",
+  "command": "scripts/train.py --config /home/user/a1_rlef_project/configs/p1_formal/p1formal_real_adaptive.yml --output_dir /home/user/a1_rlef_project/experiments/p1formal_real_adaptive_seed3407 --device cuda --max_steps 1000",
+  "steps": 1000,
+  "elapsed_sec": 296.72110652923584,
+  "config": {
+    "seed": 3407,
+    "protocol": {
+      "stage": "P1 formal",
+      "dataset": "real",
+      "mode": "adaptive",
+      "notes": "1000-step full-train/full-test gauge replication; val crop_size=None means full-resolution test images."
+    },
+    "model": {
+      "base_channels": 24,
+      "exposure_branch": true,
+      "adaptive_gauge": true,
+      "fixed_gauge": null,
+      "physics_branch": true,
+      "gate_branch": false,
+      "q_branch": false
+    },
+    "training": {
+      "batch_size": 8,
+      "max_steps": 1000,
+      "lr": 0.0002,
+      "weight_decay": 0.0001,
+      "crop_size": 128,
+      "log_every": 100,
+      "num_workers": 0,
+      "grad_clip": 1.0
+    },
+    "eval": {
+      "batch_size": 1
+    },
+    "data": {
+      "train": {
+        "type": "paired_rgb",
+        "low_dir": "/home/user/a1_rlef_project/data/LOL-v2/Real_captured/Train/Low",
+        "high_dir": "/home/user/a1_rlef_project/data/LOL-v2/Real_captured/Train/Normal",
+        "crop_size": 128,
+        "augment": true,
+        "max_images": null,
+        "name": "LOL-v2-real-train-formal"
+      },
+      "val": {
+        "type": "paired_rgb",
+        "low_dir": "/home/user/a1_rlef_project/data/LOL-v2/Real_captured/Test/Low",
+        "high_dir": "/home/user/a1_rlef_project/data/LOL-v2/Real_captured/Test/Normal",
+        "crop_size": null,
+        "augment": false,
+        "max_images": null,
+        "name": "LOL-v2-real-val-formal"
+      }
+    },
+    "loss": {
+      "rec": 1.0,
+      "phys": 0.1,
+      "poisson": 0.03,
+      "gauge": 0.1,
+      "wtv": 0.01
+    }
+  },
+  "metrics": {
+    "psnr": 19.050426445007325,
+    "ssim": 0.757245323061943,
+    "lee": 0.2560193109884858,
+    "nai": 2.169876285791397,
+    "input_psnr": 9.718215217590332,
+    "identity_drop": 9.332211265563965,
+    "q_ece": 0.5711829248070717,
+    "over": 0.0005658333391875204,
+    "under": 0.0
+  },
+  "checkpoint": "/home/user/a1_rlef_project/experiments/p1formal_real_adaptive_seed3407/checkpoints/last.pth"
+}
