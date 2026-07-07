@@ -18,10 +18,22 @@ Commit message:
 Add GIR-Field final paper and experiment artifacts
 ```
 
-Verification after push:
+Final pushed HEAD:
 
 ```text
-refs/heads/main -> 638c019e0d1b854dd1d1ff603330d142e32fb1f6
+See `git ls-remote origin refs/heads/main` or the final response for the latest pushed commit.
+```
+
+Primary artifact upload commit:
+
+```text
+638c019e0d1b854dd1d1ff603330d142e32fb1f6
+```
+
+Verification command used:
+
+```text
+git ls-remote https://github.com/LiangJiangxtuer/a1_rlef_project.git refs/heads/main
 ```
 
 Local validation before upload:
