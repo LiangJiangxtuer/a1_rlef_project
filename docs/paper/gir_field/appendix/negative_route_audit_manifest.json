@@ -1,0 +1,19 @@
+{
+  "rows": 32,
+  "selected_rows_in_tex": 17,
+  "csv": "docs/paper/gir_field/appendix/negative_route_audit_table.csv",
+  "tex": "docs/paper/gir_field/appendix/negative_route_audit_table.tex",
+  "sources": [
+    "results/tables/p5_retinex_distill_summary.csv",
+    "results/tables/p5b_domain_distill_summary.csv",
+    "results/tables/p6_structural_backbone_summary.csv",
+    "results/tables/p6b_synprotect_summary.csv",
+    "results/tables/p6c_gateprotect_summary.csv",
+    "results/tables/p7_domainhead_summary.csv",
+    "results/tables/p7b_realanchor_summary.csv",
+    "results/tables/p7c_realanchor_fine_summary.csv",
+    "results/tables/dgb_branch_consolidation_summary.csv"
+  ],
+  "sha256_csv": "d78fcbabf1d50ee4368387e4479ab5af8cd7628d62c04c9bb99505830543720c",
+  "sha256_tex": "3e721c916844a15201326ee0c36425913812263be62a6e647d816632a7526c44"
+}

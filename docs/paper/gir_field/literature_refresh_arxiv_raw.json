@@ -1,0 +1,722 @@
+[
+  {
+    "arxiv": "2606.29752v1",
+    "title": "LEIQ-Assessor: Multi-dimensional Quality Assessment of Low-light Enhanced Images via Multi-task Learning",
+    "published": "2026-06-29",
+    "authors": [
+      "Wei Sun",
+      "Yanwei Jiang",
+      "Dandan Zhu",
+      "Jinqiu Sang",
+      "Jikai Xu",
+      "Weixia Zhang"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.MM"
+    ],
+    "summary": "Low-light image enhancement algorithms (LIEAs) aim to improve the visibility of images captured under poor illumination. However, the enhancement process often introduces artifacts such as noise amplification, color shift, structural damage, and over-exposure, which degrade the perceptual quality of the enhanced images. Therefore, a reliable image "
+  },
+  {
+    "arxiv": "2606.29430v1",
+    "title": "EvLIR: Learning Illumination Residuals from Ordered Events for Low-Light Image Enhancement",
+    "published": "2026-06-28",
+    "authors": [
+      "Haoxian Zhou",
+      "Chuanzhi Xu",
+      "Langyi Chen",
+      "Pengfei Ye",
+      "Haodong Chen",
+      "Qiang Qu"
+    ],
+    "categories": [
+      "cs.CV"
+    ],
+    "summary": "Low-light image enhancement is severely ill-posed when the input frame contains missing structure, saturated noise, and weak local contrast. Event cameras provide asynchronous brightness-change observations with high temporal resolution, but prior works often treat voxel channels as an unordered or static feature stack before fusion, rather than ex"
+  },
+  {
+    "arxiv": "2606.21674v1",
+    "title": "Enlight: Fast Low-Light Image Enhancement via Multi-Objective Optimization and Shadow-Aware Refinement",
+    "published": "2026-06-19",
+    "authors": [
+      "Nirjhor Datta",
+      "M. Sohel Rahman"
+    ],
+    "categories": [
+      "cs.CV"
+    ],
+    "summary": "We present ENLIGHT, a fast and training free framework for low-light image enhancement based on direct optimization of a perceptual objective. Unlike deep learning approaches that require large scale training data and supervision, ENLIGHT operates in a zero-shot manner by optimizing image quality at inference time. The method employs a two stage gl"
+  },
+  {
+    "arxiv": "2606.17998v1",
+    "title": "AIGS-Net: Compact Illumination Field Modeling via 2D Gaussian Splatting for Fast Low-Light Image Enhancement",
+    "published": "2026-06-16",
+    "authors": [
+      "Yuhan Chen",
+      "Kunyang Huang",
+      "Fuchen Li",
+      "Zhuohan Qin",
+      "Guofa Li",
+      "Wenbo Chu"
+    ],
+    "categories": [
+      "cs.CV"
+    ],
+    "summary": "Existing low-light image enhancement methods often face a bottleneck between the representation capacity of illumination-field modeling and computational complexity. To address this issue, this paper proposes an Adaptive Illumination Gaussian Splatting Network (AIGS-Net), an ultra-lightweight architecture for fast low-light enhancement. Unlike conv"
+  },
+  {
+    "arxiv": "2606.17985v1",
+    "title": "Gaussian Light Field Splatting: A Physical Prior-Driven Vision Transformer for Unsupervised Low-Light Image Enhancement",
+    "published": "2026-06-16",
+    "authors": [
+      "Yuhan Chen",
+      "Wenxuan Yu",
+      "Guofa Li",
+      "Fuchen Li",
+      "Kunyang Huang",
+      "Yicui Shi"
+    ],
+    "categories": [
+      "cs.CV"
+    ],
+    "summary": "Existing unsupervised low-light image enhancement methods often encounter local exposure imbalance and color distortion under complex non-uniform illumination. In addition, most Vision Transformers lack an explicit mechanism for modeling the physical priors of illumination degradation. To address these limitations, we propose GLFS, a Gaussian light"
+  },
+  {
+    "arxiv": "2606.16159v1",
+    "title": "Continuous Splatting meets Retinex: Continuous Gaussian Splatting and Implicit Reflectance Modeling for Low-Light Image Enhancement",
+    "published": "2026-06-15",
+    "authors": [
+      "Yuhan Chen",
+      "Yicui Shi",
+      "Guofa Li",
+      "Wenxuan Yu",
+      "Ying Fang",
+      "Guangrui Bai"
+    ],
+    "categories": [
+      "cs.CV"
+    ],
+    "summary": "Low-light image enhancement aims to recover clear images from low-illumination observations and is crucial for high-level downstream vision tasks. However, existing methods frequently encounter color distortion and structural artifacts when balancing global smooth illumination adjustment and local high-frequency detail recovery. To address these is"
+  },
+  {
+    "arxiv": "2606.10280v1",
+    "title": "Overlapped Wavelet Diffusion for Low-Light Image Enhancement",
+    "published": "2026-06-09",
+    "authors": [
+      "Fen Peng",
+      "Taizo Suzuki",
+      "Seisuke Kyochi"
+    ],
+    "categories": [
+      "eess.IV",
+      "cs.CV"
+    ],
+    "summary": "In this study, we propose an overlapped wavelet diffusion framework for Low-Light Image Enhancement (LLIE), which incorporates two complementary components to achieve blocking artifact-free and detail-preserving enhancement. Although recent diffusion-based LLIE methods have demonstrated remarkable performance compared with traditional approaches, D"
+  },
+  {
+    "arxiv": "2605.28605v1",
+    "title": "Internally Referenced Low-Light Enhancement",
+    "published": "2026-05-27",
+    "authors": [
+      "Peiyuan He",
+      "Hainuo Wang",
+      "Hengxing Liu",
+      "Mingjia Li",
+      "Xiaojie Guo"
+    ],
+    "categories": [
+      "cs.CV"
+    ],
+    "summary": "Self-supervised low-light image enhancement (LLIE) is highly appealing as it eliminates the reliance on external paired data. However, the lack of external references causes networks to struggle with decoupling entangled illumination, delicate textures, and amplified noise. To resolve this challenge, we propose an Internally Referenced LLIE framewo"
+  },
+  {
+    "arxiv": "2605.23531v2",
+    "title": "PixIE: Prompted Pixel-Space Low-Light Image Enhancement",
+    "published": "2026-05-22",
+    "authors": [
+      "Ruirui Lin",
+      "Guoxi Huang",
+      "David Bull",
+      "Nantheera Anantrasirichai"
+    ],
+    "categories": [
+      "cs.CV"
+    ],
+    "summary": "Low-light images suffer from severe noise, contrast loss, and semantic ambiguity, making enhancement a joint problem of denoising and detail recovery. We propose PixIE, a feed-forward pixel-space LLIE framework semantically prompted by a vision foundation model. PixIE first performs cross-scale denoising to suppress noise and preserve structure, th"
+  },
+  {
+    "arxiv": "2605.22186v1",
+    "title": "Event-Illumination Collaborative Low-light Image Enhancement with a High-resolution Real-world Dataset",
+    "published": "2026-05-21",
+    "authors": [
+      "Senyan Xu",
+      "Zhijing Sun",
+      "Kean Liu",
+      "Xin Lu",
+      "Ruixuan Jiang",
+      "Mingyang Huang"
+    ],
+    "categories": [
+      "cs.CV"
+    ],
+    "summary": "Event-based low-light image enhancement (LIE) methods mainly focus on incorporating high dynamic range (HDR) information from events while overlooking the essential global illumination in images and the inherent noise sensitivity of event signals in real-world scenarios. To address these issues, we propose EIC-LIE, an event-illumination collaborati"
+  },
+  {
+    "arxiv": "2605.19982v1",
+    "title": "InterLight: Leveraging Intrinsic Illumination Priors for Low-Light Image Enhancement",
+    "published": "2026-05-19",
+    "authors": [
+      "Ziqi Wang",
+      "Xu Zhang",
+      "Laibin Chang",
+      "Shi Chen",
+      "Jiaqi Ma",
+      "Huan Zhang"
+    ],
+    "categories": [
+      "cs.CV"
+    ],
+    "summary": "Low-Light Image Enhancement (LLIE) has long been a challenging problem in low-level vision, as insufficient illumination often leads to low contrast, detail loss, and noise. Recent studies show that deep learning-based Retinex theory can effectively decouple illumination and reflectance. However, existing methods frequently suffer from over-enhance"
+  },
+  {
+    "arxiv": "2605.17893v1",
+    "title": "LUMEN: Low-light Unified Multi-stage Enhancement Network using depth-guided flash, clustering, and attention-based Transformers",
+    "published": "2026-05-18",
+    "authors": [
+      "Bibhabasu Debnath",
+      "Sahana Ray",
+      "Sanjay Ghosh"
+    ],
+    "categories": [
+      "eess.IV"
+    ],
+    "summary": "Low-light image enhancement remains a challenging problem due to severe noise, color distortion, contrast degradation, and loss of structural details under insufficient illumination. Existing methods typically apply uniform enhancement without considering the depth-dependent nature of light attenuation and sensor noise in real-world scenes. To addr"
+  },
+  {
+    "arxiv": "2605.12556v1",
+    "title": "M2Retinexformer: Multi-Modal Retinexformer for Low-Light Image Enhancement",
+    "published": "2026-05-11",
+    "authors": [
+      "Youssef Aboelwafa",
+      "Hicham G. Elmongui",
+      "Marwan Torki"
+    ],
+    "categories": [
+      "cs.CV"
+    ],
+    "summary": "Low-light image enhancement is challenging due to complex degradations, including amplified noise, artifacts, and color distortion. While Retinex-based deep learning methods have achieved promising results, they primarily rely on single-modality RGB information. We propose M2Retinexformer (Multi-Modal Retinexformer), a novel framework that extends "
+  },
+  {
+    "arxiv": "2605.07767v1",
+    "title": "SIMI: Self-information Mining Network for Low-light Image Enhancement",
+    "published": "2026-05-08",
+    "authors": [
+      "Xuanshuo Fu",
+      "Lei Kang",
+      "Javier Vazquez-Corral"
+    ],
+    "categories": [
+      "cs.CV"
+    ],
+    "summary": "Poor lighting conditions significantly impact image quality, posing substantial challenges for image editing and visualization. Many existing enhancement methods aim at proposing complex models while neglecting the intrinsic information contained within low-light images. In this work, we propose the Self-Information Mining (SIMI) network, an innova"
+  },
+  {
+    "arxiv": "2605.02627v1",
+    "title": "Rethinking Low-Light Image Enhancement: A Log-Domain Intensity--Chromaticity Decoupling Perspective",
+    "published": "2026-05-04",
+    "authors": [
+      "Guangrui Bai",
+      "Yifan Mei",
+      "Yahui Deng",
+      "Yuhan Chen",
+      "Yuze Qiu",
+      "Wenhai Liu"
+    ],
+    "categories": [
+      "cs.CV"
+    ],
+    "summary": "Explicit reconstruction constraints derived from the decoupled representation are further imposed to suppress abnormal channel amplification and chromatic noise. Experiments on LOLv2-Real, MIT-Adobe FiveK, and LSRW show that the proposed method achieves competitive or superior quantitative and visual performance, reaching 29.71 dB PSNR and 0.89 SSI"
+  },
+  {
+    "arxiv": "2607.02516v1",
+    "title": "Alignment Is All You Need For X-to-4D Generation",
+    "published": "2026-07-02",
+    "authors": [
+      "Qiaowei Miao",
+      "Kehan Li",
+      "Yawei Luo",
+      "Yi Yang"
+    ],
+    "categories": [
+      "cs.CV"
+    ],
+    "summary": "Generative diffusion models excel at synthesizing high-quality images, videos, and 3D content under multimodal control. However, arbitrary user-defined modality-to-4D (X-to-4D) generation remains challenging due to the high cost of constructing diverse datasets and the limited scalability of existing methods. This paper presents Align4D, a flexible"
+  },
+  {
+    "arxiv": "2607.02509v1",
+    "title": "ReContext: Recursive Evidence Replay as LLM Harness for Long-Context Reasoning",
+    "published": "2026-07-02",
+    "authors": [
+      "Yanjun Zhao",
+      "Ruizhong Qiu",
+      "Tianxin Wei",
+      "Yuanchen Bei",
+      "Zhining Liu",
+      "Lingjie Chen"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "summary": "Understanding and reasoning over long contexts has become a key requirement for deploying large language models (LLMs) in realistic applications. Although recent LLMs support increasingly long context windows, they often fail to use relevant evidence that is already present in the input, revealing a gap between context access and effective context "
+  },
+  {
+    "arxiv": "2607.02504v1",
+    "title": "Reasoning LLM Improves Speaker Recognition in Long-form TV Dramas",
+    "published": "2026-07-02",
+    "authors": [
+      "Yuxuan Li",
+      "Lingxi Xie",
+      "Xinyue Huo",
+      "Jihao Qiu",
+      "Jiacheng Shao",
+      "Pengfei Chen"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.CV"
+    ],
+    "summary": "Long-form TV dramas present a formidable challenge for comprehensive video understanding, where deciphering complex storyline often relies on \\textbf{speaker recognition}, the task of accurately attributing each spoken utterance to its respective character. In this paper, we advance this field through two primary contributions. (1) We introduce \\te"
+  },
+  {
+    "arxiv": "2607.02498v1",
+    "title": "Alleviating prior dependencies for DESI DR1 clustering fits through reparameterization",
+    "published": "2026-07-02",
+    "authors": [
+      "Marco Bonici",
+      "Simone Paradiso",
+      "Glenn McGee",
+      "Guido D'Amico",
+      "Minas Karamanis",
+      "Hanyu Zhang"
+    ],
+    "categories": [
+      "astro-ph.CO"
+    ],
+    "summary": "Bayesian analyses of the full-shape clustering of Dark Energy Spectroscopic Instrument (DESI) Data Release 1 (DR1) exhibit prior-volume projection effects, whereby weakly constrained nuisance parameters of the Effective Field Theory of Large Scale Structure (EFTofLSS) shift marginalized cosmological posteriors away from the posterior maximum. We re"
+  },
+  {
+    "arxiv": "2607.02483v1",
+    "title": "Robustness and hyperstability for the Erdős-Gallai theorem",
+    "published": "2026-07-02",
+    "authors": [
+      "Micha Christoph",
+      "Alp Müyesser",
+      "Yuval Wigderson"
+    ],
+    "categories": [
+      "math.CO"
+    ],
+    "summary": "The Erdős-Gallai theorem states that every graph of average degree $d$ contains a cycle of length at least $d$. We prove the following robust extension of the Erdős-Gallai theorem: For every $c>0$ there exists $K$ such that for all $d\\geq K$, $p\\geq K/d$ and every graph $G$ with average degree $d$, the random graph $G_p$ obtained by independently p"
+  },
+  {
+    "arxiv": "2607.02464v1",
+    "title": "Will Scaling Improve Social Simulation with LLMs?",
+    "published": "2026-07-02",
+    "authors": [
+      "Caleb Ziems",
+      "William Held",
+      "Su Doga Karaca",
+      "David Grusky",
+      "Tatsunori Hashimoto",
+      "Diyi Yang"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "summary": "Large Language Model (LLM) social simulations are a promising research method, but they are not yet faithful enough to be adopted widely. In this work, we investigate whether the current scaling paradigm in language modeling is likely to close these gaps, or whether simulation fidelity is orthogonal to general capabilities and therefore deserving o"
+  },
+  {
+    "arxiv": "2607.02461v1",
+    "title": "OrbitQuant: Data-Agnostic Quantization for Image and Video Diffusion Transformers",
+    "published": "2026-07-02",
+    "authors": [
+      "Donghyun Lee",
+      "Jitesh Chavan",
+      "Duy Nguyen",
+      "Sam Huang",
+      "Liming Jiang",
+      "Priyadarshini Panda"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "summary": "Diffusion transformers (DiTs) achieve state-of-the-art image and video generation, but their multi-step sampling and growing parameter count make inference expensive. Post-training quantization (PTQ) is the natural remedy, yet DiT activations shift across timesteps, prompts, and guidance branches, forcing prior methods to re-fit calibration data fo"
+  },
+  {
+    "arxiv": "2607.02455v1",
+    "title": "When Do LLM Personas Support Visualization Design? A Cross-Model Study of Color Assignment and Chart Choice",
+    "published": "2026-07-02",
+    "authors": [
+      "Shahreen Salim",
+      "Klaus Mueller"
+    ],
+    "categories": [
+      "cs.HC"
+    ],
+    "summary": "Large language model personas are increasingly used to approximate diverse users during early-stage visualization design, but it remains unclear whether persona-conditioned outputs reflect stable personality effects or artifacts of model choice and task framing. We examine this question across two visualization-relevant tasks: color assignment for "
+  },
+  {
+    "arxiv": "2607.02452v1",
+    "title": "The $D_{s1}(2460)$ and other open-charm $1^+$ states in relativistic chiral effective field theory",
+    "published": "2026-07-02",
+    "authors": [
+      "Ze-Rui Liang",
+      "Qi-Chao Xiao",
+      "Zhi-Hui Guo",
+      "De-Liang Yao"
+    ],
+    "categories": [
+      "hep-ph"
+    ],
+    "summary": "We derive the pertinent chiral potentials for charmed vector meson interactions with light pseudoscalar bosons in a relativistic U(3) chiral effective field theory up to next-to-leading order. Predictions for the $S$- and $P$-wave scattering lengths are obtained for all the relevant elastic channels. A comparison with the most recent -- and current"
+  },
+  {
+    "arxiv": "2607.02450v1",
+    "title": "On invariant subalgebras of noncommutative Poisson boundaries for higher rank lattices",
+    "published": "2026-07-02",
+    "authors": [
+      "Shuoxing Zhou"
+    ],
+    "categories": [
+      "math.OA",
+      "math.DS",
+      "math.GR"
+    ],
+    "summary": "Let $G$ be a real connected semisimple Lie group with trivial center, no non-trivial compact factors, and all simple factors of real rank at least two. Let $Γ<G$ be an irreducible lattice, let $P<G$ be a minimal parabolic subgroup, and consider the crossed product $L^\\infty(G/P,ν_P)\\rtimes Γ$. We prove that every $Γ$-invariant von Neumann subalgebr"
+  },
+  {
+    "arxiv": "2607.02446v1",
+    "title": "On a Rosenzweig-Porter-type model",
+    "published": "2026-07-02",
+    "authors": [
+      "Giorgio Cipolloni",
+      "László Erdős",
+      "Joscha Henheik"
+    ],
+    "categories": [
+      "math-ph",
+      "cond-mat.dis-nn",
+      "cond-mat.stat-mech",
+      "math.PR"
+    ],
+    "summary": "We consider a very general Rosenzweig-Porter-type model, $H=H_0+λW$, where $H_0$ is an arbitrary Hermitian matrix and $W$ is a standard Wigner matrix. We precisely trace the localization properties of the eigenvectors and the eigenstate thermalisation hypothesis (ETH) as the coupling constant $λ$ interpolates between the trivial $λ=0$ case and the "
+  },
+  {
+    "arxiv": "2607.02440v1",
+    "title": "EvoPolicyGym: Evaluating Autonomous Policy Evolution in Interactive Environments",
+    "published": "2026-07-02",
+    "authors": [
+      "Zhilin Wang",
+      "Han Song",
+      "Runzhe Zhan",
+      "Jusen Du",
+      "Jiacheng Chen",
+      "Tianle Li"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.CL"
+    ],
+    "summary": "Autonomous agents are increasingly expected to improve executable policies through feedback, yet existing evaluations often collapse this process into a final score or confound it with open-ended software-engineering progress. We introduce Autonomous Policy Evolution, a controlled evaluation setting in which a harness-model agent repeatedly edits a"
+  },
+  {
+    "arxiv": "2607.02439v1",
+    "title": "Native-Opacity Sensitivity of a Fixed Delta Cephei MESA-RSP Pulsation Model",
+    "published": "2026-07-02",
+    "authors": [
+      "Zuhoor Elahi",
+      "Christopher Sirola",
+      "Wafa Gull"
+    ],
+    "categories": [
+      "astro-ph.SR"
+    ],
+    "summary": "Radiative opacity is one of the central microphysical inputs controlling the thermal response of Cepheid envelopes and the driving or damping of radial pulsations. We present a controlled opacity-sensitivity experiment for a fixed delta Cephei nonlinear radial pulsation model computed with the MESA Radial Stellar Pulsation module. The stellar and p"
+  },
+  {
+    "arxiv": "2607.02437v1",
+    "title": "Extreme Adaptive Transformer for Time Series Forecasting",
+    "published": "2026-07-02",
+    "authors": [
+      "Sanjeev Shrestha",
+      "Hui Liu",
+      "Yifan Zhang"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "summary": "Time series forecasting remains challenging when the underlying data contain rare but critical extreme events. This issue is particularly important in hydrologic forecasting, where streamflow distributions are often highly skewed and extreme peaks can have substantial impacts on flood monitoring, water resource management, and early warning systems"
+  },
+  {
+    "arxiv": "2607.02434v1",
+    "title": "A Topological Formula for Potts Lattice Gauge Theory Correlations",
+    "published": "2026-07-02",
+    "authors": [
+      "Paul Duncan",
+      "Benjamin Schweinhart"
+    ],
+    "categories": [
+      "math.PR",
+      "math-ph",
+      "math.AT"
+    ],
+    "summary": "We exhibit a formula relating the correlation between Wilson loop variables in Potts lattice gauge theory to a topological quantity in the plaquette random cluster model. As applications we show that the correlation length of the model on $\\mathbb{Z}^4$ with free boundary conditions equals that of the dual model with constant boundary conditions, w"
+  },
+  {
+    "arxiv": "2605.26729v1",
+    "title": "Learning Reference-Guided Exposure Correction with Hybrid Illumination Characteristics",
+    "published": "2026-05-26",
+    "authors": [
+      "Hao Ren",
+      "Zetong Bi",
+      "Zhaoliang Wan",
+      "Hui Cheng"
+    ],
+    "categories": [
+      "cs.CV"
+    ],
+    "summary": "We present HICNet, a reference-guided exposure correction framework. A lightweight, content-agnostic encoder distills each image into a compact illumination embedding capturing regional brightness, edge contrast, and higher-order luminance moments. The embedding difference between a source and its reference drives a multi-scale modulation network t"
+  },
+  {
+    "arxiv": "2605.15986v1",
+    "title": "Temporal evolution of the periodic GeV signal from 4FGL J1913.2+0512 and analysis of the SS 433 / W50 lobes",
+    "published": "2026-05-15",
+    "authors": [
+      "Ömer Faruk Çoban",
+      "Diego F. Torres",
+      "Jian Li",
+      "Daniela Hadasch",
+      "Agnibha De Sarkar",
+      "Matthew Kerr"
+    ],
+    "categories": [
+      "astro-ph.HE"
+    ],
+    "summary": "SS 433 is a microquasar whose relativistic jets precess every ~162 days, providing a laboratory for jet-interstellar medium interactions. We present a comprehensive analysis of 16 years of Fermi Large Area Telescope data (August 2008-September 2024) of the SS 433/W50 field, using events in the 0.3-300 GeV range and employing pulsar gating to mitiga"
+  },
+  {
+    "arxiv": "2605.11435v1",
+    "title": "ZeroIDIR: Zero-Reference Illumination Degradation Image Restoration with Perturbed Consistency Diffusion Models",
+    "published": "2026-05-12",
+    "authors": [
+      "Hai Jiang",
+      "Zhen Liu",
+      "Yinjie Lei",
+      "Songchen Han",
+      "Bing Zeng",
+      "Shuaicheng Liu"
+    ],
+    "categories": [
+      "cs.CV"
+    ],
+    "summary": "In this paper, we propose a zero-reference diffusion-based framework, named ZeroIDIR, for illumination degradation image restoration, which decouples the restoration process into adaptive illumination correction and diffusion-based reconstruction while being trained solely on low-quality degraded images. Specifically, we design an adaptive gamma co"
+  },
+  {
+    "arxiv": "2604.04136v1",
+    "title": "Rethinking Exposure Correction for Spatially Non-uniform Degradation",
+    "published": "2026-04-05",
+    "authors": [
+      "Ao Li",
+      "Jiawei Sun",
+      "Le Dong",
+      "Zhenyu Wang",
+      "Weisheng Dong"
+    ],
+    "categories": [
+      "cs.CV"
+    ],
+    "summary": "Real-world exposure correction is fundamentally challenged by spatially non-uniform degradations, where diverse exposure errors frequently coexist within a single image. However, existing exposure correction methods are still largely developed under a predominantly uniform assumption. Architecturally, they typically rely on globally aggregated modu"
+  },
+  {
+    "arxiv": "2603.04971v1",
+    "title": "Mixture of Universal Experts: Scaling Virtual Width via Depth-Width Transformation",
+    "published": "2026-03-05",
+    "authors": [
+      "Yilong Chen",
+      "Naibin Gu",
+      "Junyuan Shang",
+      "Zhenyu Zhang",
+      "Yuchen Feng",
+      "Jiawei Sheng"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "summary": "Mixture-of-Experts (MoE) decouples model capacity from per-token computation, yet their scalability remains limited by the physical dimensions of depth and width. To overcome this, we propose Mixture of Universal Experts (MOUE),a MoE generalization introducing a novel scaling dimension: Virtual Width. In general, MoUE aims to reuse a universal laye"
+  },
+  {
+    "arxiv": "2601.19129v2",
+    "title": "CLIP-Guided Unsupervised Semantic-Aware Exposure Correction",
+    "published": "2026-01-27",
+    "authors": [
+      "Puzhen Wu",
+      "Han Weng",
+      "Quan Zheng",
+      "Yi Zhan",
+      "Hewei Wang",
+      "Yiming Li"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "summary": "Improper exposure often leads to severe loss of details, color distortion, and reduced contrast. Exposure correction still faces two critical challenges: (1) the ignorance of object-wise regional semantic information causes the color shift artifacts; (2) real-world exposure images generally have no ground-truth labels, and its labeling entails mass"
+  },
+  {
+    "arxiv": "2512.05960v1",
+    "title": "AQUA-Net: Adaptive Frequency Fusion and Illumination Aware Network for Underwater Image Enhancement",
+    "published": "2025-12-05",
+    "authors": [
+      "Munsif Ali",
+      "Najmul Hassan",
+      "Lucia Ventura",
+      "Davide Di Bari",
+      "Simonepietro Canese"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "summary": "Underwater images often suffer from severe color distortion, low contrast, and a hazy appearance due to wavelength-dependent light absorption and scattering. Simultaneously, existing deep learning models exhibit high computational complexity, which limits their practical deployment for real-time underwater applications. To address these challenges,"
+  },
+  {
+    "arxiv": "2511.06066v1",
+    "title": "LoopExpose: An Unsupervised Framework for Arbitrary-Length Exposure Correction",
+    "published": "2025-11-08",
+    "authors": [
+      "Ao Li",
+      "Chen Chen",
+      "Zhenyu Wang",
+      "Tao Huang",
+      "Fangfang Wu",
+      "Weisheng Dong"
+    ],
+    "categories": [
+      "cs.CV"
+    ],
+    "summary": "Exposure correction is essential for enhancing image quality under challenging lighting conditions. While supervised learning has achieved significant progress in this area, it relies heavily on large-scale labeled datasets, which are difficult to obtain in practical scenarios. To address this limitation, we propose a pseudo label-based unsupervise"
+  },
+  {
+    "arxiv": "2511.02411v1",
+    "title": "IllumFlow: Illumination-Adaptive Low-Light Enhancement via Conditional Rectified Flow and Retinex Decomposition",
+    "published": "2025-11-04",
+    "authors": [
+      "Wenyang Wei",
+      "Yang yang",
+      "Xixi Jia",
+      "Xiangchu Feng",
+      "Weiwei Wang",
+      "Renzhen Wang"
+    ],
+    "categories": [
+      "cs.CV"
+    ],
+    "summary": "We present IllumFlow, a novel framework that synergizes conditional Rectified Flow (CRF) with Retinex theory for low-light image enhancement (LLIE). Our model addresses low-light enhancement through separate optimization of illumination and reflectance components, effectively handling both lighting variations and noise. Specifically, we first decom"
+  },
+  {
+    "arxiv": "2510.27644v2",
+    "title": "Probing cosmic isotropy with Gamma-ray bursts: A dipole and quadrupole analysis of BATSE and Fermi GBM data",
+    "published": "2025-10-31",
+    "authors": [
+      "Debosi Mondal",
+      "Biswajit Pandey",
+      "Amit Mondal"
+    ],
+    "categories": [
+      "astro-ph.HE",
+      "astro-ph.CO"
+    ],
+    "summary": "The cosmological principle, asserting large-scale homogeneity and isotropy, underpins the standard model of cosmology. Testing its validity using independent astronomical probes remains crucial for understanding the global structure of the Universe. We investigate the angular distribution of Gamma-Ray Bursts (GRBs) using two of the most comprehensi"
+  },
+  {
+    "arxiv": "2510.07741v1",
+    "title": "UltraLED: Learning to See Everything in Ultra-High Dynamic Range Scenes",
+    "published": "2025-10-09",
+    "authors": [
+      "Yuang Meng",
+      "Xin Jin",
+      "Lina Lei",
+      "Chun-Le Guo",
+      "Chongyi Li"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "summary": "Ultra-high dynamic range (UHDR) scenes exhibit significant exposure disparities between bright and dark regions. Such conditions are commonly encountered in nighttime scenes with light sources. Even with standard exposure settings, a bimodal intensity distribution with boundary peaks often emerges, making it difficult to preserve both highlight and"
+  },
+  {
+    "arxiv": "2508.09565v1",
+    "title": "WEC-DG: Multi-Exposure Wavelet Correction Method Guided by Degradation Description",
+    "published": "2025-08-13",
+    "authors": [
+      "Ming Zhao",
+      "Pingping Liu",
+      "Tongshun Zhang",
+      "Zhe Zhang"
+    ],
+    "categories": [
+      "cs.CV"
+    ],
+    "summary": "Multi-exposure correction technology is essential for restoring images affected by insufficient or excessive lighting, enhancing the visual experience by improving brightness, contrast, and detail richness. However, current multi-exposure correction methods often encounter challenges in addressing intra-class variability caused by diverse lighting "
+  },
+  {
+    "arxiv": "2507.17252v1",
+    "title": "Unsupervised Exposure Correction",
+    "published": "2025-07-23",
+    "authors": [
+      "Ruodai Cui",
+      "Li Niu",
+      "Guosheng Hu"
+    ],
+    "categories": [
+      "cs.CV"
+    ],
+    "summary": "Current exposure correction methods have three challenges, labor-intensive paired data annotation, limited generalizability, and performance degradation in low-level computer vision tasks. In this work, we introduce an innovative Unsupervised Exposure Correction (UEC) method that eliminates the need for manual annotations, offers improved generaliz"
+  },
+  {
+    "arxiv": "2507.17157v1",
+    "title": "UNICE: Training A Universal Image Contrast Enhancer",
+    "published": "2025-07-23",
+    "authors": [
+      "Ruodai Cui",
+      "Lei Zhang"
+    ],
+    "categories": [
+      "cs.CV"
+    ],
+    "summary": "Existing image contrast enhancement methods are typically designed for specific tasks such as under-/over-exposure correction, low-light and backlit image enhancement, etc. The learned models, however, exhibit poor generalization performance across different tasks, even across different datasets of a specific task. It is important to explore whethe"
+  },
+  {
+    "arxiv": "2506.21132v2",
+    "title": "Learning to See in the Extremely Dark",
+    "published": "2025-06-26",
+    "authors": [
+      "Hai Jiang",
+      "Binhao Guan",
+      "Zhen Liu",
+      "Xiaohong Liu",
+      "Jian Yu",
+      "Zheng Liu"
+    ],
+    "categories": [
+      "cs.CV"
+    ],
+    "summary": "Learning-based methods have made promising advances in low-light RAW image enhancement, while their capability to extremely dark scenes where the environmental illuminance drops as low as 0.0001 lux remains to be explored due to the lack of corresponding datasets. To this end, we propose a paired-to-paired data synthesis pipeline capable of generat"
+  }
+]

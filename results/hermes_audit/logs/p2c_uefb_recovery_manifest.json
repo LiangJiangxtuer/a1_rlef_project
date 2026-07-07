@@ -1,0 +1,77 @@
+{
+  "generated_at": "2026-07-03T05:41:09.528386+00:00",
+  "phase": "P2C UEFB recovery",
+  "runs": [
+    {
+      "variant_id": "P2C_DGB_GATE_FLOOR015",
+      "intervention": "global_route_floor",
+      "route_floor": 0.15,
+      "run_dir": "/home/user/a1_rlef_project/experiments/p2c_p2c_dgb_gate_floor015_image_stats_gauge_original_gate_floor015_seed3407",
+      "config": "/home/user/a1_rlef_project/configs/dgb_rlef/p2c_p2c_dgb_gate_floor015_image_stats_gauge_original_gate_floor015.yml",
+      "log": "/home/user/a1_rlef_project/logs/p2c_uefb_recovery/p2c_p2c_dgb_gate_floor015_image_stats_gauge_original_gate_floor015.log",
+      "uefb_psnr": 17.695471151351928,
+      "real_psnr": 19.65808457374573,
+      "synthetic_psnr": 17.635049047470094,
+      "uefb_E_corr": 0.4820942931827158,
+      "real_E_corr": 0.7476908865571023,
+      "synthetic_E_corr": 0.8662491965293885
+    },
+    {
+      "variant_id": "P2C_DGB_GATE_FLOOR025",
+      "intervention": "global_route_floor",
+      "route_floor": 0.25,
+      "run_dir": "/home/user/a1_rlef_project/experiments/p2c_p2c_dgb_gate_floor025_image_stats_gauge_original_gate_floor025_seed3407",
+      "config": "/home/user/a1_rlef_project/configs/dgb_rlef/p2c_p2c_dgb_gate_floor025_image_stats_gauge_original_gate_floor025.yml",
+      "log": "/home/user/a1_rlef_project/logs/p2c_uefb_recovery/p2c_p2c_dgb_gate_floor025_image_stats_gauge_original_gate_floor025.log",
+      "uefb_psnr": 17.684406219482423,
+      "real_psnr": 20.297293701171874,
+      "synthetic_psnr": 18.356176347732543,
+      "uefb_E_corr": 0.5338911259234883,
+      "real_E_corr": 0.6514961254596711,
+      "synthetic_E_corr": 0.7922312563657761
+    },
+    {
+      "variant_id": "P2C_DGB_ESHAPE025",
+      "intervention": "reduced_e_shape_weight",
+      "route_floor": 0.0,
+      "run_dir": "/home/user/a1_rlef_project/experiments/p2c_p2c_dgb_eshape025_image_stats_gauge_original_route_eshape025_seed3407",
+      "config": "/home/user/a1_rlef_project/configs/dgb_rlef/p2c_p2c_dgb_eshape025_image_stats_gauge_original_route_eshape025.yml",
+      "log": "/home/user/a1_rlef_project/logs/p2c_uefb_recovery/p2c_p2c_dgb_eshape025_image_stats_gauge_original_route_eshape025.log",
+      "uefb_psnr": 17.655403623580934,
+      "real_psnr": 19.87253040313721,
+      "synthetic_psnr": 18.186532611846925,
+      "uefb_E_corr": 0.4878566942629404,
+      "real_E_corr": 0.7079405367374421,
+      "synthetic_E_corr": 0.8387112683057785
+    },
+    {
+      "variant_id": "P2C_DGB_ESHAPE010",
+      "intervention": "reduced_e_shape_weight",
+      "route_floor": 0.0,
+      "run_dir": "/home/user/a1_rlef_project/experiments/p2c_p2c_dgb_eshape010_image_stats_gauge_original_route_eshape010_seed3407",
+      "config": "/home/user/a1_rlef_project/configs/dgb_rlef/p2c_p2c_dgb_eshape010_image_stats_gauge_original_route_eshape010.yml",
+      "log": "/home/user/a1_rlef_project/logs/p2c_uefb_recovery/p2c_p2c_dgb_eshape010_image_stats_gauge_original_route_eshape010.log",
+      "uefb_psnr": 17.791856729507447,
+      "real_psnr": 19.60370762825012,
+      "synthetic_psnr": 18.587917642593382,
+      "uefb_E_corr": 0.4722174797245825,
+      "real_E_corr": 0.7304461604356766,
+      "synthetic_E_corr": 0.8125532522797585
+    }
+  ],
+  "summary_csv": "/home/user/a1_rlef_project/results/tables/p2c_uefb_recovery_summary.csv",
+  "summary_json": "/home/user/a1_rlef_project/results/tables/p2c_uefb_recovery_summary.json",
+  "route_diagnostics_json": "/home/user/a1_rlef_project/results/tables/p2c_uefb_recovery_route_diagnostics.json",
+  "report": "/home/user/a1_rlef_project/results/hermes_audit/reports/P2C_UEFB_RECOVERY_REPORT.md",
+  "promotion": [
+    false,
+    false,
+    false,
+    false
+  ],
+  "decision": "no_go_for_multiseed_promotion",
+  "best_uefb_variant": "P2C_DGB_ESHAPE010",
+  "next_recommendation": "P2D balanced e_shape010 real-preservation branch",
+  "full_suite": "........................................................................ [ 75%]\n........................                                                 [100%]\n96 passed in 19.75s",
+  "compileall": "passed (no output)"
+}

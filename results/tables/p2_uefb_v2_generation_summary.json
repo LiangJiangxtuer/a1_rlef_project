@@ -1,0 +1,37 @@
+{
+  "root": "data/UEFB-v2",
+  "train": {
+    "png_counts": {
+      "low": 3000,
+      "high": 3000,
+      "E_gt": 3000,
+      "A_gt": 3000,
+      "Q_gt": 3000
+    },
+    "npy_counts": {
+      "E_gt": 3000,
+      "A_gt": 3000,
+      "Q_gt": 3000
+    },
+    "meta_samples": 3000,
+    "near_identity": 621,
+    "mean_clip_ratio": 0.017822224934895832
+  },
+  "test": {
+    "png_counts": {
+      "low": 500,
+      "high": 500,
+      "E_gt": 500,
+      "A_gt": 500,
+      "Q_gt": 500
+    },
+    "npy_counts": {
+      "E_gt": 500,
+      "A_gt": 500,
+      "Q_gt": 500
+    },
+    "meta_samples": 500,
+    "near_identity": 117,
+    "mean_clip_ratio": 0.0212330322265625
+  }
+}

@@ -1,0 +1,329 @@
+2026-07-01 16:42:22.966987: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-07-01 16:42:23.006393: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+AttributeError: 'MessageFactory' object has no attribute 'GetPrototype'
+AttributeError: 'MessageFactory' object has no attribute 'GetPrototype'
+AttributeError: 'MessageFactory' object has no attribute 'GetPrototype'
+AttributeError: 'MessageFactory' object has no attribute 'GetPrototype'
+AttributeError: 'MessageFactory' object has no attribute 'GetPrototype'
+WARNING:tensorflow:From /home/user/a1_rlef_project/external_baselines/.venv_tf/lib/python3.11/site-packages/tensorflow/python/compat/v2_compat.py:108: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+/home/user/a1_rlef_project/external_baselines/.venv_tf/lib/python3.11/site-packages/tensorflow/python/keras/engine/base_layer_v1.py:1697: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  warnings.warn('`layer.apply` is deprecated and '
+/home/user/a1_rlef_project/external_baselines/KinD_plus/msia_BN_3_M.py:12: UserWarning: `tf.layers.conv2d` is deprecated and will be removed in a future version. Please Use `tf.keras.layers.Conv2D` instead.
+  concat = tf.layers.conv2d(input_i,
+/home/user/a1_rlef_project/external_baselines/KinD_plus/msia_BN_3_M.py:29: UserWarning: `tf.layers.batch_normalization` is deprecated and will be removed in a future version. Please use `tf.keras.layers.BatchNormalization` instead. In particular, `tf.control_dependencies(tf.GraphKeys.UPDATE_OPS)` should not be used (consult the `tf.keras.layers.BatchNormalization` documentation).
+  pu_conv = tf.layers.batch_normalization(pu_conv, training=training)
+WARNING:tensorflow:From /home/user/a1_rlef_project/external_baselines/.venv_tf/lib/python3.11/site-packages/keras/src/layers/normalization/batch_normalization.py:883: _colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+/home/user/a1_rlef_project/external_baselines/KinD_plus/msia_BN_3_M.py:36: UserWarning: `tf.layers.batch_normalization` is deprecated and will be removed in a future version. Please use `tf.keras.layers.BatchNormalization` instead. In particular, `tf.control_dependencies(tf.GraphKeys.UPDATE_OPS)` should not be used (consult the `tf.keras.layers.BatchNormalization` documentation).
+  pu_conv = tf.layers.batch_normalization(pu_conv, training=training)
+/home/user/a1_rlef_project/external_baselines/KinD_plus/msia_BN_3_M.py:43: UserWarning: `tf.layers.batch_normalization` is deprecated and will be removed in a future version. Please use `tf.keras.layers.BatchNormalization` instead. In particular, `tf.control_dependencies(tf.GraphKeys.UPDATE_OPS)` should not be used (consult the `tf.keras.layers.BatchNormalization` documentation).
+  pu_conv = tf.layers.batch_normalization(pu_conv, training=training)
+loaded ./checkpoint/decom_model/model.ckpt
+2026-07-01 16:42:26.342840: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:388] MLIR V1 optimization pass is not enabled
+loaded ./checkpoint/illu_model/model.ckpt
+loaded ./checkpoint/restoration_model/model.ckpt
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+(384, 384, 3)
+Start evalating!
+0
+Evaluate image r00816405t
+1
+Evaluate image r00869422t
+2
+Evaluate image r00879054t
+3
+Evaluate image r01058910t
+4
+Evaluate image r01170470t
+5
+Evaluate image r01474187t
+6
+Evaluate image r0150031ft
+7
+Evaluate image r01559391t
+8
+Evaluate image r02189767t
+9
+Evaluate image r02354285t
+10
+Evaluate image r02508493t
+11
+Evaluate image r0287344at
+12
+Evaluate image r02897203t
+13
+Evaluate image r03193652t
+14
+Evaluate image r0341853dt
+15
+Evaluate image r0372042dt
+16
+Evaluate image r04317453t
+17
+Evaluate image r0465565ct
+18
+Evaluate image r05243256t
+19
+Evaluate image r05772356t
+20
+Evaluate image r05839451t
+21
+Evaluate image r0589558at
+22
+Evaluate image r0603031et
+23
+Evaluate image r068812d7t
+24
+Evaluate image r0703243bt
+25
+Evaluate image r0708431at
+26
+Evaluate image r072421a1t
+27
+Evaluate image r072649fdt
+28
+Evaluate image r07598392t
+29
+Evaluate image r0773471dt
+30
+Evaluate image r077507cat
+31
+Evaluate image r08079988t
+32
+Evaluate image r0809811bt
+33
+Evaluate image r082626aft
+34
+Evaluate image r084889d5t
+35
+Evaluate image r08788547t
+36
+Evaluate image r08873591t
+37
+Evaluate image r08996953t
+38
+Evaluate image r0905697bt
+39
+Evaluate image r09245347t
+40
+Evaluate image r09445479t
+41
+Evaluate image r09670876t
+42
+Evaluate image r096982ddt
+43
+Evaluate image r097088c1t
+44
+Evaluate image r097555c4t
+45
+Evaluate image r104153eat
+46
+Evaluate image r107730b5t
+47
+Evaluate image r108301e3t
+48
+Evaluate image r10893508t
+49
+Evaluate image r10940798t
+50
+Evaluate image r113402d4t
+51
+Evaluate image r1148801et
+52
+Evaluate image r116825e2t
+53
+Evaluate image r11850456t
+54
+Evaluate image r12133015t
+55
+Evaluate image r125034a9t
+56
+Evaluate image r125442fat
+57
+Evaluate image r127608abt
+58
+Evaluate image r12946364t
+59
+Evaluate image r1301676dt
+60
+Evaluate image r13073518t
+61
+Evaluate image r1372056ct
+62
+Evaluate image r13837601t
+63
+Evaluate image r13907965t
+64
+Evaluate image r13928401t
+65
+Evaluate image r141665bdt
+66
+Evaluate image r141669e5t
+67
+Evaluate image r1419078bt
+68
+Evaluate image r142335f0t
+69
+Evaluate image r142787e2t
+70
+Evaluate image r14289905t
+71
+Evaluate image r145215fft
+72
+Evaluate image r145221d9t
+73
+Evaluate image r146771d7t
+74
+Evaluate image r150058a4t
+75
+Evaluate image r15885978t
+76
+Evaluate image r15919202t
+77
+Evaluate image r1602555bt
+78
+Evaluate image r163317d6t
+79
+Evaluate image r163967d4t
+80
+Evaluate image r16422663t
+81
+Evaluate image r16509308t
+82
+Evaluate image r165355c0t
+83
+Evaluate image r16654024t
+84
+Evaluate image r1683028at
+85
+Evaluate image r1694427et
+86
+Evaluate image r170632f5t
+87
+Evaluate image r17217693t
+88
+Evaluate image r181768b7t
+89
+Evaluate image r1824034et
+90
+Evaluate image r185929e9t
+91
+Evaluate image r18791531t
+92
+Evaluate image r18798194t
+93
+Evaluate image r1889220ft
+94
+Evaluate image r18990432t
+95
+Evaluate image r1904147dt
+96
+Evaluate image r191488c6t
+97
+Evaluate image r1915909et
+98
+Evaluate image r19183258t
+99
+Evaluate image r197770adt

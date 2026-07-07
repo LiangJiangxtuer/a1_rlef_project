@@ -1,0 +1,185 @@
++ /home/user/miniconda3/envs/cutler_dinov3/bin/python scripts/train.py --config /home/user/a1_rlef_project/configs/p6b_synprotect/p6b_p6b_ms_syn150_m4j_eshape_multiscale_synprotect_rec150.yml --output_dir /home/user/a1_rlef_project/experiments/p6b_p6b_ms_syn150_m4j_eshape_multiscale_synprotect_rec150_seed3407 --device cuda --max_steps 1000
+Traceback (most recent call last):
+  File "/home/user/a1_rlef_project/scripts/train.py", line 118, in <module>
+    if __name__=='__main__': main()
+                             ^^^^^^
+  File "/home/user/a1_rlef_project/scripts/train.py", line 98, in main
+    out=model(batch['low'])
+        ^^^^^^^^^^^^^^^^^^^
+  File "/home/user/miniconda3/envs/cutler_dinov3/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/miniconda3/envs/cutler_dinov3/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/a1_rlef_project/src/rlef/models/rlef_former.py", line 99, in forward
+    feat = self.backbone(torch.cat([low, lum, grad], dim=1))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/miniconda3/envs/cutler_dinov3/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/miniconda3/envs/cutler_dinov3/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/a1_rlef_project/src/rlef/models/rlef_former.py", line 62, in forward
+    return self.up1(torch.cat([u1, s0], dim=1))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 36.00 MiB. GPU 0 has a total capacity of 23.52 GiB of which 37.44 MiB is free. Process 5120 has 490.00 MiB memory in use. Process 2284534 has 22.17 GiB memory in use. Including non-PyTorch memory, this process has 804.00 MiB memory in use. Of the allocated memory 326.48 MiB is allocated by PyTorch, and 25.52 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
++ /home/user/miniconda3/envs/cutler_dinov3/bin/python scripts/train.py --config /home/user/a1_rlef_project/configs/p6b_synprotect/p6b_p6b_ms_syn150_m4j_eshape_multiscale_synprotect_rec150.yml --output_dir /home/user/a1_rlef_project/experiments/p6b_p6b_ms_syn150_m4j_eshape_multiscale_synprotect_rec150_seed3407 --device cuda --max_steps 1000
+{"step": 1, "loss": 1.2847381830215454, "rec_UEFB": 0.2534242570400238, "rec_LOL-v2-real-train": 0.23487530648708344, "rec_LOL-v2-synthetic-train": 0.5463848114013672, "rec": 1.034684419631958, "phys": 0.29046210646629333, "poisson": 0.36360663175582886, "gauge": 1.3387945890426636, "e_shape": 0.9568678736686707, "id": 0.021734455600380898, "gate": 0.18719883263111115, "wtv": 0.12013202160596848}
+{"step": 100, "loss": 0.41539353132247925, "rec_UEFB": 0.21516649425029755, "rec_LOL-v2-real-train": 0.10576343536376953, "rec_LOL-v2-synthetic-train": 0.0, "rec": 0.32092994451522827, "phys": 0.14046847820281982, "poisson": 0.16020765900611877, "gauge": 0.36393070220947266, "e_shape": 0.44303590059280396, "id": 0.0179695263504982, "gate": 0.2759893834590912, "wtv": 0.04794495552778244}
+{"step": 200, "loss": 0.5619133114814758, "rec_UEFB": 0.1891719251871109, "rec_LOL-v2-real-train": 0.13131964206695557, "rec_LOL-v2-synthetic-train": 0.1568051129579544, "rec": 0.4772966504096985, "phys": 0.1253667175769806, "poisson": 0.1660843789577484, "gauge": 0.288044810295105, "e_shape": 0.4364727735519409, "id": 0.027260085567831993, "gate": 0.2817844748497009, "wtv": 0.03492170572280884}
+{"step": 300, "loss": 0.936133086681366, "rec_UEFB": 0.2584421932697296, "rec_LOL-v2-real-train": 0.21827486157417297, "rec_LOL-v2-synthetic-train": 0.3607473373413086, "rec": 0.8374643921852112, "phys": 0.190082848072052, "poisson": 0.1614065021276474, "gauge": 0.4065343141555786, "e_shape": 0.30386680364608765, "id": 0.041833799332380295, "gate": 0.2470167577266693, "wtv": 0.02310769632458687}
+{"step": 400, "loss": 0.8061583638191223, "rec_UEFB": 0.22154438495635986, "rec_LOL-v2-real-train": 0.13738547265529633, "rec_LOL-v2-synthetic-train": 0.346705824136734, "rec": 0.705635666847229, "phys": 0.16496476531028748, "poisson": 0.23716600239276886, "gauge": 0.4321065843105316, "e_shape": 0.2884073555469513, "id": 0.02910161390900612, "gate": 0.2643951177597046, "wtv": 0.020936883985996246}
+{"step": 500, "loss": 0.5578925609588623, "rec_UEFB": 0.16235706210136414, "rec_LOL-v2-real-train": 0.3053906559944153, "rec_LOL-v2-synthetic-train": 0.0, "rec": 0.4677477180957794, "phys": 0.18236473202705383, "poisson": 0.06828001141548157, "gauge": 0.2496538758277893, "e_shape": 0.5474576354026794, "id": 0.03958737850189209, "gate": 0.29885461926460266, "wtv": 0.013448623940348625}
+{"step": 600, "loss": 0.4891962707042694, "rec_UEFB": 0.1466638743877411, "rec_LOL-v2-real-train": 0.0, "rec_LOL-v2-synthetic-train": 0.2588295638561249, "rec": 0.40549343824386597, "phys": 0.13407418131828308, "poisson": 0.08184146881103516, "gauge": 0.32393163442611694, "e_shape": 0.3874630331993103, "id": 0.008421667851507664, "gate": 0.3574066162109375, "wtv": 0.02083640545606613}
+{"step": 700, "loss": 0.4003474712371826, "rec_UEFB": 0.12395548820495605, "rec_LOL-v2-real-train": 0.0, "rec_LOL-v2-synthetic-train": 0.20226937532424927, "rec": 0.3262248635292053, "phys": 0.1436040699481964, "poisson": 0.09606471657752991, "gauge": 0.23704493045806885, "e_shape": 0.36672088503837585, "id": 0.016606252640485764, "gate": 0.25066667795181274, "wtv": 0.019637130200862885}
+{"step": 800, "loss": 0.6803197860717773, "rec_UEFB": 0.19115515053272247, "rec_LOL-v2-real-train": 0.20688045024871826, "rec_LOL-v2-synthetic-train": 0.19430570304393768, "rec": 0.5923413038253784, "phys": 0.1135624572634697, "poisson": 0.3593151569366455, "gauge": 0.2975248694419861, "e_shape": 0.33940017223358154, "id": 0.024317797273397446, "gate": 0.2610056698322296, "wtv": 0.027468450367450714}
+{"step": 900, "loss": 0.22989806532859802, "rec_UEFB": 0.15921787917613983, "rec_LOL-v2-real-train": 0.0, "rec_LOL-v2-synthetic-train": 0.0, "rec": 0.15921787917613983, "phys": 0.11910338699817657, "poisson": 0.022494960576295853, "gauge": 0.21912379562854767, "e_shape": 0.4560985863208771, "id": 0.019099369645118713, "gate": 0.31247419118881226, "wtv": 0.017056655138731003}
+{"step": 1000, "loss": 0.2748299241065979, "rec_UEFB": 0.18186017870903015, "rec_LOL-v2-real-train": 0.0, "rec_LOL-v2-synthetic-train": 0.0, "rec": 0.18186017870903015, "phys": 0.1335355043411255, "poisson": 0.025757862254977226, "gauge": 0.36823636293411255, "e_shape": 0.5615547895431519, "id": 0.03345610573887825, "gate": 0.2860967516899109, "wtv": 0.017954155802726746}
+{
+  "DONE": true,
+  "run_id": "p6b_p6b_ms_syn150_m4j_eshape_multiscale_synprotect_rec150_seed3407",
+  "command": "scripts/train.py --config /home/user/a1_rlef_project/configs/p6b_synprotect/p6b_p6b_ms_syn150_m4j_eshape_multiscale_synprotect_rec150.yml --output_dir /home/user/a1_rlef_project/experiments/p6b_p6b_ms_syn150_m4j_eshape_multiscale_synprotect_rec150_seed3407 --device cuda --max_steps 1000",
+  "steps": 1000,
+  "elapsed_sec": 103.93094754219055,
+  "config": {
+    "seed": 3407,
+    "protocol": {
+      "stage": "P6b synthetic-protection structural route",
+      "variant_id": "P6B_MS_SYN150",
+      "variant_name": "m4j_eshape_multiscale_synprotect_rec150",
+      "synthetic_rec_weight": 1.5,
+      "notes": "Keep P6 multiscale backbone and M4J_ES heads; protect synthetic by upweighting only synthetic paired reconstruction. No teacher/output-level distillation."
+    },
+    "model": {
+      "base_channels": 24,
+      "e_max": 3.5,
+      "exposure_branch": true,
+      "adaptive_gauge": true,
+      "fixed_gauge": null,
+      "physics_branch": true,
+      "gate_branch": true,
+      "q_branch": false,
+      "backbone": "multiscale",
+      "backbone_blocks": 3
+    },
+    "training": {
+      "batch_size": 8,
+      "max_steps": 1000,
+      "lr": 0.0002,
+      "weight_decay": 0.0001,
+      "crop_size": 128,
+      "log_every": 100,
+      "num_workers": 0,
+      "grad_clip": 1.0
+    },
+    "eval": {
+      "batch_size": 1
+    },
+    "data": {
+      "train": [
+        {
+          "type": "uefb",
+          "root": "/home/user/a1_rlef_project/data/UEFB-v2/train",
+          "crop_size": 128,
+          "augment": true,
+          "max_images": null
+        },
+        {
+          "type": "paired_rgb",
+          "low_dir": "/home/user/a1_rlef_project/data/LOL-v2/Real_captured/Train/Low",
+          "high_dir": "/home/user/a1_rlef_project/data/LOL-v2/Real_captured/Train/Normal",
+          "crop_size": 128,
+          "augment": true,
+          "max_images": null,
+          "name": "LOL-v2-real-train"
+        },
+        {
+          "type": "paired_rgb",
+          "low_dir": "/home/user/a1_rlef_project/data/LOL-v2/Synthetic/Train/Low",
+          "high_dir": "/home/user/a1_rlef_project/data/LOL-v2/Synthetic/Train/Normal",
+          "crop_size": 128,
+          "augment": true,
+          "max_images": null,
+          "name": "LOL-v2-synthetic-train"
+        }
+      ],
+      "val": {
+        "type": "uefb",
+        "root": "/home/user/a1_rlef_project/data/UEFB-v2/test",
+        "crop_size": null,
+        "augment": false,
+        "max_images": null
+      }
+    },
+    "loss": {
+      "rec": 0.0,
+      "phys": 0.15,
+      "poisson": 0.05,
+      "gauge": 0.1,
+      "id": 0.02,
+      "gate": 0.02,
+      "wtv": 0.02,
+      "e_shape": 0.05,
+      "e_shape_kernel": 7,
+      "rec_by_dataset": {
+        "UEFB": 1.0,
+        "LOL-v2-real-train": 1.0,
+        "LOL-v2-synthetic-train": 1.5
+      }
+    }
+  },
+  "metrics": {
+    "psnr": 16.452310232162475,
+    "ssim": 0.7806067529320717,
+    "lee": 0.3170080910027027,
+    "nai": 1.8781714837551118,
+    "input_psnr": 12.995622906684876,
+    "identity_drop": 3.4566873302459715,
+    "q_ece": 0.47993474757671356,
+    "over": 0.00014913940621227083,
+    "under": 0.0,
+    "E_MAE": 0.291365364022553,
+    "E_MAE_aligned": 0.18898688344284892,
+    "E_corr": 0.468349598236382
+  },
+  "checkpoint": "/home/user/a1_rlef_project/experiments/p6b_p6b_ms_syn150_m4j_eshape_multiscale_synprotect_rec150_seed3407/checkpoints/last.pth"
+}
++ /home/user/miniconda3/envs/cutler_dinov3/bin/python scripts/eval_paired.py --config /home/user/a1_rlef_project/configs/p6b_synprotect/p6b_p6b_ms_syn150_m4j_eshape_multiscale_synprotect_rec150.yml --checkpoint /home/user/a1_rlef_project/experiments/p6b_p6b_ms_syn150_m4j_eshape_multiscale_synprotect_rec150_seed3407/checkpoints/last.pth --low_dir /home/user/a1_rlef_project/data/LOL-v2/Real_captured/Test/Low --high_dir /home/user/a1_rlef_project/data/LOL-v2/Real_captured/Test/Normal --output_dir /home/user/a1_rlef_project/experiments/p6b_p6b_ms_syn150_m4j_eshape_multiscale_synprotect_rec150_seed3407/paired_eval/real --device cuda
+/home/user/a1_rlef_project/scripts/eval_paired.py:18: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model=build_model(cfg).to(device); ckpt=torch.load(args.checkpoint,map_location=device); model.load_state_dict(ckpt['model'])
+{
+  "psnr": 19.33663906097412,
+  "ssim": 0.7882148343324661,
+  "lee": 0.24780122138559818,
+  "nai": 2.7533877658843995,
+  "input_psnr": 9.718215217590332,
+  "identity_drop": 9.618423852920532,
+  "q_ece": 0.580921259522438,
+  "over": 7.548611267793603e-05,
+  "under": 0.0,
+  "E_MAE": 0.34357390403747556,
+  "E_MAE_aligned": 0.26253172047436235,
+  "E_corr": 0.6823137763142586
+}
++ /home/user/miniconda3/envs/cutler_dinov3/bin/python scripts/eval_paired.py --config /home/user/a1_rlef_project/configs/p6b_synprotect/p6b_p6b_ms_syn150_m4j_eshape_multiscale_synprotect_rec150.yml --checkpoint /home/user/a1_rlef_project/experiments/p6b_p6b_ms_syn150_m4j_eshape_multiscale_synprotect_rec150_seed3407/checkpoints/last.pth --low_dir /home/user/a1_rlef_project/data/LOL-v2/Synthetic/Test/Low --high_dir /home/user/a1_rlef_project/data/LOL-v2/Synthetic/Test/Normal --output_dir /home/user/a1_rlef_project/experiments/p6b_p6b_ms_syn150_m4j_eshape_multiscale_synprotect_rec150_seed3407/paired_eval/synthetic --device cuda
+/home/user/a1_rlef_project/scripts/eval_paired.py:18: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model=build_model(cfg).to(device); ckpt=torch.load(args.checkpoint,map_location=device); model.load_state_dict(ckpt['model'])
+{
+  "psnr": 19.097311792373656,
+  "ssim": 0.8091664037108421,
+  "lee": 0.2371601413935423,
+  "nai": 1.442548658847809,
+  "input_psnr": 11.220927743911743,
+  "identity_drop": 7.8763840293884275,
+  "q_ece": 0.5874366360902786,
+  "over": 0.0005619077425672004,
+  "under": 0.0,
+  "E_MAE": 0.6099221520125866,
+  "E_MAE_aligned": 0.5000719934888184,
+  "E_corr": 0.7854196205735207
+}
+RESUME: found existing checkpoint and UEFB metrics under /home/user/a1_rlef_project/experiments/p6b_p6b_ms_syn150_m4j_eshape_multiscale_synprotect_rec150_seed3407
+REUSE_EVAL: /home/user/a1_rlef_project/experiments/p6b_p6b_ms_syn150_m4j_eshape_multiscale_synprotect_rec150_seed3407/paired_eval/real/metrics.json
+REUSE_EVAL: /home/user/a1_rlef_project/experiments/p6b_p6b_ms_syn150_m4j_eshape_multiscale_synprotect_rec150_seed3407/paired_eval/synthetic/metrics.json

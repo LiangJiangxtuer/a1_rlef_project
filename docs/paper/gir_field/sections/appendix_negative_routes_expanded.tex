@@ -1,0 +1,14 @@
+\section{Expanded Negative-Route Audit}
+\label{app:negative_routes_expanded}
+
+The stopped routes are not discarded implementation history; they are evidence about which explanations failed. The audit separates three failure modes. First, several routes improve one score by importing a new bias, such as a teacher output, domain weight, or real-anchor regularizer. Second, several routes improve an output metric while leaving exposure-field identifiability unresolved. Third, DGB-style routing changes path allocation but does not become a calibrated recoverability mechanism. Tables~\ref{tab:negative_route_family_summary} and~\ref{tab:negative_route_audit} preserve this evidence so that the paper does not overfit its story to the successful M4J\_ES/P3c route.
+
+\paragraph{Distillation and domain weighting.} P5/P5B show why teacher distillation is not used as the main claim. The best P5 real score and the best P5 synthetic score occur under different temperature settings, and P5B introduces domain-specific weights while still not producing a promoted joint model. These runs support the decision to avoid a teacher-distillation contribution.
+
+\paragraph{Structural and protection routes.} P6/P6B/P6C test whether capacity, synthetic reconstruction protection, or scalar gate protection can solve the tri-domain conflict. The answer is negative: synthetic protection increases synthetic scores at the cost of UEFB/real behavior, while gate protection remains a scalar control heuristic rather than a gauge-identifiable principle.
+
+\paragraph{Domain heads and real anchors.} P7/P7B/P7C test whether domain adapters or real-anchor regularizers can stabilize real performance. They produce local improvements but remain domain-fragile. Since the paper claims gauge-identifiable exposure-field learning, not dataset-specific anchoring, these routes are kept as appendix evidence only.
+
+\paragraph{DGB branch.} DGB and P2B--P2E routing variants are explicitly stopped. Their split-wise improvements are useful diagnostics, but every row in the consolidation table has promotion marked false. This is why the main paper does not revive DGB/P2F or present routing as solved recoverability.
+
+\input{appendix/negative_route_family_summary}

@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-07-03T00:36:56.818658+00:00",
+  "phase0_audit_report": "/home/user/a1_rlef_project/results/hermes_audit/reports/PHASE0_EXECUTION_AUDIT.md",
+  "phase1_guidance": "/home/user/a1_rlef_project/results/hermes_audit/reports/PHASE1_EXECUTION_GUIDANCE.md",
+  "phase1_entry_ledger": "/home/user/a1_rlef_project/results/hermes_audit/claim_ledgers/phase1_entry_gate_from_phase0.md",
+  "phase0_result": "/home/user/a1_rlef_project/results/hermes_audit/logs/phase0_result.json",
+  "phase0_summary": "/home/user/a1_rlef_project/results/hermes_audit/tables/phase0_baselines_summary.csv",
+  "phase0_pass": true,
+  "phase1_executed": false,
+  "next_action_if_user_confirms": "execute Phase 1 strict-TDD minimal DGB-RLEF implementation only",
+  "guardrails": [
+    "no teacher distill",
+    "no rec_by_dataset main path",
+    "no RA>0.010",
+    "no Phase2 training during Phase1"
+  ]
+}

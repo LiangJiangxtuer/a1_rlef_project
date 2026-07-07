@@ -1,0 +1,29 @@
+{
+  "generated_at": "2026-07-03T02:27:11.061817+00:00",
+  "created_or_updated": [
+    "src/rlef/models/exposure_gauge.py",
+    "src/rlef/losses/e_shape_loss.py",
+    "src/rlef/models/gauge_head.py",
+    "src/rlef/losses/gauge_scheduler.py",
+    "src/rlef/models/recoverability_router.py",
+    "src/rlef/metrics/domain_metrics.py",
+    "tests/test_dgb_exposure_gauge_contract.py",
+    "tests/test_dgb_e_shape_loss_contract.py",
+    "tests/test_dgb_gauge_head_scheduler_contract.py",
+    "tests/test_dgb_recoverability_router_contract.py",
+    "tests/test_dgb_domain_metrics_contract.py",
+    "configs/dgb_rlef/dgb_rlef_minimal_seed3407.yml",
+    "src/rlef/losses/total_loss.py",
+    "results/hermes_audit/reports/PHASE1_DGB_RLEF_IMPLEMENTATION.md",
+    "results/hermes_audit/logs/unit_tests.log"
+  ],
+  "new_unit_tests": 11,
+  "dgb_unit_test_output": "...........                                                              [100%]\n11 passed in 1.48s",
+  "full_suite_output": "........................................................................ [ 86%]\n...........                                                              [100%]\n83 passed in 20.99s",
+  "compileall": "passed (no output)",
+  "phase2_training_run": false,
+  "ready_for_phase2_candidate_training_when_user_requests_it": true,
+  "full_suite_log": "/home/user/a1_rlef_project/results/hermes_audit/logs/phase1_full_suite.log",
+  "compileall_log": "/home/user/a1_rlef_project/results/hermes_audit/logs/phase1_compileall.log",
+  "updated_at": "2026-07-03T02:28:25.748238+00:00"
+}

@@ -1,0 +1,164 @@
++ /home/user/miniconda3/envs/cutler_dinov3/bin/python scripts/train.py --config /home/user/a1_rlef_project/configs/p7b_realanchor/p7b_p7b_dhead_ra005_m4j_eshape_multiscale_dhead_realanchor005.yml --output_dir /home/user/a1_rlef_project/experiments/p7b_p7b_dhead_ra005_m4j_eshape_multiscale_dhead_realanchor005_seed3407 --device cuda --max_steps 1000
+{"step": 1, "loss": 0.5571228265762329, "rec": 0.26751500368118286, "domain_head_anchor_uefb": 0.0, "domain_head_anchor_real": 0.002257561543956399, "domain_head_anchor_synthetic": 0.0, "domain_head_anchor": 0.002257561543956399, "phys": 0.33149585127830505, "poisson": 0.23952829837799072, "gauge": 1.8290742635726929, "e_shape": 0.7051498889923096, "id": 0.016030000522732735, "gate": 0.2504509687423706, "wtv": 0.10774579644203186}
+{"step": 100, "loss": 0.21145206689834595, "rec": 0.13457316160202026, "domain_head_anchor_uefb": 0.0, "domain_head_anchor_real": 0.0, "domain_head_anchor_synthetic": 0.0, "domain_head_anchor": 0.0, "phys": 0.11455654352903366, "poisson": 0.03460553288459778, "gauge": 0.2959509491920471, "e_shape": 0.44389522075653076, "id": 0.020495399832725525, "gate": 0.2658921480178833, "wtv": 0.02237810008227825}
+{"step": 200, "loss": 0.22811771929264069, "rec": 0.13986079394817352, "domain_head_anchor_uefb": 0.0, "domain_head_anchor_real": 0.0, "domain_head_anchor_synthetic": 0.0, "domain_head_anchor": 0.0, "phys": 0.12077872455120087, "poisson": 0.03982825577259064, "gauge": 0.3699250817298889, "e_shape": 0.4693450629711151, "id": 0.02737901359796524, "gate": 0.33529970049858093, "wtv": 0.021768180653452873}
+{"step": 300, "loss": 0.32239359617233276, "rec": 0.22668589651584625, "domain_head_anchor_uefb": 0.0, "domain_head_anchor_real": 0.0, "domain_head_anchor_synthetic": 0.0, "domain_head_anchor": 0.0, "phys": 0.18254034221172333, "poisson": 0.087520070374012, "gauge": 0.38518619537353516, "e_shape": 0.3393928110599518, "id": 0.01166437566280365, "gate": 0.39802414178848267, "wtv": 0.013432259671390057}
+{"step": 400, "loss": 0.2959669232368469, "rec": 0.18243207037448883, "domain_head_anchor_uefb": 0.0, "domain_head_anchor_real": 0.0016173645853996277, "domain_head_anchor_synthetic": 0.0, "domain_head_anchor": 0.0016173645853996277, "phys": 0.16822341084480286, "poisson": 0.06921528279781342, "gauge": 0.5859062671661377, "e_shape": 0.3677470088005066, "id": 0.026469260454177856, "gate": 0.25907450914382935, "wtv": 0.026718638837337494}
+{"step": 500, "loss": 0.25944799184799194, "rec": 0.15988783538341522, "domain_head_anchor_uefb": 0.0, "domain_head_anchor_real": 0.001466583926230669, "domain_head_anchor_synthetic": 0.0, "domain_head_anchor": 0.001466583926230669, "phys": 0.10903103649616241, "poisson": 0.3650381863117218, "gauge": 0.38260096311569214, "e_shape": 0.37926313281059265, "id": 0.011166216805577278, "gate": 0.27059653401374817, "wtv": 0.03142477944493294}
+{"step": 600, "loss": 0.2829534709453583, "rec": 0.17885443568229675, "domain_head_anchor_uefb": 0.0, "domain_head_anchor_real": 0.0013529157731682062, "domain_head_anchor_synthetic": 0.0, "domain_head_anchor": 0.0013529157731682062, "phys": 0.13447628915309906, "poisson": 0.3924054503440857, "gauge": 0.4566556215286255, "e_shape": 0.20225265622138977, "id": 0.013128307648003101, "gate": 0.3121957778930664, "wtv": 0.033485330641269684}
+{"step": 700, "loss": 0.23433184623718262, "rec": 0.16175593435764313, "domain_head_anchor_uefb": 0.0, "domain_head_anchor_real": 0.0012306987773627043, "domain_head_anchor_synthetic": 0.0, "domain_head_anchor": 0.0012306987773627043, "phys": 0.11753913015127182, "poisson": 0.15886831283569336, "gauge": 0.2504916787147522, "e_shape": 0.24340468645095825, "id": 0.010685106739401817, "gate": 0.3926317095756531, "wtv": 0.024259384721517563}
+{"step": 800, "loss": 0.2272356152534485, "rec": 0.14971686899662018, "domain_head_anchor_uefb": 0.0, "domain_head_anchor_real": 0.0011119188275188208, "domain_head_anchor_synthetic": 0.0, "domain_head_anchor": 0.0011119188275188208, "phys": 0.11342011392116547, "poisson": 0.2596713602542877, "gauge": 0.21248790621757507, "e_shape": 0.37457650899887085, "id": 0.007747155614197254, "gate": 0.28780269622802734, "wtv": 0.026081817224621773}
+{"step": 900, "loss": 0.2212168574333191, "rec": 0.1452127993106842, "domain_head_anchor_uefb": 0.0, "domain_head_anchor_real": 0.0010261086281388998, "domain_head_anchor_synthetic": 0.0, "domain_head_anchor": 0.0010261086281388998, "phys": 0.11262068152427673, "poisson": 0.10787437856197357, "gauge": 0.29316985607147217, "e_shape": 0.3671340346336365, "id": 0.012757817283272743, "gate": 0.22060748934745789, "wtv": 0.017507413402199745}
+{"step": 1000, "loss": 0.2598617970943451, "rec": 0.17386238276958466, "domain_head_anchor_uefb": 0.0, "domain_head_anchor_real": 0.0009259798680432141, "domain_head_anchor_synthetic": 0.0, "domain_head_anchor": 0.0009259798680432141, "phys": 0.13153062760829926, "poisson": 0.05222776532173157, "gauge": 0.3955783247947693, "e_shape": 0.34243080019950867, "id": 0.02032274566590786, "gate": 0.26839834451675415, "wtv": 0.013934608548879623}
+{
+  "DONE": true,
+  "run_id": "p7b_p7b_dhead_ra005_m4j_eshape_multiscale_dhead_realanchor005_seed3407",
+  "command": "scripts/train.py --config /home/user/a1_rlef_project/configs/p7b_realanchor/p7b_p7b_dhead_ra005_m4j_eshape_multiscale_dhead_realanchor005.yml --output_dir /home/user/a1_rlef_project/experiments/p7b_p7b_dhead_ra005_m4j_eshape_multiscale_dhead_realanchor005_seed3407 --device cuda --max_steps 1000",
+  "steps": 1000,
+  "elapsed_sec": 99.64092803001404,
+  "config": {
+    "seed": 3407,
+    "protocol": {
+      "stage": "P7b domain-head real-anchor route",
+      "variant_id": "P7B_DHEAD_RA005",
+      "variant_name": "m4j_eshape_multiscale_dhead_realanchor005",
+      "domain_adapter": "head_bias",
+      "real_anchor_weight": 0.005,
+      "notes": "Start from P7_MS_DHEAD; regularize only real-domain domain-head biases toward zero to protect real PSNR without global scalar rec/gate knobs."
+    },
+    "model": {
+      "base_channels": 24,
+      "e_max": 3.5,
+      "exposure_branch": true,
+      "adaptive_gauge": true,
+      "fixed_gauge": null,
+      "physics_branch": true,
+      "gate_branch": true,
+      "q_branch": false,
+      "backbone": "multiscale",
+      "backbone_blocks": 3,
+      "domain_conditioning": true,
+      "domain_names": [
+        "uefb",
+        "real",
+        "synthetic"
+      ],
+      "domain_embed_dim": 8,
+      "domain_adapter": "head_bias"
+    },
+    "training": {
+      "batch_size": 8,
+      "max_steps": 1000,
+      "lr": 0.0002,
+      "weight_decay": 0.0001,
+      "crop_size": 128,
+      "log_every": 100,
+      "num_workers": 0,
+      "grad_clip": 1.0
+    },
+    "eval": {
+      "batch_size": 1
+    },
+    "data": {
+      "train": [
+        {
+          "type": "uefb",
+          "root": "/home/user/a1_rlef_project/data/UEFB-v2/train",
+          "crop_size": 128,
+          "augment": true,
+          "max_images": null
+        },
+        {
+          "type": "paired_rgb",
+          "low_dir": "/home/user/a1_rlef_project/data/LOL-v2/Real_captured/Train/Low",
+          "high_dir": "/home/user/a1_rlef_project/data/LOL-v2/Real_captured/Train/Normal",
+          "crop_size": 128,
+          "augment": true,
+          "max_images": null,
+          "name": "LOL-v2-real-train"
+        },
+        {
+          "type": "paired_rgb",
+          "low_dir": "/home/user/a1_rlef_project/data/LOL-v2/Synthetic/Train/Low",
+          "high_dir": "/home/user/a1_rlef_project/data/LOL-v2/Synthetic/Train/Normal",
+          "crop_size": 128,
+          "augment": true,
+          "max_images": null,
+          "name": "LOL-v2-synthetic-train"
+        }
+      ],
+      "val": {
+        "type": "uefb",
+        "root": "/home/user/a1_rlef_project/data/UEFB-v2/test",
+        "crop_size": null,
+        "augment": false,
+        "max_images": null
+      }
+    },
+    "loss": {
+      "rec": 1.0,
+      "phys": 0.15,
+      "poisson": 0.05,
+      "gauge": 0.1,
+      "id": 0.02,
+      "gate": 0.02,
+      "wtv": 0.02,
+      "e_shape": 0.05,
+      "e_shape_kernel": 7,
+      "domain_head_anchor_by_dataset": {
+        "uefb": 0.0,
+        "real": 0.005,
+        "synthetic": 0.0
+      }
+    }
+  },
+  "metrics": {
+    "psnr": 17.93638457298279,
+    "ssim": 0.8069130313396454,
+    "lee": 0.26853780007734895,
+    "nai": 1.8279768855571747,
+    "input_psnr": 12.995622906684876,
+    "identity_drop": 4.9407616653442386,
+    "q_ece": 0.43044135041534903,
+    "over": 3.7536622849074774e-06,
+    "under": 0.0,
+    "E_MAE": 0.2831722668707371,
+    "E_MAE_aligned": 0.1972381222182885,
+    "E_corr": 0.4398751827403903
+  },
+  "checkpoint": "/home/user/a1_rlef_project/experiments/p7b_p7b_dhead_ra005_m4j_eshape_multiscale_dhead_realanchor005_seed3407/checkpoints/last.pth"
+}
++ /home/user/miniconda3/envs/cutler_dinov3/bin/python scripts/eval_paired.py --config /home/user/a1_rlef_project/configs/p7b_realanchor/p7b_p7b_dhead_ra005_m4j_eshape_multiscale_dhead_realanchor005.yml --checkpoint /home/user/a1_rlef_project/experiments/p7b_p7b_dhead_ra005_m4j_eshape_multiscale_dhead_realanchor005_seed3407/checkpoints/last.pth --low_dir /home/user/a1_rlef_project/data/LOL-v2/Real_captured/Test/Low --high_dir /home/user/a1_rlef_project/data/LOL-v2/Real_captured/Test/Normal --output_dir /home/user/a1_rlef_project/experiments/p7b_p7b_dhead_ra005_m4j_eshape_multiscale_dhead_realanchor005_seed3407/paired_eval/real --device cuda --domain real
+/home/user/a1_rlef_project/scripts/eval_paired.py:18: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model=build_model(cfg).to(device); ckpt=torch.load(args.checkpoint,map_location=device); model.load_state_dict(ckpt['model'])
+{
+  "psnr": 19.0584645652771,
+  "ssim": 0.7829081624746322,
+  "lee": 0.2470321936160326,
+  "nai": 2.654737958908081,
+  "input_psnr": 9.718215217590332,
+  "identity_drop": 9.340249357223511,
+  "q_ece": 0.5768877705931663,
+  "over": 5.4750001249885824e-05,
+  "under": 0.0,
+  "E_MAE": 0.3768216177821159,
+  "E_MAE_aligned": 0.2432049533724785,
+  "E_corr": 0.7189532455801964
+}
++ /home/user/miniconda3/envs/cutler_dinov3/bin/python scripts/eval_paired.py --config /home/user/a1_rlef_project/configs/p7b_realanchor/p7b_p7b_dhead_ra005_m4j_eshape_multiscale_dhead_realanchor005.yml --checkpoint /home/user/a1_rlef_project/experiments/p7b_p7b_dhead_ra005_m4j_eshape_multiscale_dhead_realanchor005_seed3407/checkpoints/last.pth --low_dir /home/user/a1_rlef_project/data/LOL-v2/Synthetic/Test/Low --high_dir /home/user/a1_rlef_project/data/LOL-v2/Synthetic/Test/Normal --output_dir /home/user/a1_rlef_project/experiments/p7b_p7b_dhead_ra005_m4j_eshape_multiscale_dhead_realanchor005_seed3407/paired_eval/synthetic --device cuda --domain synthetic
+/home/user/a1_rlef_project/scripts/eval_paired.py:18: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model=build_model(cfg).to(device); ckpt=torch.load(args.checkpoint,map_location=device); model.load_state_dict(ckpt['model'])
+{
+  "psnr": 18.00824303627014,
+  "ssim": 0.7786229851841927,
+  "lee": 0.28815786812454464,
+  "nai": 1.3781963473558425,
+  "input_psnr": 11.220927743911743,
+  "identity_drop": 6.787315282821655,
+  "q_ece": 0.5875825229287147,
+  "over": 2.1023220779170513e-06,
+  "under": 0.0,
+  "E_MAE": 0.5442152485996484,
+  "E_MAE_aligned": 0.4741485781222582,
+  "E_corr": 0.839499214887619
+}

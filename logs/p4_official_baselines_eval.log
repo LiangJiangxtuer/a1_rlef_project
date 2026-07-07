@@ -1,0 +1,14 @@
+/home/user/a1_rlef_project/scripts/run_p4_official_baselines.py:142: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  net.load_state_dict(torch.load(ckpt, map_location=dev))
+Traceback (most recent call last):
+  File "/home/user/a1_rlef_project/scripts/run_p4_official_baselines.py", line 240, in <module>
+    main()
+  File "/home/user/a1_rlef_project/scripts/run_p4_official_baselines.py", line 235, in main
+    rows = evaluate_p4(run_zero_dce=args.run_zero_dce, device=args.device)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/a1_rlef_project/scripts/run_p4_official_baselines.py", line 206, in evaluate_p4
+    metrics, per_image = evaluate_image_outputs(pred_dir, low_dir, high_dir)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/a1_rlef_project/scripts/run_p4_official_baselines.py", line 85, in evaluate_image_outputs
+    raise FileNotFoundError(f'no paired images for pred={pred_dir}, low={low_dir}, high={high_dir}')
+FileNotFoundError: no paired images for pred=/home/user/a1_rlef_project/experiments/p4_official_baselines/retinexformer/results/LOL_v2_real/RetinexFormer_LOL_v2_real/LOL_v2_real, low=/home/user/a1_rlef_project/data/LOL-v2/Real_captured/Test/Low, high=/home/user/a1_rlef_project/data/LOL-v2/Real_captured/Test/Normal

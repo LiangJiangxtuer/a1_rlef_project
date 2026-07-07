@@ -1,0 +1,39 @@
+{"phase": "N1", "eval": "M4", "dataset": "uefb", "max_images": null}
+/home/user/a1_rlef_project/scripts/run_girfield_relaxed_pipeline.py:326: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  ckpt = torch.load(variant['checkpoint'], map_location=device)
+{"phase": "N1", "eval": "M4", "dataset": "real", "max_images": null}
+{"phase": "N1", "eval": "M4", "dataset": "synthetic", "max_images": null}
+{"phase": "N1", "eval": "M4J", "dataset": "uefb", "max_images": null}
+{"phase": "N1", "eval": "M4J", "dataset": "real", "max_images": null}
+{"phase": "N1", "eval": "M4J", "dataset": "synthetic", "max_images": null}
+{"phase": "N1", "eval": "M4J_ES", "dataset": "uefb", "max_images": null}
+{"phase": "N1", "eval": "M4J_ES", "dataset": "real", "max_images": null}
+{"phase": "N1", "eval": "M4J_ES", "dataset": "synthetic", "max_images": null}
+{"phase": "N1", "eval": "P3C_E0050_S42", "dataset": "uefb", "max_images": null}
+{"phase": "N1", "eval": "P3C_E0050_S42", "dataset": "real", "max_images": null}
+{"phase": "N1", "eval": "P3C_E0050_S42", "dataset": "synthetic", "max_images": null}
+{"phase": "N1", "eval": "P3C_E0050_S2027", "dataset": "uefb", "max_images": null}
+{"phase": "N1", "eval": "P3C_E0050_S2027", "dataset": "real", "max_images": null}
+{"phase": "N1", "eval": "P3C_E0050_S2027", "dataset": "synthetic", "max_images": null}
+{"phase": "N1", "eval": "P3C_E0050_S3407", "dataset": "uefb", "max_images": null}
+{"phase": "N1", "eval": "P3C_E0050_S3407", "dataset": "real", "max_images": null}
+{"phase": "N1", "eval": "P3C_E0050_S3407", "dataset": "synthetic", "max_images": null}
+{"phase": "N1", "eval": "P3D_E0100_S42", "dataset": "uefb", "max_images": null}
+{"phase": "N1", "eval": "P3D_E0100_S42", "dataset": "real", "max_images": null}
+{"phase": "N1", "eval": "P3D_E0100_S42", "dataset": "synthetic", "max_images": null}
+{"phase": "N1", "eval": "P3D_E0100_S2027", "dataset": "uefb", "max_images": null}
+{"phase": "N1", "eval": "P3D_E0100_S2027", "dataset": "real", "max_images": null}
+{"phase": "N1", "eval": "P3D_E0100_S2027", "dataset": "synthetic", "max_images": null}
+{"phase": "N1", "eval": "P3D_E0100_S3407", "dataset": "uefb", "max_images": null}
+{"phase": "N1", "eval": "P3D_E0100_S3407", "dataset": "real", "max_images": null}
+{"phase": "N1", "eval": "P3D_E0100_S3407", "dataset": "synthetic", "max_images": null}
+{"phase": "N4", "risk_extract": "M4J_ES", "max_patches": 20000}
+/home/user/a1_rlef_project/scripts/run_girfield_relaxed_pipeline.py:326: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  ckpt = torch.load(variant['checkpoint'], map_location=device)
+{"phase": "N4", "risk_extract": "P3C_E0050_S3407", "max_patches": 20000}
+{
+  "DONE": true,
+  "report": "/home/user/a1_rlef_project/docs/GIR_FIELD_FORMAL_PROTOCOL_REPORT.md",
+  "manifest": "/home/user/a1_rlef_project/results/girfield_formal/GIR_FIELD_FORMAL_PROTOCOL_MANIFEST.json",
+  "validation": "- status: `PASS`"
+}

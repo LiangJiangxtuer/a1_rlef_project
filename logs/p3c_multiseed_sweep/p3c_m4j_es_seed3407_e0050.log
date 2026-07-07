@@ -1,0 +1,3 @@
+REUSE: seed=3407 e_shape=0.05 imported from /home/user/a1_rlef_project/experiments/p3b_m4j_es_m4_joint_eshape_seed3407
+REUSE_EVAL: /home/user/a1_rlef_project/experiments/p3b_m4j_es_m4_joint_eshape_seed3407/paired_eval/real/metrics.json
+REUSE_EVAL: /home/user/a1_rlef_project/experiments/p3b_m4j_es_m4_joint_eshape_seed3407/paired_eval/synthetic/metrics.json

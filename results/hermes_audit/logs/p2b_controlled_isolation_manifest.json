@@ -1,0 +1,42 @@
+{
+  "generated_at": "2026-07-03T03:44:53.515881+00:00",
+  "phase": "P2B controlled isolation",
+  "runs": [
+    {
+      "variant_id": "P2B_DGB_GAUGE_ONLY",
+      "run_dir": "/home/user/a1_rlef_project/experiments/p2b_p2b_dgb_gauge_only_image_stats_gauge_original_gate_route_seed3407",
+      "config": "/home/user/a1_rlef_project/configs/dgb_rlef/p2b_p2b_dgb_gauge_only_image_stats_gauge_original_gate_route.yml",
+      "log": "/home/user/a1_rlef_project/logs/p2b_controlled_isolation/p2b_p2b_dgb_gauge_only_image_stats_gauge_original_gate_route.log",
+      "uefb_psnr": 17.718968555450438,
+      "real_psnr": 20.431721687316895,
+      "synthetic_psnr": 18.40170907974243,
+      "uefb_E_corr": 0.5082217492064228,
+      "real_E_corr": 0.7117646920681,
+      "synthetic_E_corr": 0.8391770997643471
+    },
+    {
+      "variant_id": "P2B_DGB_ROUTE_ONLY",
+      "run_dir": "/home/user/a1_rlef_project/experiments/p2b_p2b_dgb_route_only_adaptive_gauge_safe_router_seed3407",
+      "config": "/home/user/a1_rlef_project/configs/dgb_rlef/p2b_p2b_dgb_route_only_adaptive_gauge_safe_router.yml",
+      "log": "/home/user/a1_rlef_project/logs/p2b_controlled_isolation/p2b_p2b_dgb_route_only_adaptive_gauge_safe_router.log",
+      "uefb_psnr": 17.71322127532959,
+      "real_psnr": 19.966537094116212,
+      "synthetic_psnr": 17.94501919746399,
+      "uefb_E_corr": 0.46531522733066233,
+      "real_E_corr": 0.6638692811131477,
+      "synthetic_E_corr": 0.8370390674471855
+    }
+  ],
+  "summary_csv": "/home/user/a1_rlef_project/results/tables/p2b_controlled_isolation_summary.csv",
+  "summary_json": "/home/user/a1_rlef_project/results/tables/p2b_controlled_isolation_summary.json",
+  "route_diagnostics_json": "/home/user/a1_rlef_project/results/tables/p2b_controlled_isolation_route_diagnostics.json",
+  "report": "/home/user/a1_rlef_project/results/hermes_audit/reports/P2B_CONTROLLED_ISOLATION_REPORT.md",
+  "promotion": [
+    false,
+    false
+  ],
+  "decision": "no_go_for_multiseed_promotion",
+  "next_recommendation": "P2C UEFB recovery from P2B_DGB_GAUGE_ONLY",
+  "full_suite": "........................................................................ [ 79%]\n...................                                                      [100%]\n91 passed in 19.00s",
+  "compileall": "passed (no output)"
+}

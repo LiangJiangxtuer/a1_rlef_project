@@ -21,3 +21,8 @@ results/unpaired/
 *.tar.gz
 wandb/
 tensorboard/
+
+# Third-party baseline checkouts and local toolchains are reproducibility aids, not project artifacts.
+# Official baseline results/logs are tracked under results/ and logs/ instead.
+external_baselines/
+tools/tectonic/

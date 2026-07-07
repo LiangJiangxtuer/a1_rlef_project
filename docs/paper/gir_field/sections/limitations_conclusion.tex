@@ -1,0 +1,9 @@
+\section{Limitations}
+\label{sec:limitations}
+
+This work is claim-calibrated by design. First, GIR-Field is not a SOTA restoration method. Retinexformer remains substantially stronger in RGB fidelity on LOL-v2-real and LOL-v2-synthetic, so our claims are about exposure-field identifiability and evaluation rather than restoration dominance. Second, internal-field metrics apply only to methods that explicitly predict an exposure field. Black-box methods are evaluated fairly on output-only metrics, but they cannot be compared on $S_{corr}$ or Gauge\_MAE without adding an external field estimator. Third, the recoverability risk probe is not yet well calibrated: its AUC indicates signal, but its ECE remains too high for a deployed selective-enhancement module. Finally, the current formal audit uses local frozen checkpoints and local baselines; a submission-ready benchmark paper should further verify recent 2024--2026 low-light methods with official weights and protocols.
+
+\section{Conclusion}
+\label{sec:conclusion}
+
+We presented GIR-Field, a gauge-identifiable view of local exposure-field learning for uneven low-light enhancement. The key finding is not that our model beats the strongest enhancer, but that standard image-fidelity metrics can select a physically incoherent exposure field. By decomposing $E$ into gauge-free shape $S$ and image-level gauge $\mu$, using centered E-shape calibration, and evaluating with UEFB-G, we separate RGB fidelity, global gauge error, and local shape error. A full frozen-evidence audit shows that centered E-shape significantly improves exposure-shape correlation over joint training while also improving real and synthetic PSNR. The resulting contribution is a mechanism and benchmark framework for claim-calibrated exposure-field research.

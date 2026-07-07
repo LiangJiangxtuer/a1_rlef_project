@@ -22,13 +22,40 @@ def _key(p: Path) -> str:
     return s
 
 
+def _luminance_chw(x: torch.Tensor) -> torch.Tensor:
+    if x.shape[0] == 1:
+        return x
+    w = torch.tensor([0.299, 0.587, 0.114], dtype=x.dtype, device=x.device).view(3, 1, 1)
+    return (x[:3] * w).sum(dim=0, keepdim=True)
+
+
+def _oracle_maps(low: torch.Tensor, high: torch.Tensor) -> tuple[torch.Tensor, torch.Tensor, torch.Tensor]:
+    e = torch.log(_luminance_chw(high) + 1e-4) - torch.log(_luminance_chw(low) + 1e-4)
+    q95 = torch.quantile(e.abs().flatten(), 0.95).clamp_min(1e-6)
+    a = (e.abs() / q95).clamp(0, 1)
+    q = torch.ones_like(e)
+    return e.contiguous(), a.contiguous(), q.contiguous()
+
+
 class PairedRGBDataset(Dataset):
-    def __init__(self, low_dir: str | Path, high_dir: str | Path, crop_size: int | None = None, training: bool = False, augment: bool = False, name: str | None = None, max_images: int | None = None):
+    def __init__(self, low_dir: str | Path, high_dir: str | Path, crop_size: int | None = None, training: bool = False, augment: bool = False, name: str | None = None, max_images: int | None = None, teacher_dir: str | Path | None = None):
         self.low_dir, self.high_dir = Path(low_dir), Path(high_dir)
+        self.teacher_dir = Path(teacher_dir) if teacher_dir is not None else None
         self.crop_size, self.training, self.augment = crop_size, training, augment
         self.dataset_name = name or self.low_dir.parent.name
         highs = {_key(p): p for p in list_images(self.high_dir)}
-        pairs = [(lp, highs[_key(lp)]) for lp in list_images(self.low_dir) if _key(lp) in highs]
+        teachers = {_key(p): p for p in list_images(self.teacher_dir)} if self.teacher_dir is not None else None
+        pairs = []
+        for lp in list_images(self.low_dir):
+            key = _key(lp)
+            if key not in highs:
+                continue
+            if teachers is not None:
+                if key not in teachers:
+                    continue
+                pairs.append((lp, highs[key], teachers[key]))
+            else:
+                pairs.append((lp, highs[key], None))
         if max_images is not None:
             pairs = pairs[:max_images]
         if not pairs:
@@ -62,9 +89,17 @@ class PairedRGBDataset(Dataset):
         return xs
 
     def __getitem__(self, idx):
-        low_path, high_path = self.pairs[idx]
+        low_path, high_path, teacher_path = self.pairs[idx]
         low = to_tensor(Image.open(low_path).convert('RGB'))
         high = to_tensor(Image.open(high_path).convert('RGB'))
-        low, high = self._crop(low, high)
-        low, high = self._aug(low, high)
-        return {'low': low.contiguous(), 'high': high.contiguous(), 'name': low_path.stem, 'dataset': self.dataset_name}
+        if teacher_path is not None:
+            teacher = to_tensor(Image.open(teacher_path).convert('RGB'))
+            low, high, teacher = self._crop(low, high, teacher)
+            low, high, teacher = self._aug(low, high, teacher)
+        else:
+            low, high = self._crop(low, high)
+            low, high = self._aug(low, high)
+            teacher = None
+        e, a, q = _oracle_maps(low, high)
+        sample = {'low': low.contiguous(), 'high': high.contiguous(), 'teacher': (teacher if teacher is not None else high).contiguous(), 'E_gt': e, 'A_gt': a, 'Q_gt': q, 'name': low_path.stem, 'dataset': self.dataset_name}
+        return sample

@@ -1,0 +1,15 @@
+/home/user/a1_rlef_project/results/hermes_audit/logs/phase0_reproduce_and_report.py:166: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  ckpt = torch.load(checkpoint_path, map_location=DEVICE)
+{
+  "started_at": "2026-07-02T16:42:37.472031+00:00",
+  "ended_at": "2026-07-02T16:45:01.235773+00:00",
+  "summary_csv": "/home/user/a1_rlef_project/results/hermes_audit/tables/phase0_baselines_summary.csv",
+  "per_image_csv": "/home/user/a1_rlef_project/results/hermes_audit/tables/phase0_per_image_metrics.csv",
+  "report": "/home/user/a1_rlef_project/results/hermes_audit/reports/PHASE0_BASELINE_REPRODUCTION.md",
+  "ledger": "/home/user/a1_rlef_project/results/hermes_audit/claim_ledgers/phase0_reproduction_ledger.md",
+  "strict_target_ok": true,
+  "all_prompt_ok": false,
+  "anomaly_count": 9,
+  "summary_row_count": 25,
+  "per_image_row_count": 4200
+}

@@ -1,0 +1,121 @@
+note: Running TeX ...
+warning: sections/method:9: Overfull \hbox (0.17587pt too wide) in paragraph at lines 8--9
+warning: sections/experiments:63: Overfull \hbox (1.63588pt too wide) in paragraph at lines 62--63
+warning: appendix/negative_route_family_summary:9: Underfull \hbox (badness 1939) in paragraph at lines 8--9
+warning: appendix/negative_route_family_summary:10: Underfull \hbox (badness 10000) in paragraph at lines 9--10
+warning: appendix/negative_route_family_summary:10: Underfull \hbox (badness 7379) in paragraph at lines 9--10
+warning: appendix/negative_route_family_summary:10: Underfull \hbox (badness 1990) in paragraph at lines 9--10
+warning: appendix/negative_route_family_summary:11: Underfull \hbox (badness 2343) in paragraph at lines 10--11
+warning: appendix/negative_route_family_summary:11: Underfull \hbox (badness 2103) in paragraph at lines 10--11
+warning: appendix/negative_route_family_summary:11: Underfull \hbox (badness 1314) in paragraph at lines 10--11
+warning: appendix/negative_route_family_summary:11: Underfull \hbox (badness 10000) in paragraph at lines 10--11
+warning: appendix/negative_route_family_summary:12: Underfull \hbox (badness 10000) in paragraph at lines 11--12
+warning: appendix/negative_route_family_summary:12: Underfull \hbox (badness 10000) in paragraph at lines 11--12
+warning: appendix/negative_route_family_summary:12: Underfull \hbox (badness 1221) in paragraph at lines 12--12
+warning: appendix/negative_route_family_summary:13: Underfull \hbox (badness 10000) in paragraph at lines 12--13
+warning: appendix/negative_route_family_summary:13: Underfull \hbox (badness 3078) in paragraph at lines 12--13
+warning: appendix/negative_route_family_summary:13: Underfull \hbox (badness 4217) in paragraph at lines 12--13
+warning: appendix/negative_route_family_summary:13: Overfull \hbox (12.84555pt too wide) in paragraph at lines 13--13
+warning: appendix/negative_route_family_summary:14: Underfull \hbox (badness 2229) in paragraph at lines 13--14
+warning: appendix/negative_route_family_summary:15: Underfull \hbox (badness 6808) in paragraph at lines 14--15
+warning: appendix/negative_route_family_summary:15: Underfull \hbox (badness 5217) in paragraph at lines 14--15
+warning: appendix/negative_route_family_summary:15: Underfull \hbox (badness 3872) in paragraph at lines 15--15
+warning: appendix/negative_route_family_summary:16: Overfull \hbox (17.47954pt too wide) in paragraph at lines 16--16
+warning: appendix/negative_route_family_summary:16: Overfull \hbox (34.83255pt too wide) in paragraph at lines 16--16
+warning: appendix/negative_route_family_summary:17: Underfull \hbox (badness 1584) in paragraph at lines 16--17
+warning: appendix/negative_route_family_summary:17: Underfull \hbox (badness 2042) in paragraph at lines 16--17
+warning: appendix/negative_route_family_summary:19: Overfull \hbox (20.15pt too wide) in paragraph at lines 4--19
+warning: appendix/negative_route_audit_table:11: Underfull \hbox (badness 6445) in paragraph at lines 10--11
+warning: appendix/negative_route_audit_table:13: Underfull \hbox (badness 10000) in paragraph at lines 12--13
+warning: appendix/negative_route_audit_table:14: Underfull \hbox (badness 10000) in paragraph at lines 13--14
+warning: appendix/negative_route_audit_table:14: Underfull \hbox (badness 1221) in paragraph at lines 14--14
+warning: appendix/negative_route_audit_table:15: Underfull \hbox (badness 1221) in paragraph at lines 15--15
+warning: appendix/negative_route_audit_table:20: Underfull \hbox (badness 3872) in paragraph at lines 20--20
+warning: appendix/negative_route_audit_table:21: Underfull \hbox (badness 3872) in paragraph at lines 21--21
+warning: appendix/negative_route_audit_table:22: Overfull \hbox (8.08243pt too wide) in paragraph at lines 22--22
+warning: appendix/negative_route_audit_table:23: Overfull \hbox (19.28943pt too wide) in paragraph at lines 23--23
+warning: appendix/negative_route_audit_table:24: Overfull \hbox (7.45943pt too wide) in paragraph at lines 24--24
+note: Running BibTeX on gir_field_full_paper_skeleton.aux ...
+note: warnings were issued by BibTeX; use --print and/or --keep-logs for details.
+note: Rerunning TeX because bibtex was run ...
+warning: sections/method:9: Overfull \hbox (0.17587pt too wide) in paragraph at lines 8--9
+warning: sections/experiments:63: Overfull \hbox (1.63588pt too wide) in paragraph at lines 62--63
+warning: appendix/negative_route_family_summary:9: Underfull \hbox (badness 1939) in paragraph at lines 8--9
+warning: appendix/negative_route_family_summary:10: Underfull \hbox (badness 10000) in paragraph at lines 9--10
+warning: appendix/negative_route_family_summary:10: Underfull \hbox (badness 7379) in paragraph at lines 9--10
+warning: appendix/negative_route_family_summary:10: Underfull \hbox (badness 1990) in paragraph at lines 9--10
+warning: appendix/negative_route_family_summary:11: Underfull \hbox (badness 2343) in paragraph at lines 10--11
+warning: appendix/negative_route_family_summary:11: Underfull \hbox (badness 2103) in paragraph at lines 10--11
+warning: appendix/negative_route_family_summary:11: Underfull \hbox (badness 1314) in paragraph at lines 10--11
+warning: appendix/negative_route_family_summary:11: Underfull \hbox (badness 10000) in paragraph at lines 10--11
+warning: appendix/negative_route_family_summary:12: Underfull \hbox (badness 10000) in paragraph at lines 11--12
+warning: appendix/negative_route_family_summary:12: Underfull \hbox (badness 10000) in paragraph at lines 11--12
+warning: appendix/negative_route_family_summary:12: Underfull \hbox (badness 1221) in paragraph at lines 12--12
+warning: appendix/negative_route_family_summary:13: Underfull \hbox (badness 10000) in paragraph at lines 12--13
+warning: appendix/negative_route_family_summary:13: Underfull \hbox (badness 3078) in paragraph at lines 12--13
+warning: appendix/negative_route_family_summary:13: Underfull \hbox (badness 4217) in paragraph at lines 12--13
+warning: appendix/negative_route_family_summary:13: Overfull \hbox (12.84555pt too wide) in paragraph at lines 13--13
+warning: appendix/negative_route_family_summary:14: Underfull \hbox (badness 2229) in paragraph at lines 13--14
+warning: appendix/negative_route_family_summary:15: Underfull \hbox (badness 6808) in paragraph at lines 14--15
+warning: appendix/negative_route_family_summary:15: Underfull \hbox (badness 5217) in paragraph at lines 14--15
+warning: appendix/negative_route_family_summary:15: Underfull \hbox (badness 3872) in paragraph at lines 15--15
+warning: appendix/negative_route_family_summary:16: Overfull \hbox (17.47954pt too wide) in paragraph at lines 16--16
+warning: appendix/negative_route_family_summary:16: Overfull \hbox (34.83255pt too wide) in paragraph at lines 16--16
+warning: appendix/negative_route_family_summary:17: Underfull \hbox (badness 1584) in paragraph at lines 16--17
+warning: appendix/negative_route_family_summary:17: Underfull \hbox (badness 2042) in paragraph at lines 16--17
+warning: appendix/negative_route_family_summary:19: Overfull \hbox (20.15pt too wide) in paragraph at lines 4--19
+warning: appendix/negative_route_audit_table:11: Underfull \hbox (badness 6445) in paragraph at lines 10--11
+warning: appendix/negative_route_audit_table:13: Underfull \hbox (badness 10000) in paragraph at lines 12--13
+warning: appendix/negative_route_audit_table:14: Underfull \hbox (badness 10000) in paragraph at lines 13--14
+warning: appendix/negative_route_audit_table:14: Underfull \hbox (badness 1221) in paragraph at lines 14--14
+warning: appendix/negative_route_audit_table:15: Underfull \hbox (badness 1221) in paragraph at lines 15--15
+warning: appendix/negative_route_audit_table:20: Underfull \hbox (badness 3872) in paragraph at lines 20--20
+warning: appendix/negative_route_audit_table:21: Underfull \hbox (badness 3872) in paragraph at lines 21--21
+warning: appendix/negative_route_audit_table:22: Overfull \hbox (8.08243pt too wide) in paragraph at lines 22--22
+warning: appendix/negative_route_audit_table:23: Overfull \hbox (19.28943pt too wide) in paragraph at lines 23--23
+warning: appendix/negative_route_audit_table:24: Overfull \hbox (7.45943pt too wide) in paragraph at lines 24--24
+note: Rerunning TeX because "gir_field_full_paper_skeleton.aux" changed ...
+warning: sections/method:9: Overfull \hbox (0.17587pt too wide) in paragraph at lines 8--9
+warning: sections/experiments:63: Overfull \hbox (1.63588pt too wide) in paragraph at lines 62--63
+warning: appendix/negative_route_family_summary:9: Underfull \hbox (badness 1939) in paragraph at lines 8--9
+warning: appendix/negative_route_family_summary:10: Underfull \hbox (badness 10000) in paragraph at lines 9--10
+warning: appendix/negative_route_family_summary:10: Underfull \hbox (badness 7379) in paragraph at lines 9--10
+warning: appendix/negative_route_family_summary:10: Underfull \hbox (badness 1990) in paragraph at lines 9--10
+warning: appendix/negative_route_family_summary:11: Underfull \hbox (badness 2343) in paragraph at lines 10--11
+warning: appendix/negative_route_family_summary:11: Underfull \hbox (badness 2103) in paragraph at lines 10--11
+warning: appendix/negative_route_family_summary:11: Underfull \hbox (badness 1314) in paragraph at lines 10--11
+warning: appendix/negative_route_family_summary:11: Underfull \hbox (badness 10000) in paragraph at lines 10--11
+warning: appendix/negative_route_family_summary:12: Underfull \hbox (badness 10000) in paragraph at lines 11--12
+warning: appendix/negative_route_family_summary:12: Underfull \hbox (badness 10000) in paragraph at lines 11--12
+warning: appendix/negative_route_family_summary:12: Underfull \hbox (badness 1221) in paragraph at lines 12--12
+warning: appendix/negative_route_family_summary:13: Underfull \hbox (badness 10000) in paragraph at lines 12--13
+warning: appendix/negative_route_family_summary:13: Underfull \hbox (badness 3078) in paragraph at lines 12--13
+warning: appendix/negative_route_family_summary:13: Underfull \hbox (badness 4217) in paragraph at lines 12--13
+warning: appendix/negative_route_family_summary:13: Overfull \hbox (12.84555pt too wide) in paragraph at lines 13--13
+warning: appendix/negative_route_family_summary:14: Underfull \hbox (badness 2229) in paragraph at lines 13--14
+warning: appendix/negative_route_family_summary:15: Underfull \hbox (badness 6808) in paragraph at lines 14--15
+warning: appendix/negative_route_family_summary:15: Underfull \hbox (badness 5217) in paragraph at lines 14--15
+warning: appendix/negative_route_family_summary:15: Underfull \hbox (badness 3872) in paragraph at lines 15--15
+warning: appendix/negative_route_family_summary:16: Overfull \hbox (17.47954pt too wide) in paragraph at lines 16--16
+warning: appendix/negative_route_family_summary:16: Overfull \hbox (34.83255pt too wide) in paragraph at lines 16--16
+warning: appendix/negative_route_family_summary:17: Underfull \hbox (badness 1584) in paragraph at lines 16--17
+warning: appendix/negative_route_family_summary:17: Underfull \hbox (badness 2042) in paragraph at lines 16--17
+warning: appendix/negative_route_family_summary:19: Overfull \hbox (20.15pt too wide) in paragraph at lines 4--19
+warning: appendix/negative_route_audit_table:11: Underfull \hbox (badness 6445) in paragraph at lines 10--11
+warning: appendix/negative_route_audit_table:13: Underfull \hbox (badness 10000) in paragraph at lines 12--13
+warning: appendix/negative_route_audit_table:14: Underfull \hbox (badness 10000) in paragraph at lines 13--14
+warning: appendix/negative_route_audit_table:14: Underfull \hbox (badness 1221) in paragraph at lines 14--14
+warning: appendix/negative_route_audit_table:15: Underfull \hbox (badness 1221) in paragraph at lines 15--15
+warning: appendix/negative_route_audit_table:20: Underfull \hbox (badness 3872) in paragraph at lines 20--20
+warning: appendix/negative_route_audit_table:21: Underfull \hbox (badness 3872) in paragraph at lines 21--21
+warning: appendix/negative_route_audit_table:22: Overfull \hbox (8.08243pt too wide) in paragraph at lines 22--22
+warning: appendix/negative_route_audit_table:23: Overfull \hbox (19.28943pt too wide) in paragraph at lines 23--23
+warning: appendix/negative_route_audit_table:24: Overfull \hbox (7.45943pt too wide) in paragraph at lines 24--24
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+note: Running xdvipdfmx ...
+note: Writing `build_article_v2/gir_field_full_paper_skeleton.blg` (1001 B)
+note: Writing `build_article_v2/gir_field_full_paper_skeleton.out` (6.1728515625 KiB)
+note: Writing `build_article_v2/gir_field_full_paper_skeleton.log` (17.3818359375 KiB)
+note: Writing `build_article_v2/gir_field_full_paper_skeleton.aux` (13.35546875 KiB)
+note: Writing `build_article_v2/gir_field_full_paper_skeleton.pdf` (320.8330078125 KiB)
+note: Writing `build_article_v2/gir_field_full_paper_skeleton.bbl` (5.98046875 KiB)

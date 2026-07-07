@@ -1,0 +1,19 @@
+note: Running TeX ...
+warning: sections/method:9: Overfull \hbox (0.17587pt too wide) in paragraph at lines 8--9
+warning: sections/experiments:63: Overfull \hbox (1.63588pt too wide) in paragraph at lines 62--63
+note: Running BibTeX on gir_field_full_paper_skeleton.aux ...
+note: warnings were issued by BibTeX; use --print and/or --keep-logs for details.
+note: Rerunning TeX because bibtex was run ...
+warning: sections/method:9: Overfull \hbox (0.17587pt too wide) in paragraph at lines 8--9
+warning: sections/experiments:63: Overfull \hbox (1.63588pt too wide) in paragraph at lines 62--63
+note: Rerunning TeX because "gir_field_full_paper_skeleton.aux" changed ...
+warning: sections/method:9: Overfull \hbox (0.17587pt too wide) in paragraph at lines 8--9
+warning: sections/experiments:63: Overfull \hbox (1.63588pt too wide) in paragraph at lines 62--63
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+note: Running xdvipdfmx ...
+note: Writing `build_article_v3/gir_field_full_paper_skeleton.out` (6.1728515625 KiB)
+note: Writing `build_article_v3/gir_field_full_paper_skeleton.pdf` (319.892578125 KiB)
+note: Writing `build_article_v3/gir_field_full_paper_skeleton.bbl` (5.98046875 KiB)
+note: Writing `build_article_v3/gir_field_full_paper_skeleton.log` (13.85546875 KiB)
+note: Writing `build_article_v3/gir_field_full_paper_skeleton.aux` (13.35546875 KiB)
+note: Writing `build_article_v3/gir_field_full_paper_skeleton.blg` (1001 B)

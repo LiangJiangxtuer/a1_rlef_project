@@ -1,0 +1,34 @@
+[
+  {
+    "route": "P5/P5b distillation",
+    "best_reference": "P5_RD_T03",
+    "best_snapshot": "UEFB=18.169; real=20.416; synthetic=16.996",
+    "decision": "appendix only",
+    "reason": "output-level teacher distillation shifts real/synthetic trade-off and is not a stable deployable mainline",
+    "n_runs": 3
+  },
+  {
+    "route": "P6/P6b/P6c structural scalar controls",
+    "best_reference": "P6_MS_M4J_ES / P6B_MS_SYN125 / P6C_MS_GATEID005",
+    "best_snapshot": "P6 real=20.197; P6b synthetic=19.115; P6c real=20.456",
+    "decision": "appendix only",
+    "reason": "structural backbone is useful, but scalar synthetic/gate protection over-corrects and does not solve three-domain trade-off",
+    "n_runs": 9
+  },
+  {
+    "route": "P7/P7b/P7c domain heads",
+    "best_reference": "P7B_DHEAD_RA010",
+    "best_snapshot": "UEFB=18.085; real=19.847; synthetic=17.965",
+    "decision": "near-miss reference only",
+    "reason": "P7B_RA010 is closest but misses real P3c mean; stronger P7c anchors degrade",
+    "n_runs": 9
+  },
+  {
+    "route": "DGB branch",
+    "best_reference": "P2B_DGB_GAUGE_ONLY",
+    "best_snapshot": "best real=20.432; best synthetic=18.683; joint_gate_any=False",
+    "decision": "stopped and consolidated",
+    "reason": "joint gate failed across Phase2/P2B/P2C/P2D/P2E; routing changes did not recover real-domain quality",
+    "n_runs": 11
+  }
+]

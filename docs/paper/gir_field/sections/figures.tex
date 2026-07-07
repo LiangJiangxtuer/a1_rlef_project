@@ -1,0 +1,30 @@
+\section{Diagnostic Figures and Captions}
+\label{sec:figures}
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=0.95\linewidth]{fig_psnr_vs_scorr.pdf}
+    \caption{\textbf{PSNR-only ranking can disagree with exposure-field identifiability.} The formal audit plots UEFB PSNR against gauge-free shape correlation $S_{corr}$ for internal variants. M4 obtains high UEFB PSNR but negative shape correlation, while M4J\_ES and P3c have lower or comparable PSNR with physically coherent positive $S_{corr}$. This is the central motivation for UEFB-G: a benchmark for exposure-field methods must report both output fidelity and field identifiability.}
+    \label{fig:psnr_vs_scorr}
+\end{figure}
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=0.95\linewidth]{fig_gauge_perturbation_bar.pdf}
+    \caption{\textbf{Gauge perturbation separates global gauge shifts from local shape distortions.} A global shift $E'=E+0.5$ increases absolute E\_MAE and Gauge\_MAE but leaves S\_MAE at zero and $S_{corr}=1$, because the spatial shape is unchanged. A local zero-mean distortion changes S\_MAE and lowers $S_{corr}$ while leaving Gauge\_MAE near zero. This validates the metric decomposition used by UEFB-G.}
+    \label{fig:gauge_perturbation}
+\end{figure}
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=0.95\linewidth]{fig_psnr_misranking_failure_grid.pdf}
+    \caption{\textbf{Visual diagnostic grid for PSNR-vs-shape cases.} The grid shows low input, prediction, ground truth, and internal E/A/Q maps for representative UEFB cases. It is intended as a failure-analysis figure rather than a success-only qualitative panel: every row should be read with the question ``what does PSNR fail to reveal about the exposure field?''}
+    \label{fig:failure_grid}
+\end{figure}
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=0.95\linewidth]{fig_risk_reliability.pdf}
+    \caption{\textbf{Recoverability risk has signal but remains calibration-limited.} The lightweight risk probe reaches AUC around 0.766, indicating that harmful local enhancement is predictable from image and field statistics. However, ECE remains around 0.281, so the probe is diagnostic rather than a calibrated decision module. This supports future recoverability-aware work but not a main claim that risk is solved.}
+    \label{fig:risk_reliability}
+\end{figure}

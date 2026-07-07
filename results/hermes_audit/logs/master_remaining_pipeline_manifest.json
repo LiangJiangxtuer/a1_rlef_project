@@ -1,0 +1,99 @@
+{
+  "generated_at": "2026-07-05T03:11:46.092252+00:00",
+  "decision": "Master-prompt remaining executable steps completed after DGB stop and S1-S4 pipeline",
+  "no_new_training": true,
+  "dgb_status": "stopped and consolidated",
+  "full_suite": "115 passed in 21.37s",
+  "files": [
+    {
+      "path": "/home/user/a1_rlef_project/results/hermes_audit/reports/P2_NOREF_SUPPLEMENTARY_EVAL.md",
+      "relative_path": "results/hermes_audit/reports/P2_NOREF_SUPPLEMENTARY_EVAL.md",
+      "bytes": 2119,
+      "sha256": "0aafd0bf72bc94fdbce5dcb1e0d22d4c42b861081ba16a29bbeae13bca5cf668"
+    },
+    {
+      "path": "/home/user/a1_rlef_project/results/hermes_audit/tables/noref_supplementary_summary.csv",
+      "relative_path": "results/hermes_audit/tables/noref_supplementary_summary.csv",
+      "bytes": 1829,
+      "sha256": "a57e221600de74ef2099710f751ab9ee2151c2117cea2d571b1719497a78a525"
+    },
+    {
+      "path": "/home/user/a1_rlef_project/results/hermes_audit/tables/noref_supplementary_summary.json",
+      "relative_path": "results/hermes_audit/tables/noref_supplementary_summary.json",
+      "bytes": 3639,
+      "sha256": "ad11fbbdd5be1075a32f1f8d5c888ccc0c2b7ac234d092484e286d832653d600"
+    },
+    {
+      "path": "/home/user/a1_rlef_project/results/hermes_audit/tables/noref_supplementary_per_image.csv",
+      "relative_path": "results/hermes_audit/tables/noref_supplementary_per_image.csv",
+      "bytes": 64045,
+      "sha256": "516d720cb1ed4647298b3941ad627a481f8c138c5aad4bd103ff936cb0b11315"
+    },
+    {
+      "path": "/home/user/a1_rlef_project/results/hermes_audit/figures/noref_unpaired_grid.png",
+      "relative_path": "results/hermes_audit/figures/noref_unpaired_grid.png",
+      "bytes": 448236,
+      "sha256": "6afcc087ac0132fa37bcf85553b5dfb0118229fa48431d547ce800268c9eb88f"
+    },
+    {
+      "path": "/home/user/a1_rlef_project/results/hermes_audit/tables/final_main_table.csv",
+      "relative_path": "results/hermes_audit/tables/final_main_table.csv",
+      "bytes": 2163,
+      "sha256": "035542325fd8780e0c1ee936be373459bc03751f8804b53f1f3a584556dbd0cc"
+    },
+    {
+      "path": "/home/user/a1_rlef_project/results/hermes_audit/tables/final_main_table.json",
+      "relative_path": "results/hermes_audit/tables/final_main_table.json",
+      "bytes": 4345,
+      "sha256": "b8f5cf4fcba30818fa9836056320053d73a66ef4a6c6be5139e690dab9672f80"
+    },
+    {
+      "path": "/home/user/a1_rlef_project/results/hermes_audit/tables/final_ablation_table.csv",
+      "relative_path": "results/hermes_audit/tables/final_ablation_table.csv",
+      "bytes": 1372,
+      "sha256": "6e7d6ed245ad8d2f511ac7425afad80ac12e2b7a87f43798a28f917cdc47d012"
+    },
+    {
+      "path": "/home/user/a1_rlef_project/results/hermes_audit/tables/final_ablation_table.json",
+      "relative_path": "results/hermes_audit/tables/final_ablation_table.json",
+      "bytes": 2093,
+      "sha256": "0b32d607b574719e5a8e40dcafe5e2532b5fb4afeca4137a8ef77a96bea25e1e"
+    },
+    {
+      "path": "/home/user/a1_rlef_project/results/hermes_audit/figures/final_qualitative_grid.png",
+      "relative_path": "results/hermes_audit/figures/final_qualitative_grid.png",
+      "bytes": 1166762,
+      "sha256": "7a7ed12d7835b4f9e49c05fb1629fc7c76ce6a1f72c23c7f740cb36ddfc8e2ff"
+    },
+    {
+      "path": "/home/user/a1_rlef_project/docs/DGB_RLEF_FINAL_EXPERIMENT_REPORT.md",
+      "relative_path": "docs/DGB_RLEF_FINAL_EXPERIMENT_REPORT.md",
+      "bytes": 5279,
+      "sha256": "432776fbbedded4aa1bbee44149fe3cba5d0c594fcb77e38bb321dc8d59afaec"
+    },
+    {
+      "path": "/home/user/a1_rlef_project/docs/DGB_RLEF_PAPER_IDEA.md",
+      "relative_path": "docs/DGB_RLEF_PAPER_IDEA.md",
+      "bytes": 2943,
+      "sha256": "e0e42453cc5c9c131886ab5f35de1ece9d1669b0ab8f4aeed29372808766abac"
+    },
+    {
+      "path": "/home/user/a1_rlef_project/docs/DGB_RLEF_REPRODUCIBILITY_CHECKLIST.md",
+      "relative_path": "docs/DGB_RLEF_REPRODUCIBILITY_CHECKLIST.md",
+      "bytes": 2078,
+      "sha256": "32dd94a5bce0a7cd0a53df84f6c0d01d36106be827c2489e5aa5d4419693e2a8"
+    },
+    {
+      "path": "/home/user/a1_rlef_project/results/hermes_audit/reports/MASTER_REMAINING_STEPS_VALIDATION.md",
+      "relative_path": "results/hermes_audit/reports/MASTER_REMAINING_STEPS_VALIDATION.md",
+      "bytes": 990,
+      "sha256": "6b98fec2e836f13e3e37e169bc0e782eb10631dd92f33dc7a110742b47f1c13d"
+    },
+    {
+      "path": "/home/user/a1_rlef_project/results/hermes_audit/reports/MASTER_REMAINING_STEPS_TEST_REPORT.md",
+      "relative_path": "results/hermes_audit/reports/MASTER_REMAINING_STEPS_TEST_REPORT.md",
+      "bytes": 300,
+      "sha256": "4d5dd398fd7378112ea2c97d365d4859a5a05793a1c9c1136903591a494fb97b"
+    }
+  ]
+}

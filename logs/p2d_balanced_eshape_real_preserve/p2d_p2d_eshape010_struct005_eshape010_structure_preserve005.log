@@ -1,0 +1,176 @@
++ /home/user/miniconda3/envs/cutler_dinov3/bin/python scripts/train.py --config /home/user/a1_rlef_project/configs/dgb_rlef/p2d_p2d_eshape010_struct005_eshape010_structure_preserve005.yml --output_dir /home/user/a1_rlef_project/experiments/p2d_p2d_eshape010_struct005_eshape010_structure_preserve005_seed3407 --device cuda --max_steps 1000
+{"step": 1, "loss": 0.3498809337615967, "rec": 0.26849234104156494, "structure_preserve": 0.10414248704910278, "phys": 0.2858341336250305, "poisson": 0.19051958620548248, "e_shape": 0.5748559832572937, "id": 0.032580651342868805, "gate": 0.2793349623680115, "q": 0.48699435591697693, "wtv": 0.10267940163612366}
+{"step": 100, "loss": 0.24416513741016388, "rec": 0.18623316287994385, "structure_preserve": 0.06856632977724075, "phys": 0.12739256024360657, "poisson": 0.4300682246685028, "e_shape": 0.7045619487762451, "id": 0.021474799141287804, "gate": 0.22867052257061005, "q": 0.06715226918458939, "wtv": 0.024989131838083267}
+{"step": 200, "loss": 0.25269147753715515, "rec": 0.2060730755329132, "structure_preserve": 0.08295071125030518, "phys": 0.1452537178993225, "poisson": 0.1381106674671173, "e_shape": 0.5450441837310791, "id": 0.014458022080361843, "gate": 0.330974817276001, "q": 0.05517543852329254, "wtv": 0.015734190121293068}
+{"step": 300, "loss": 0.2173634022474289, "rec": 0.16412602365016937, "structure_preserve": 0.0692782998085022, "phys": 0.10858248919248581, "poisson": 0.4411942660808563, "e_shape": 0.4581602215766907, "id": 0.014520064927637577, "gate": 0.29913437366485596, "q": 0.018591560423374176, "wtv": 0.00999375432729721}
+{"step": 400, "loss": 0.17419308423995972, "rec": 0.1382342427968979, "structure_preserve": 0.05462353676557541, "phys": 0.1158682107925415, "poisson": 0.09238129109144211, "gauge": 0.620485246181488, "e_shape": 0.4792434275150299, "id": 0.01119990460574627, "gate": 0.2539316415786743, "q": 0.010261427611112595, "wtv": 0.007623100653290749}
+{"step": 500, "loss": 0.17242500185966492, "rec": 0.12947338819503784, "structure_preserve": 0.05005009472370148, "phys": 0.09228916466236115, "poisson": 0.2868401110172272, "gauge": 0.9550734162330627, "e_shape": 0.4981280267238617, "id": 0.008772578090429306, "gate": 0.21063575148582458, "q": 0.016904737800359726, "wtv": 0.00842549093067646}
+{"step": 600, "loss": 0.2782042324542999, "rec": 0.22534990310668945, "structure_preserve": 0.09974414110183716, "phys": 0.1811678409576416, "poisson": 0.15638789534568787, "gauge": 0.8489817380905151, "e_shape": 0.36646929383277893, "id": 0.0247714314609766, "gate": 0.266165554523468, "q": 0.006907920353114605, "wtv": 0.003361632814630866}
+{"step": 700, "loss": 0.23515382409095764, "rec": 0.1800345927476883, "structure_preserve": 0.07112272828817368, "phys": 0.1365276277065277, "poisson": 0.31749987602233887, "gauge": 0.6732149124145508, "e_shape": 0.5775318145751953, "id": 0.01732470467686653, "gate": 0.26112374663352966, "q": 0.017256716266274452, "wtv": 0.00767331849783659}
+{"step": 800, "loss": 0.18593794107437134, "rec": 0.15028059482574463, "structure_preserve": 0.0655222162604332, "phys": 0.132189080119133, "poisson": 0.009973973035812378, "gauge": 0.4931679368019104, "e_shape": 0.4769236743450165, "id": 0.02850249782204628, "gate": 0.2050112783908844, "q": 0.004873599857091904, "wtv": 0.00256803585216403}
+{"step": 900, "loss": 0.1728363186120987, "rec": 0.12591446936130524, "structure_preserve": 0.05192496255040169, "phys": 0.11245327442884445, "poisson": 0.2714666426181793, "gauge": 0.8300745487213135, "e_shape": 0.564242422580719, "id": 0.015395556576550007, "gate": 0.1829216182231903, "q": 0.004101772792637348, "wtv": 0.002154974965378642}
+{"step": 1000, "loss": 0.18784360587596893, "rec": 0.15257778763771057, "structure_preserve": 0.06131424382328987, "phys": 0.11964424699544907, "poisson": 0.016640277579426765, "gauge": 0.3449975848197937, "e_shape": 0.4970504939556122, "id": 0.010135134682059288, "gate": 0.27194157242774963, "q": 0.05023335665464401, "wtv": 0.003988597076386213}
+{
+  "DONE": true,
+  "run_id": "p2d_p2d_eshape010_struct005_eshape010_structure_preserve005_seed3407",
+  "command": "scripts/train.py --config /home/user/a1_rlef_project/configs/dgb_rlef/p2d_p2d_eshape010_struct005_eshape010_structure_preserve005.yml --output_dir /home/user/a1_rlef_project/experiments/p2d_p2d_eshape010_struct005_eshape010_structure_preserve005_seed3407 --device cuda --max_steps 1000",
+  "steps": 1000,
+  "elapsed_sec": 196.8560118675232,
+  "config": {
+    "seed": 3407,
+    "protocol": {
+      "stage": "P2D balanced e_shape010 real preservation",
+      "variant_id": "P2D_ESHAPE010_STRUCT005",
+      "variant_name": "eshape010_structure_preserve005",
+      "base_variant": "P2C_DGB_ESHAPE010",
+      "intervention": "generic_structure_preserve",
+      "notes": "P2D balanced branch: stronger generic contrast-weighted structure preservation for real-domain recovery, no dataset labels.",
+      "phase2d_balanced_eshape_real_preserve": true
+    },
+    "model": {
+      "base_channels": 24,
+      "e_max": 3.5,
+      "exposure_branch": true,
+      "adaptive_gauge": true,
+      "fixed_gauge": null,
+      "physics_branch": true,
+      "gate_branch": true,
+      "q_branch": true,
+      "backbone": "multiscale",
+      "backbone_blocks": 3,
+      "type": "DGB_RLEF_MINIMAL",
+      "gauge_mode": "image_stats",
+      "gauge_mu_min": -1.0,
+      "gauge_mu_max": 2.5,
+      "route_type": "identity_gate",
+      "safe_alpha": 0.7,
+      "route_floor": 0.0
+    },
+    "training": {
+      "batch_size": 8,
+      "max_steps": 1000,
+      "lr": 0.0002,
+      "weight_decay": 0.0001,
+      "crop_size": 128,
+      "log_every": 100,
+      "num_workers": 0,
+      "grad_clip": 1.0,
+      "phase2d_balanced_eshape_real_preserve": true
+    },
+    "eval": {
+      "batch_size": 1
+    },
+    "data": {
+      "train": [
+        {
+          "type": "uefb",
+          "root": "/home/user/a1_rlef_project/data/UEFB-v2/train",
+          "crop_size": 128,
+          "augment": true,
+          "max_images": null
+        },
+        {
+          "type": "paired_rgb",
+          "low_dir": "/home/user/a1_rlef_project/data/LOL-v2/Real_captured/Train/Low",
+          "high_dir": "/home/user/a1_rlef_project/data/LOL-v2/Real_captured/Train/Normal",
+          "crop_size": 128,
+          "augment": true,
+          "max_images": null,
+          "name": "LOL-v2-real-train"
+        },
+        {
+          "type": "paired_rgb",
+          "low_dir": "/home/user/a1_rlef_project/data/LOL-v2/Synthetic/Train/Low",
+          "high_dir": "/home/user/a1_rlef_project/data/LOL-v2/Synthetic/Train/Normal",
+          "crop_size": 128,
+          "augment": true,
+          "max_images": null,
+          "name": "LOL-v2-synthetic-train"
+        }
+      ],
+      "val": {
+        "type": "uefb",
+        "root": "/home/user/a1_rlef_project/data/UEFB-v2/test",
+        "crop_size": null,
+        "augment": false,
+        "max_images": null
+      }
+    },
+    "loss": {
+      "rec": 1.0,
+      "phys": 0.15,
+      "poisson": 0.05,
+      "gauge": 0.0,
+      "id": 0.02,
+      "gate": 0.02,
+      "wtv": 0.02,
+      "e_shape": 0.01,
+      "e_shape_kernel": 7,
+      "gauge_schedule": {
+        "ramp_start": 300,
+        "full_start": 700,
+        "max_weight": 0.005,
+        "hard_cap": 0.01
+      },
+      "e_shape_beta": 0.1,
+      "q": 0.02,
+      "structure_preserve": 0.05,
+      "structure_preserve_grad": 0.5,
+      "structure_preserve_floor": 0.25
+    },
+    "forbidden": {
+      "teacher_distill": true,
+      "rec_by_dataset": true,
+      "real_anchor_above_0p010": true
+    }
+  },
+  "metrics": {
+    "psnr": 17.863255617141725,
+    "ssim": 0.8108830691576004,
+    "lee": 0.26469016820192337,
+    "nai": 1.8242719906568527,
+    "input_psnr": 12.995622906684876,
+    "identity_drop": 4.8676327085494995,
+    "q_ece": 0.4101270036399364,
+    "over": 5.360921462852275e-06,
+    "under": 7.222493710287381e-06,
+    "E_MAE": 0.4961457515954971,
+    "E_MAE_aligned": 0.21426061904802918,
+    "E_corr": 0.4718378476498183
+  },
+  "checkpoint": "/home/user/a1_rlef_project/experiments/p2d_p2d_eshape010_struct005_eshape010_structure_preserve005_seed3407/checkpoints/last.pth"
+}
++ /home/user/miniconda3/envs/cutler_dinov3/bin/python scripts/eval_paired.py --config /home/user/a1_rlef_project/configs/dgb_rlef/p2d_p2d_eshape010_struct005_eshape010_structure_preserve005.yml --checkpoint /home/user/a1_rlef_project/experiments/p2d_p2d_eshape010_struct005_eshape010_structure_preserve005_seed3407/checkpoints/last.pth --low_dir /home/user/a1_rlef_project/data/LOL-v2/Real_captured/Test/Low --high_dir /home/user/a1_rlef_project/data/LOL-v2/Real_captured/Test/Normal --output_dir /home/user/a1_rlef_project/experiments/p2d_p2d_eshape010_struct005_eshape010_structure_preserve005_seed3407/paired_eval/real --device cuda --domain real
+/home/user/a1_rlef_project/scripts/eval_paired.py:18: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model=build_model(cfg).to(device); ckpt=torch.load(args.checkpoint,map_location=device); model.load_state_dict(ckpt['model'])
+{
+  "psnr": 19.54091272354126,
+  "ssim": 0.774367960691452,
+  "lee": 0.25192669831216336,
+  "nai": 2.6155566644668578,
+  "input_psnr": 9.718215217590332,
+  "identity_drop": 9.8226975107193,
+  "q_ece": 0.5391169519722462,
+  "over": 4.348611191744567e-05,
+  "under": 1.1111111280115438e-06,
+  "E_MAE": 0.7581687933206558,
+  "E_MAE_aligned": 0.3444035652279854,
+  "E_corr": 0.6560977983474732
+}
++ /home/user/miniconda3/envs/cutler_dinov3/bin/python scripts/eval_paired.py --config /home/user/a1_rlef_project/configs/dgb_rlef/p2d_p2d_eshape010_struct005_eshape010_structure_preserve005.yml --checkpoint /home/user/a1_rlef_project/experiments/p2d_p2d_eshape010_struct005_eshape010_structure_preserve005_seed3407/checkpoints/last.pth --low_dir /home/user/a1_rlef_project/data/LOL-v2/Synthetic/Test/Low --high_dir /home/user/a1_rlef_project/data/LOL-v2/Synthetic/Test/Normal --output_dir /home/user/a1_rlef_project/experiments/p2d_p2d_eshape010_struct005_eshape010_structure_preserve005_seed3407/paired_eval/synthetic --device cuda --domain synthetic
+/home/user/a1_rlef_project/scripts/eval_paired.py:18: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model=build_model(cfg).to(device); ckpt=torch.load(args.checkpoint,map_location=device); model.load_state_dict(ckpt['model'])
+{
+  "psnr": 18.398645191192628,
+  "ssim": 0.7703885927796363,
+  "lee": 0.30801171431317925,
+  "nai": 1.3433883833885192,
+  "input_psnr": 11.220927743911743,
+  "identity_drop": 7.177717456817627,
+  "q_ece": 0.5651671275496483,
+  "over": 0.0001799632906613624,
+  "under": 0.0,
+  "E_MAE": 0.8412511563301086,
+  "E_MAE_aligned": 0.6268885632045567,
+  "E_corr": 0.7844407498836518
+}

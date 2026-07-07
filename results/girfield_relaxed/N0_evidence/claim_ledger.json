@@ -1,0 +1,42 @@
+[
+  {
+    "claim_id": "C1_centered_shape_positive",
+    "claim": "Centered/gauge-invariant E-shape improves exposure-shape identifiability relative to M4J.",
+    "status": "to_test_in_N1",
+    "primary_artifacts": "N1_statistics/statistical_tests.csv",
+    "allowed_in_main": true,
+    "forbidden_overclaim": "E_corr improvement guarantees superior restoration"
+  },
+  {
+    "claim_id": "C2_psnr_can_mislead",
+    "claim": "UEFB-G/E-A-Q exposes PSNR-only misranking such as M4 high PSNR but weak/wrong shape.",
+    "status": "to_test_in_N1_N2",
+    "primary_artifacts": "N1_statistics, N2_uefbg",
+    "allowed_in_main": true,
+    "forbidden_overclaim": "PSNR is invalid for all LLIE"
+  },
+  {
+    "claim_id": "C3_dgb_no_joint_resolution",
+    "claim": "DGB/P5/P6/P7 move trade-offs but do not resolve tri-domain balance under current evidence.",
+    "status": "frozen_prior_audit",
+    "primary_artifacts": "dgb_branch_consolidation_summary; final_ablation_table",
+    "allowed_in_main": false,
+    "forbidden_overclaim": "DGB-RLEF is SOTA or resolves tri-domain trade-off"
+  },
+  {
+    "claim_id": "C4_external_blackbox_boundary",
+    "claim": "External black-box baselines can be compared on output metrics but not internal E/S/Gauge metrics.",
+    "status": "to_register_in_N3",
+    "primary_artifacts": "N3_external/external_baseline_registry.csv",
+    "allowed_in_main": true,
+    "forbidden_overclaim": "black-box methods failed E_corr because they lack internal E-map"
+  },
+  {
+    "claim_id": "C5_recoverability_risk_probe",
+    "claim": "A lightweight output/field risk probe can test whether recoverability risk is calibratable without reviving DGB router.",
+    "status": "to_test_in_N4",
+    "primary_artifacts": "N4_risk/risk_calibration_summary.csv",
+    "allowed_in_main": false,
+    "forbidden_overclaim": "risk head solves enhancement"
+  }
+]

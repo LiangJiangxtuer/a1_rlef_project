@@ -1,0 +1,61 @@
+\section{Method}
+\label{sec:method}
+
+\subsection{Motivation: when image fidelity misleads exposure-field learning}
+
+Low-light image enhancement is commonly evaluated by image-fidelity metrics such as PSNR and SSIM. These metrics are necessary, but they do not determine whether an exposure-field model has learned a physically meaningful local exposure structure. Our formal audit exposes this gap directly: on UEFB-v2, the M4 A-gate variant obtains the highest UEFB PSNR among internal mechanisms (18.6530), yet its gauge-free exposure-shape correlation is negative ($S_{corr}=-0.1393$). In contrast, M4J\_ES has a slightly lower UEFB PSNR (17.9811) but a strongly positive exposure-shape correlation ($S_{corr}=0.4399$). Thus, PSNR-only evaluation can select a model whose RGB output is locally plausible while its exposure field points in the wrong spatial direction.
+
+We therefore formulate the task not as another SOTA low-light restoration model, but as \emph{gauge-identifiable exposure-field learning}: a model should separate gauge-free exposure shape from absolute image-level gauge, and the benchmark should report when image fidelity and exposure-field identifiability disagree.
+
+\subsection{Gauge ambiguity of local exposure fields}
+
+Let $I_l$ denote a low-light image and $I_h$ the paired normally exposed target. Let $Y_l$ and $Y_h$ be their luminance channels. A diagnostic target exposure field can be written as
+\begin{equation}
+E^*(x) = \log(Y_h(x)+\epsilon) - \log(Y_l(x)+\epsilon),
+\end{equation}
+where $x \in \Omega$ indexes spatial position and $\epsilon$ is a small constant. In gradient-domain or Poisson-like formulations, the field $E$ is ambiguous up to an additive constant: $E$ and $E+c$ have the same local gradient structure. A model that optimizes an absolute field loss can therefore entangle global gauge error with spatial shape error, while a model that optimizes only RGB reconstruction can obtain high PSNR with an incorrect exposure shape.
+
+We decompose the exposure field into an image-level gauge and a zero-mean spatial shape:
+\begin{equation}
+\mu(E) = \frac{1}{|\Omega|}\sum_{x\in\Omega} E(x), \qquad
+S(E)(x) = E(x) - \mu(E),
+\end{equation}
+so that
+\begin{equation}
+E(x) = S(x) + \mu, \qquad \sum_{x\in\Omega} S(x)=0.
+\end{equation}
+Under the zero-mean constraint, the decomposition is unique: $S$ represents gauge-free exposure shape, while $\mu$ represents absolute exposure gauge. This turns the equivalence class $E \sim E+c$ into two separately measurable components.
+
+\begin{proposition}[Gauge-identifiable shape/gauge decomposition]
+For any exposure field $E:\Omega\rightarrow\mathbb{R}$ on a finite image domain, the pair $(S,\mu)$ defined by $\mu=|\Omega|^{-1}\sum_{x\in\Omega}E(x)$ and $S=E-\mu$ is the unique decomposition satisfying $E=S+\mu$ and $\sum_{x\in\Omega}S(x)=0$. Moreover, for any additive gauge shift $E'=E+c$, the shape is invariant, $S(E')=S(E)$, while the gauge shifts by $c$, $\mu(E')=\mu(E)+c$.
+\end{proposition}
+\begin{proof}
+Existence follows directly from the definitions. If $E=S_1+\mu_1=S_2+\mu_2$ and both $S_1,S_2$ have zero spatial mean, then taking spatial means gives $\mu_1=\mu_2=\mathrm{mean}(E)$, hence $S_1=S_2=E-\mathrm{mean}(E)$. For $E'=E+c$, centering cancels the constant shift, so $S(E')=E+c-\mathrm{mean}(E+c)=E-\mathrm{mean}(E)=S(E)$, while $\mu(E')=\mu(E)+c$.
+\end{proof}
+
+This proposition justifies reporting shape and gauge separately. A metric that only reports absolute field error cannot tell whether an error comes from $S$ or $\mu$; UEFB-G reports both.
+
+\subsection{Centered exposure-shape calibration}
+
+To make exposure-field supervision invariant to additive gauge shifts, we use a centered low-pass exposure-shape loss. Let $\mathcal{L}_{LP}$ be an average low-pass filter and $C(A)=A-\mathrm{mean}(A)$ be spatial centering. The shape loss is
+\begin{align}
+\mathcal{L}_{shape} &= 1 - \mathrm{corr}\left(C(\mathcal{L}_{LP}(\hat{E})), C(\mathcal{L}_{LP}(E^*))\right) \\
+&\quad + \beta \|\nabla \hat{E} - \nabla E^*\|_1 .
+\end{align}
+The first term ignores global gauge shifts and compares low-frequency exposure shape; the second term preserves local spatial structure. In our implementation the low-pass kernel size is 7 and $\beta=0.1$; the default P3c setting uses $e\_shape=0.05$.
+
+\subsection{UEFB-G: gauge-controlled evaluation}
+
+We distinguish two kinds of metrics. Output-only metrics can be applied to any enhancement method, including black-box baselines: PSNR, SSIM, local exposure error, over/under exposure ratio, and identity drop. Internal-field metrics apply only to methods that explicitly predict an exposure field:
+\begin{align}
+\mathrm{S\_MAE} &= \|S(\hat{E}) - S(E^*)\|_1, \\
+\mathrm{Gauge\_MAE} &= |\mu(\hat{E}) - \mu(E^*)|, \\
+\mathrm{S\_corr} &= \mathrm{corr}(S(\hat{E}), S(E^*)).
+\end{align}
+Black-box methods such as Retinexformer, Zero-DCE++, and KinD++ are therefore compared only on output metrics; their internal-field metrics are marked N/A rather than imputed.
+
+To verify that these metrics separate error types, we construct gauge perturbations on UEFB-G targets: global shifts $E'=E+c$, zero-mean local distortions $E'=E+\delta(x)$ with $\mathrm{mean}(\delta)=0$, and mixed distortions $E'=E+c+\delta(x)$. A correct gauge-controlled metric should ignore the first perturbation for shape evaluation but penalize the second.
+
+\subsection{Recoverability risk as a diagnostic probe}
+
+Finally, we audit recoverability without reviving the DGB router. For each local patch, we define a harmful-enhancement label by comparing the local MSE of the enhanced output to the input. A patch is harmful if enhancement increases local error relative to the low input. We train a lightweight logistic probe using low-image statistics, predicted output statistics, gate/recoverability proxies, exposure magnitude, and saturation proxy. This probe is not a method module; it measures whether recoverability risk is predictable and calibrated. In the formal run, the probe reaches AUC around 0.766 but ECE around 0.281, so we treat recoverability as a diagnostic signal rather than a solved contribution.

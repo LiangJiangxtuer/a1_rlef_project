@@ -1,0 +1,126 @@
++ /home/user/miniconda3/envs/cutler_dinov3/bin/python scripts/train.py --config /home/user/a1_rlef_project/configs/p3_formal/p3formal_m5_recoverability_q.yml --output_dir /home/user/a1_rlef_project/experiments/p3formal_m5_recoverability_q_seed3407 --device cuda --max_steps 1000
+{"step": 1, "loss": 0.4473636746406555, "rec": 0.29811176657676697, "phys": 0.19291238486766815, "poisson": 0.17316386103630066, "gauge": 0.9373301267623901, "id": 0.012578670866787434, "gate": 0.31298890709877014, "q": 0.42242324352264404, "wtv": 0.1482030749320984}
+{"step": 100, "loss": 0.2088438868522644, "rec": 0.15845198929309845, "phys": 0.15180255472660065, "poisson": 0.06734392046928406, "gauge": 0.15466447174549103, "id": 0.014811565168201923, "gate": 0.25380799174308777, "q": 0.11673585325479507, "wtv": 0.054037272930145264}
+{"step": 200, "loss": 0.20945946872234344, "rec": 0.15084922313690186, "phys": 0.13252931833267212, "poisson": 0.05994867533445358, "gauge": 0.25120267271995544, "id": 0.019942954182624817, "gate": 0.37773776054382324, "q": 0.08619213104248047, "wtv": 0.04678479954600334}
+{"step": 300, "loss": 0.2369963824748993, "rec": 0.1815970242023468, "phys": 0.12379326671361923, "poisson": 0.053475454449653625, "gauge": 0.266462504863739, "id": 0.004162394441664219, "gate": 0.27255576848983765, "q": 0.05590956285595894, "wtv": 0.04288884997367859}
+{"step": 400, "loss": 0.2104864865541458, "rec": 0.16453996300697327, "phys": 0.12181244790554047, "poisson": 0.04189736023545265, "gauge": 0.1885787844657898, "id": 0.009793328121304512, "gate": 0.27743256092071533, "q": 0.015546130947768688, "wtv": 0.03332311660051346}
+{"step": 500, "loss": 0.19553697109222412, "rec": 0.15196962654590607, "phys": 0.11877670884132385, "poisson": 0.03102078288793564, "gauge": 0.17364299297332764, "id": 0.015397385694086552, "gate": 0.24282902479171753, "q": 0.06242850050330162, "wtv": 0.021120570600032806}
+{"step": 600, "loss": 0.2049674391746521, "rec": 0.15422271192073822, "phys": 0.12057651579380035, "poisson": 0.01698288507759571, "gauge": 0.2745567858219147, "id": 0.004360746592283249, "gate": 0.1863151490688324, "q": 0.018675677478313446, "wtv": 0.008320242166519165}
+{"step": 700, "loss": 0.21998074650764465, "rec": 0.16085496544837952, "phys": 0.11685445159673691, "poisson": 0.019759269431233406, "gauge": 0.35345351696014404, "id": 0.003491735551506281, "gate": 0.22361069917678833, "q": 0.028416356071829796, "wtv": 0.007695184089243412}
+{"step": 800, "loss": 0.16647307574748993, "rec": 0.12826457619667053, "phys": 0.10460074245929718, "poisson": 0.01648973673582077, "gauge": 0.1634267121553421, "id": 0.009651124477386475, "gate": 0.24791185557842255, "q": 0.004562750458717346, "wtv": 0.00543524045497179}
+{"step": 900, "loss": 0.18372842669487, "rec": 0.14236091077327728, "phys": 0.11306589841842651, "poisson": 0.01424289308488369, "gauge": 0.18559566140174866, "id": 0.004725301638245583, "gate": 0.22647559642791748, "q": 0.021790210157632828, "wtv": 0.0038061169907450676}
+{"step": 1000, "loss": 0.14417938888072968, "rec": 0.10825265944004059, "phys": 0.09169095754623413, "poisson": 0.011752364225685596, "gauge": 0.15963807702064514, "id": 0.007746746297925711, "gate": 0.26582738757133484, "q": 0.004861010238528252, "wtv": 0.0026480043306946754}
+{
+  "DONE": true,
+  "run_id": "p3formal_m5_recoverability_q_seed3407",
+  "command": "scripts/train.py --config /home/user/a1_rlef_project/configs/p3_formal/p3formal_m5_recoverability_q.yml --output_dir /home/user/a1_rlef_project/experiments/p3formal_m5_recoverability_q_seed3407 --device cuda --max_steps 1000",
+  "steps": 1000,
+  "elapsed_sec": 145.54901885986328,
+  "config": {
+    "seed": 3407,
+    "protocol": {
+      "stage": "P3 formal",
+      "variant_id": "M5",
+      "variant_name": "recoverability_q",
+      "notes": "UEFB-v2 1000-step single-seed M0-M5 mechanism ablation; paired real/synthetic tests are routing diagnostics."
+    },
+    "model": {
+      "base_channels": 24,
+      "e_max": 3.5,
+      "exposure_branch": true,
+      "adaptive_gauge": true,
+      "fixed_gauge": null,
+      "physics_branch": true,
+      "gate_branch": true,
+      "q_branch": true
+    },
+    "training": {
+      "batch_size": 8,
+      "max_steps": 1000,
+      "lr": 0.0002,
+      "weight_decay": 0.0001,
+      "crop_size": 128,
+      "log_every": 100,
+      "num_workers": 0,
+      "grad_clip": 1.0
+    },
+    "eval": {
+      "batch_size": 1
+    },
+    "data": {
+      "train": {
+        "type": "uefb",
+        "root": "/home/user/a1_rlef_project/data/UEFB-v2/train",
+        "crop_size": 128,
+        "augment": true,
+        "max_images": null
+      },
+      "val": {
+        "type": "uefb",
+        "root": "/home/user/a1_rlef_project/data/UEFB-v2/test",
+        "crop_size": null,
+        "augment": false,
+        "max_images": null
+      }
+    },
+    "loss": {
+      "rec": 1.0,
+      "phys": 0.15,
+      "poisson": 0.05,
+      "gauge": 0.1,
+      "id": 0.02,
+      "gate": 0.02,
+      "q": 0.02,
+      "wtv": 0.02
+    }
+  },
+  "metrics": {
+    "psnr": 18.53547646522522,
+    "ssim": 0.8151923013925553,
+    "lee": 0.25560849914327266,
+    "nai": 1.880999563574791,
+    "input_psnr": 12.995622906684876,
+    "identity_drop": 5.539853556632996,
+    "q_ece": 0.38886986224353315,
+    "over": 1.871744879281323e-06,
+    "under": 4.9865723475704724e-05,
+    "E_MAE": 0.28529865058604625,
+    "E_MAE_aligned": 0.22553707040753215,
+    "E_corr": -0.24273958566831424
+  },
+  "checkpoint": "/home/user/a1_rlef_project/experiments/p3formal_m5_recoverability_q_seed3407/checkpoints/last.pth"
+}
++ /home/user/miniconda3/envs/cutler_dinov3/bin/python scripts/eval_paired.py --config /home/user/a1_rlef_project/configs/p3_formal/p3formal_m5_recoverability_q.yml --checkpoint /home/user/a1_rlef_project/experiments/p3formal_m5_recoverability_q_seed3407/checkpoints/last.pth --low_dir /home/user/a1_rlef_project/data/LOL-v2/Real_captured/Test/Low --high_dir /home/user/a1_rlef_project/data/LOL-v2/Real_captured/Test/Normal --output_dir /home/user/a1_rlef_project/experiments/p3formal_m5_recoverability_q_seed3407/paired_eval/real --device cuda
+Traceback (most recent call last):
+  File "/home/user/a1_rlef_project/scripts/eval_paired.py", line 8, in <module>
+    from scripts.train import build_model, evaluate
+ModuleNotFoundError: No module named 'scripts.train'
+RESUME: found existing checkpoint and UEFB metrics under /home/user/a1_rlef_project/experiments/p3formal_m5_recoverability_q_seed3407
++ /home/user/miniconda3/envs/cutler_dinov3/bin/python scripts/eval_paired.py --config /home/user/a1_rlef_project/configs/p3_formal/p3formal_m5_recoverability_q.yml --checkpoint /home/user/a1_rlef_project/experiments/p3formal_m5_recoverability_q_seed3407/checkpoints/last.pth --low_dir /home/user/a1_rlef_project/data/LOL-v2/Real_captured/Test/Low --high_dir /home/user/a1_rlef_project/data/LOL-v2/Real_captured/Test/Normal --output_dir /home/user/a1_rlef_project/experiments/p3formal_m5_recoverability_q_seed3407/paired_eval/real --device cuda
+/home/user/a1_rlef_project/scripts/eval_paired.py:18: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model=build_model(cfg).to(device); ckpt=torch.load(args.checkpoint,map_location=device); model.load_state_dict(ckpt['model'])
+{
+  "psnr": 17.02892604827881,
+  "ssim": 0.6702239009737968,
+  "lee": 0.5741163089871406,
+  "nai": 2.4027152240276335,
+  "input_psnr": 9.718215217590332,
+  "identity_drop": 7.310710835456848,
+  "q_ece": 0.6353523164987565,
+  "over": 1.469444460781233e-05,
+  "under": 0.0
+}
++ /home/user/miniconda3/envs/cutler_dinov3/bin/python scripts/eval_paired.py --config /home/user/a1_rlef_project/configs/p3_formal/p3formal_m5_recoverability_q.yml --checkpoint /home/user/a1_rlef_project/experiments/p3formal_m5_recoverability_q_seed3407/checkpoints/last.pth --low_dir /home/user/a1_rlef_project/data/LOL-v2/Synthetic/Test/Low --high_dir /home/user/a1_rlef_project/data/LOL-v2/Synthetic/Test/Normal --output_dir /home/user/a1_rlef_project/experiments/p3formal_m5_recoverability_q_seed3407/paired_eval/synthetic --device cuda
+/home/user/a1_rlef_project/scripts/eval_paired.py:18: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model=build_model(cfg).to(device); ckpt=torch.load(args.checkpoint,map_location=device); model.load_state_dict(ckpt['model'])
+{
+  "psnr": 13.777916941642761,
+  "ssim": 0.6127323251962662,
+  "lee": 0.7389364942722022,
+  "nai": 1.1829224264621734,
+  "input_psnr": 11.220927743911743,
+  "identity_drop": 2.556989197731018,
+  "q_ece": 0.5643757919967175,
+  "over": 1.7338505585939856e-05,
+  "under": 1.1754918978112983e-06
+}

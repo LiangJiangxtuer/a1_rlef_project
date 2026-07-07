@@ -1,0 +1,47 @@
+{
+  "generated_at": "2026-07-04T11:07:00.640386+00:00",
+  "phase": "P2E image-stat gate prior balance",
+  "runs": [
+    {
+      "variant_id": "P2E_ESHAPE010_GATEPRI002",
+      "intervention": "image_stat_gate_prior",
+      "gate_prior": 0.02,
+      "run_dir": "/home/user/a1_rlef_project/experiments/p2e_p2e_eshape010_gatepri002_eshape010_image_stat_gate_prior002_seed3407",
+      "config": "/home/user/a1_rlef_project/configs/dgb_rlef/p2e_p2e_eshape010_gatepri002_eshape010_image_stat_gate_prior002.yml",
+      "log": "/home/user/a1_rlef_project/logs/p2e_gate_prior_balance/p2e_p2e_eshape010_gatepri002_eshape010_image_stat_gate_prior002.log",
+      "uefb_psnr": 17.849626226425173,
+      "real_psnr": 19.487063598632812,
+      "synthetic_psnr": 18.683455123901368,
+      "uefb_E_corr": 0.4927912850677967,
+      "real_E_corr": 0.6657541596889496,
+      "synthetic_E_corr": 0.8042544466257096
+    },
+    {
+      "variant_id": "P2E_ESHAPE010_GATEPRI005",
+      "intervention": "image_stat_gate_prior",
+      "gate_prior": 0.05,
+      "run_dir": "/home/user/a1_rlef_project/experiments/p2e_p2e_eshape010_gatepri005_eshape010_image_stat_gate_prior005_seed3407",
+      "config": "/home/user/a1_rlef_project/configs/dgb_rlef/p2e_p2e_eshape010_gatepri005_eshape010_image_stat_gate_prior005.yml",
+      "log": "/home/user/a1_rlef_project/logs/p2e_gate_prior_balance/p2e_p2e_eshape010_gatepri005_eshape010_image_stat_gate_prior005.log",
+      "uefb_psnr": 17.660460554122924,
+      "real_psnr": 19.789192361831667,
+      "synthetic_psnr": 18.247637243270873,
+      "uefb_E_corr": 0.45141718269651754,
+      "real_E_corr": 0.7005786281824112,
+      "synthetic_E_corr": 0.8150944590568543
+    }
+  ],
+  "summary_csv": "/home/user/a1_rlef_project/results/tables/p2e_gate_prior_balance_summary.csv",
+  "summary_json": "/home/user/a1_rlef_project/results/tables/p2e_gate_prior_balance_summary.json",
+  "route_diagnostics_json": "/home/user/a1_rlef_project/results/tables/p2e_gate_prior_balance_route_diagnostics.json",
+  "report": "/home/user/a1_rlef_project/results/hermes_audit/reports/P2E_GATE_PRIOR_BALANCE_REPORT.md",
+  "promotion": [
+    false,
+    false
+  ],
+  "decision": "no_go_for_multiseed_promotion",
+  "best_synthetic_variant": "P2E_ESHAPE010_GATEPRI002",
+  "next_recommendation": "P2F route-quality coupling or stop DGB branch",
+  "full_suite": "........................................................................ [ 67%]\n..................................                                       [100%]\n106 passed in 19.66s",
+  "compileall": "passed (no output)"
+}

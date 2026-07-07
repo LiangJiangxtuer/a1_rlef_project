@@ -1,0 +1,56 @@
+{
+  "project_root": "/home/user/a1_rlef_project",
+  "prompt_path": "/home/user/下载/prompt.txt",
+  "prompt_exists": true,
+  "a1_qa_path": "/home/user/下载/A1_QA_audit_DGB_RLEF_experiment_guidance_20260702.md",
+  "a1_qa_exists": true,
+  "python_executable": "/home/user/miniconda3/envs/cutler_dinov3/bin/python",
+  "phase0_python": "/home/user/miniconda3/envs/cutler_dinov3/bin/python",
+  "python_version": "3.11.15 (main, Mar 11 2026, 17:20:07) [GCC 14.3.0]",
+  "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.35",
+  "torch_version": "2.5.1+cu124",
+  "cuda_available": true,
+  "torch_cuda": "12.4",
+  "device": "cuda",
+  "git_head": "b6d24a72347af86fca885bed9124be759552b5f8",
+  "git_status_short": "## main\n M docs/CLAIM_LEDGER.md\n M scripts/eval_paired.py\n M scripts/eval_uefb.py\n M scripts/train.py\n M src/rlef/datasets/paired_rgb_dataset.py\n M src/rlef/datasets/uefb_dataset.py\n M src/rlef/losses/total_loss.py\n M src/rlef/models/rlef_former.py\n M tests/test_model_and_losses_contract.py\n M tests/test_training_smoke_contract.py\n?? configs/p3_formal/\n?? configs/p3b_joint/\n?? configs/p3c_multiseed_sweep/\n?? configs/p3d_e010_multiseed/\n?? configs/p5_retinex_distill/\n?? configs/p5_retinex_teacher/\n?? configs/p5b_domain_distill/\n?? configs/p6_structural_backbone/\n?? configs/p6b_synprotect/\n?? configs/p6c_gateprotect/\n?? configs/p7_domainhead/\n?? configs/p7b_realanchor/\n?? configs/p7c_realanchor_fine/\n?? docs/P2_P3_FORMAL_UEFB_ABLATION_REPORT.md\n?? docs/P3B_JOINT_TRAINING_REPORT.md\n?? docs/P3C_MULTISEED_SWEEP_REPORT.md\n?? docs/P3D_E010_MULTISEED_REPORT.md\n?? docs/P4_OFFICIAL_BASELINES_REPORT.md\n?? docs/P5B_DOMAIN_DISTILLATION_REPORT.md\n?? docs/P5_RETINEXFORMER_DISTILLATION_REPORT.md\n?? docs/P6B_SYNPROTECT_REPORT.md\n?? docs/P6C_GATEPROTECT_REPORT.md\n?? docs/P6_STRUCTURAL_BACKBONE_REPORT.md\n?? docs/P7B_REALANCHOR_REPORT.md\n?? docs/P7C_REALANCHOR_FINE_REPORT.md\n?? docs/P7_DOMAINHEAD_REPORT.md\n?? external_baselines/\n?? logs/p3_formal/\n?? logs/p3b_joint/\n?? logs/p3c_multiseed_sweep/\n?? logs/p3d_e010_multiseed/\n?? logs/p4_kindpp_gdown.log\n?? logs/p4_kindpp_real.log\n?? logs/p4_kindpp_synthetic.log\n?? logs/p4_kindpp_unzip.log\n?? logs/p4_official_baselines_eval.log\n?? logs/p4_retinexformer_real.log\n?? logs/p4_retinexformer_synthetic.log\n?? logs/p5_retinex_distill/\n?? logs/p5_retinex_teacher/\n?? logs/p5b_domain_distill/\n?? logs/p6_structural_backbone/\n?? logs/p6b_synprotect/\n?? logs/p6c_gateprotect/\n?? logs/p7_domainhead/\n?? logs/p7b_realanchor/\n?? logs/p7c_realanchor_fine/\n?? results/hermes_audit/\n?? results/tables/p2_uefb_v2_generation_summary.json\n?? results/tables/p3_formal_uefb_m0_m5_summary.csv\n?? results/tables/p3_formal_uefb_m0_m5_summary.json\n?? results/tables/p3b_joint_m4_summary.csv\n?? results/tables/p3b_joint_m4_summary.json\n?? results/tables/p3c_multiseed_sweep_aggregate.json\n?? results/tables/p3c_multiseed_sweep_summary.csv\n?? results/tables/p3c_multiseed_sweep_summary.json\n?? results/tables/p3d_e010_multiseed_aggregate.json\n?? results/tables/p3d_e010_multiseed_summary.csv\n?? results/tables/p3d_e010_multiseed_summary.json\n?? results/tables/p4_details/\n?? results/tables/p4_official_baselines_summary.csv\n?? results/tables/p4_official_baselines_summary.json\n?? results/tables/p5_retinex_distill_summary.csv\n?? results/tables/p5_retinex_distill_summary.json\n?? results/tables/p5b_domain_distill_summary.csv\n?? results/tables/p5b_domain_distill_summary.json\n?? results/tables/p6_structural_backbone_summary.csv\n?? results/tables/p6_structural_backbone_summary.json\n?? results/tables/p6b_synprotect_summary.csv\n?? results/tables/p6b_synprotect_summary.json\n?? results/tables/p6c_gateprotect_summary.csv\n?? results/tables/p6c_gateprotect_summary.json\n?? results/tables/p7_domainhead_summary.csv\n?? results/tables/p7_domainhead_summary.json\n?? results/tables/p7b_realanchor_summary.csv\n?? results/tables/p7b_realanchor_summary.json\n?? results/tables/p7c_realanchor_fine_summary.csv\n?? results/tables/p7c_realanchor_fine_summary.json\n?? scripts/run_p3_formal.py\n?? scripts/run_p3b_joint.py\n?? scripts/run_p3c_multiseed_sweep.py\n?? scripts/run_p3d_e010_multiseed.py\n?? scripts/run_p4_official_baselines.py\n?? scripts/run_p5_retinex_distill.py\n?? scripts/run_p5b_domain_distill.py\n?? scripts/run_p6_structural_backbone.py\n?? scripts/run_p6b_synprotect.py\n?? scripts/run_p6c_gateprotect.py\n?? scripts/run_p7_domainhead.py\n?? scripts/run_p7b_realanchor.py\n?? scripts/run_p7c_realanchor_fine.py\n?? tests/test_eval_cli_contract.py\n?? tests/test_p3_formal_runner_contract.py\n?? tests/test_p3b_joint_runner_contract.py\n?? tests/test_p3c_runner_contract.py\n?? tests/test_p3d_runner_contract.py\n?? tests/test_p4_official_baselines_contract.py\n?? tests/test_p5_retinex_distill_runner_contract.py\n?? tests/test_p5b_domain_distill_runner_contract.py\n?? tests/test_p6_structural_backbone_runner_contract.py\n?? tests/test_p6b_synprotect_runner_contract.py\n?? tests/test_p6c_gateprotect_runner_contract.py\n?? tests/test_p7_domainhead_runner_contract.py\n?? tests/test_p7b_realanchor_runner_contract.py\n?? tests/test_p7c_realanchor_fine_runner_contract.py\n?? tests/test_paired_dataset_contract.py\n?? tests/test_uefb_dataset_contract.py",
+  "nvidia_smi": "0, NVIDIA GeForce RTX 4090, 529 MiB, 23553 MiB\n1, NVIDIA GeForce RTX 4090, 18 MiB, 24064 MiB",
+  "data": {
+    "uefb": {
+      "path": "/home/user/a1_rlef_project/data/UEFB-v2/test",
+      "exists": true,
+      "image_count": 2500
+    },
+    "real_low": {
+      "path": "/home/user/a1_rlef_project/data/LOL-v2/Real_captured/Test/Low",
+      "exists": true,
+      "image_count": 100
+    },
+    "real_high": {
+      "path": "/home/user/a1_rlef_project/data/LOL-v2/Real_captured/Test/Normal",
+      "exists": true,
+      "image_count": 100
+    },
+    "synthetic_low": {
+      "path": "/home/user/a1_rlef_project/data/LOL-v2/Synthetic/Test/Low",
+      "exists": true,
+      "image_count": 100
+    },
+    "synthetic_high": {
+      "path": "/home/user/a1_rlef_project/data/LOL-v2/Synthetic/Test/Normal",
+      "exists": true,
+      "image_count": 100
+    },
+    "lol_v1": {
+      "path": "/home/user/a1_rlef_project/data/LOL-v1",
+      "exists": true,
+      "image_count": 1000
+    }
+  },
+  "scripts": {
+    "train": "/home/user/a1_rlef_project/scripts/train.py",
+    "eval_paired": "/home/user/a1_rlef_project/scripts/eval_paired.py",
+    "eval_uefb": "/home/user/a1_rlef_project/scripts/eval_uefb.py",
+    "p4_official_baselines": "/home/user/a1_rlef_project/scripts/run_p4_official_baselines.py"
+  }
+}

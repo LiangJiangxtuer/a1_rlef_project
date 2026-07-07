@@ -61,4 +61,4 @@ class UEFBPairedDataset(Dataset):
         q = _load_map(self.root / 'Q_gt' / f'{name}.png').clamp(0, 1)
         low, high, e, a, q = self._crop(low, high, e, a, q)
         low, high, e, a, q = self._aug(low, high, e, a, q)
-        return {'low': low.contiguous(), 'high': high.contiguous(), 'E_gt': e.contiguous(), 'A_gt': a.contiguous(), 'Q_gt': q.contiguous(), 'name': name, 'dataset': 'UEFB'}
+        return {'low': low.contiguous(), 'high': high.contiguous(), 'teacher': high.contiguous(), 'E_gt': e.contiguous(), 'A_gt': a.contiguous(), 'Q_gt': q.contiguous(), 'name': name, 'dataset': 'UEFB'}

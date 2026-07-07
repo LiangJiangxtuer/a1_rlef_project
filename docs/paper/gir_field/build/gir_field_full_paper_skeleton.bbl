@@ -1,0 +1,57 @@
+\begin{thebibliography}{1}
+
+\bibitem{benjamini1995fdr}
+Yoav Benjamini and Yosef Hochberg.
+\newblock Controlling the false discovery rate: A practical and powerful
+  approach to multiple testing.
+\newblock {\em Journal of the Royal Statistical Society Series B: Statistical
+  Methodology}, 57(1):289--300, 1995.
+
+\bibitem{cai2023retinexformer}
+Yuanhao Cai, Hao Bian, Jing Lin, Haoqian Wang, Radu Timofte, and Yulun Zhang.
+\newblock Retinexformer: One-stage retinex-based transformer for low-light
+  image enhancement.
+\newblock In {\em Proceedings of the IEEE/CVF International Conference on
+  Computer Vision}, pages 12504--12513, 2023.
+
+\bibitem{chen2018sid}
+Chen Chen, Qifeng Chen, Jia Xu, and Vladlen Koltun.
+\newblock Learning to see in the dark.
+\newblock In {\em Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition}, pages 3291--3300, 2018.
+
+\bibitem{guo2020zerodce}
+Chunle Guo, Chongyi Li, Jichang Guo, Chen~Change Loy, Junhui Hou, Sam Kwong,
+  and Runmin Cong.
+\newblock Zero-reference deep curve estimation for low-light image enhancement.
+\newblock In {\em Proceedings of the IEEE/CVF Conference on Computer Vision and
+  Pattern Recognition}, pages 1780--1789, 2020.
+
+\bibitem{land1971retinex}
+Edwin~H. Land and John~J. McCann.
+\newblock Lightness and retinex theory.
+\newblock {\em Journal of the Optical Society of America}, 61(1):1--11, 1971.
+
+\bibitem{li2021zerodcepp}
+Chongyi Li, Chunle Guo, and Chen~Change Loy.
+\newblock Learning to enhance low-light image via zero-reference deep curve
+  estimation.
+\newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  2021.
+
+\bibitem{wei2018deepretinex}
+Chen Wei, Wenjing Wang, Wenhan Yang, and Jiaying Liu.
+\newblock Deep retinex decomposition for low-light enhancement, 2018.
+
+\bibitem{wilcoxon1945ranking}
+Frank Wilcoxon.
+\newblock Individual comparisons by ranking methods.
+\newblock {\em Biometrics Bulletin}, 1(6):80--83, 1945.
+
+\bibitem{zhang2019kind}
+Yonghua Zhang, Jiawan Zhang, and Xiaojie Guo.
+\newblock Kindling the darkness: A practical low-light image enhancer.
+\newblock In {\em Proceedings of the 27th ACM International Conference on
+  Multimedia}, 2019.
+
+\end{thebibliography}

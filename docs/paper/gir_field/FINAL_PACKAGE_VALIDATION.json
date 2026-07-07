@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "cited_key_count": 25,
+  "unused_bib_keys": [],
+  "appendix_variant_rows": 32,
+  "appendix_family_rows": 9,
+  "pdfs": {
+    "docs/paper/gir_field/build_article_v3/gir_field_full_paper_skeleton.pdf": {
+      "bytes": 327570,
+      "sha256": "98286fd02085028d0c605277f061bfbd0a247d98837d000d01f775eeca685270"
+    },
+    "docs/paper/gir_field/build_ieee_v3/gir_field_ieee_conference.pdf": {
+      "bytes": 313677,
+      "sha256": "e79b896d1b8306c03af21e6bc354030c9bd49bf0818813774747b8435ed8c34f"
+    }
+  },
+  "compile_logs": {
+    "docs/paper/gir_field/build_article_v3/tectonic_article_v3_compile.log": {
+      "bytes": 1483,
+      "sha256": "af2b6cf2de040968396d66259a39b294e91e569a73cbe41a4748991c853c86cd"
+    },
+    "docs/paper/gir_field/build_ieee_v3/tectonic_ieee_v3_compile.log": {
+      "bytes": 3429,
+      "sha256": "d9b35012ba74e8188f2654252565f6d953f18627793ba2644bcd7d1326c8e348"
+    }
+  }
+}

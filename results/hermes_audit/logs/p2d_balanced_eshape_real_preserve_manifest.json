@@ -1,0 +1,47 @@
+{
+  "generated_at": "2026-07-03T07:51:40.023387+00:00",
+  "phase": "P2D balanced e_shape010 real preservation",
+  "runs": [
+    {
+      "variant_id": "P2D_ESHAPE010_STRUCT002",
+      "intervention": "generic_structure_preserve",
+      "structure_preserve": 0.02,
+      "run_dir": "/home/user/a1_rlef_project/experiments/p2d_p2d_eshape010_struct002_eshape010_structure_preserve002_seed3407",
+      "config": "/home/user/a1_rlef_project/configs/dgb_rlef/p2d_p2d_eshape010_struct002_eshape010_structure_preserve002.yml",
+      "log": "/home/user/a1_rlef_project/logs/p2d_balanced_eshape_real_preserve/p2d_p2d_eshape010_struct002_eshape010_structure_preserve002.log",
+      "uefb_psnr": 17.73330606842041,
+      "real_psnr": 19.781454792022704,
+      "synthetic_psnr": 18.541954746246336,
+      "uefb_E_corr": 0.4752013681601966,
+      "real_E_corr": 0.7150781226158142,
+      "synthetic_E_corr": 0.8103042766451836
+    },
+    {
+      "variant_id": "P2D_ESHAPE010_STRUCT005",
+      "intervention": "generic_structure_preserve",
+      "structure_preserve": 0.05,
+      "run_dir": "/home/user/a1_rlef_project/experiments/p2d_p2d_eshape010_struct005_eshape010_structure_preserve005_seed3407",
+      "config": "/home/user/a1_rlef_project/configs/dgb_rlef/p2d_p2d_eshape010_struct005_eshape010_structure_preserve005.yml",
+      "log": "/home/user/a1_rlef_project/logs/p2d_balanced_eshape_real_preserve/p2d_p2d_eshape010_struct005_eshape010_structure_preserve005.log",
+      "uefb_psnr": 17.863255617141725,
+      "real_psnr": 19.54091272354126,
+      "synthetic_psnr": 18.398645191192628,
+      "uefb_E_corr": 0.4718378476498183,
+      "real_E_corr": 0.6560977983474732,
+      "synthetic_E_corr": 0.7844407498836518
+    }
+  ],
+  "summary_csv": "/home/user/a1_rlef_project/results/tables/p2d_balanced_eshape_real_preserve_summary.csv",
+  "summary_json": "/home/user/a1_rlef_project/results/tables/p2d_balanced_eshape_real_preserve_summary.json",
+  "route_diagnostics_json": "/home/user/a1_rlef_project/results/tables/p2d_balanced_eshape_real_preserve_route_diagnostics.json",
+  "report": "/home/user/a1_rlef_project/results/hermes_audit/reports/P2D_BALANCED_ESHAPE_REAL_PRESERVE_REPORT.md",
+  "promotion": [
+    false,
+    false
+  ],
+  "decision": "no_go_for_multiseed_promotion",
+  "best_uefb_variant": "P2D_ESHAPE010_STRUCT005",
+  "next_recommendation": "P2E image-stat-conditioned gate prior/calibration",
+  "full_suite": "........................................................................ [ 71%]\n.............................                                            [100%]\n101 passed in 21.16s",
+  "compileall": "passed (no output)"
+}

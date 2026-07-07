@@ -1,0 +1,49 @@
+seed: 3407
+protocol:
+  stage: P3 formal
+  variant_id: M5
+  variant_name: recoverability_q
+  notes: UEFB-v2 1000-step single-seed M0-M5 mechanism ablation; paired real/synthetic
+    tests are routing diagnostics.
+model:
+  base_channels: 24
+  e_max: 3.5
+  exposure_branch: true
+  adaptive_gauge: true
+  fixed_gauge: null
+  physics_branch: true
+  gate_branch: true
+  q_branch: true
+training:
+  batch_size: 8
+  max_steps: 1000
+  lr: 0.0002
+  weight_decay: 0.0001
+  crop_size: 128
+  log_every: 100
+  num_workers: 0
+  grad_clip: 1.0
+eval:
+  batch_size: 1
+data:
+  train:
+    type: uefb
+    root: /home/user/a1_rlef_project/data/UEFB-v2/train
+    crop_size: 128
+    augment: true
+    max_images: null
+  val:
+    type: uefb
+    root: /home/user/a1_rlef_project/data/UEFB-v2/test
+    crop_size: null
+    augment: false
+    max_images: null
+loss:
+  rec: 1.0
+  phys: 0.15
+  poisson: 0.05
+  gauge: 0.1
+  id: 0.02
+  gate: 0.02
+  q: 0.02
+  wtv: 0.02

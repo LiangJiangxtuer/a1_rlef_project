@@ -1,0 +1,223 @@
+{
+  "pipeline": "GIR-Field formal full frozen-evidence protocol",
+  "created_at_unix": 1783327928.5426111,
+  "protocol": {
+    "name": "GIR-Field formal full frozen-evidence protocol",
+    "claim_scope": "formal-full-frozen-evidence",
+    "no_main_training": true,
+    "dgb_revival_allowed": false,
+    "uses_frozen_checkpoints": true,
+    "max_images_per_split": null,
+    "bootstrap_samples": 5000,
+    "risk_patch_size": 32,
+    "risk_max_patches": 20000,
+    "lpips_policy": "not_computed_if_package_missing; do_not_fabricate",
+    "brisque_policy": "appendix_only_if_available; do_not_fabricate",
+    "external_baseline_policy": "reuse locally verified Retinexformer/Zero-DCE++/KinD++ artifacts; no web SOTA update in relaxed run",
+    "dataset_counts": {
+      "uefb": 500,
+      "real": 100,
+      "synthetic": 100,
+      "total_per_variant": 700,
+      "expected_per_image_rows_for_9_variants": 6300
+    },
+    "formal_scope_note": "Full local UEFB-v2 test, LOL-v2-real test, and LOL-v2-synthetic test; frozen checkpoints only; no new model training."
+  },
+  "phases": [
+    {
+      "id": "N0",
+      "name": "evidence_cleaning_and_freeze"
+    },
+    {
+      "id": "N1",
+      "name": "p3c_m4j_m4j_es_statistical_reaudit"
+    },
+    {
+      "id": "N2",
+      "name": "uefbg_gauge_perturbation_benchmark"
+    },
+    {
+      "id": "N3",
+      "name": "external_baseline_registry_and_output_only_eval"
+    },
+    {
+      "id": "N4",
+      "name": "recoverability_risk_calibration_probe"
+    },
+    {
+      "id": "N5",
+      "name": "paper_grade_tables_figures_claim_report"
+    }
+  ],
+  "file_count": 28,
+  "files": [
+    {
+      "key": "source_copy",
+      "relative_path": "docs/source/A1_after_master_prompt_QA_experiment_audit_next_top_tier_innovations_20260706.md",
+      "size_bytes": 32916,
+      "sha256": "cc10a4d4835f02aa824774a1f445f031f7bcee88a548558baf6e29c27484e81e"
+    },
+    {
+      "key": "execution_plan_md",
+      "relative_path": "docs/GIR_FIELD_FORMAL_PROTOCOL_PLAN_ZH.md",
+      "size_bytes": 1000,
+      "sha256": "6f3bdf416275d18af25f0b26732ad4fc666db544f09294bcc4f1423fbc951293"
+    },
+    {
+      "key": "evidence_manifest_csv",
+      "relative_path": "results/girfield_formal/N0_evidence/evidence_manifest.csv",
+      "size_bytes": 5189,
+      "sha256": "352848970e28df57c4349638506c0740baea414b2df3aa7e87f22086cca22aa7"
+    },
+    {
+      "key": "evidence_manifest_json",
+      "relative_path": "results/girfield_formal/N0_evidence/evidence_manifest.json",
+      "size_bytes": 8881,
+      "sha256": "a78c3bd9dcf388f516f8c2854572b9bad023f69668bc78c01367a43426222ae6"
+    },
+    {
+      "key": "claim_ledger_csv",
+      "relative_path": "results/girfield_formal/N0_evidence/claim_ledger.csv",
+      "size_bytes": 1230,
+      "sha256": "1b71b3da47ad805719a6375313d12ffc9baab0781473d914d28f1751ac942210"
+    },
+    {
+      "key": "claim_ledger_json",
+      "relative_path": "results/girfield_formal/N0_evidence/claim_ledger.json",
+      "size_bytes": 1858,
+      "sha256": "e2f5ff67a8fb5ade3a37c9b32638d241f759c1f806fa5fb15e5bb94e509c250d"
+    },
+    {
+      "key": "per_image_csv",
+      "relative_path": "results/girfield_formal/N1_statistics/per_image_metrics.csv",
+      "size_bytes": 2615962,
+      "sha256": "9d7653a7c1360943724f99148342e6bff0877ae87788edd56d9e0f1258591aae"
+    },
+    {
+      "key": "per_image_json",
+      "relative_path": "results/girfield_formal/N1_statistics/per_image_metrics.json",
+      "size_bytes": 5434657,
+      "sha256": "f58a29d065983f1486b0d40087fd07e1742a999387cda5d66dbebd7c43d8b3de"
+    },
+    {
+      "key": "summary_csv",
+      "relative_path": "results/girfield_formal/N1_statistics/variant_dataset_summary.csv",
+      "size_bytes": 16390,
+      "sha256": "08aef435edb7c032742a183fbe6714cfbe69f3fdef1e56943961179599b41895"
+    },
+    {
+      "key": "summary_json",
+      "relative_path": "results/girfield_formal/N1_statistics/variant_dataset_summary.json",
+      "size_bytes": 31726,
+      "sha256": "7a218f31f0bb36f9c8e0c7bdbaa0e0f02f776c2d9cd29f8195accd43ef793ac4"
+    },
+    {
+      "key": "stat_tests_csv",
+      "relative_path": "results/girfield_formal/N1_statistics/statistical_tests.csv",
+      "size_bytes": 6397,
+      "sha256": "ef847e394ca90629c01bac2ae003bc16cab795cf66bbddf51011628ba93c2fef"
+    },
+    {
+      "key": "stat_tests_json",
+      "relative_path": "results/girfield_formal/N1_statistics/statistical_tests.json",
+      "size_bytes": 14556,
+      "sha256": "1dd66e17ae86bf5877edb1a62ab0a9e498113ceadf815ae9edcae633a4476ac8"
+    },
+    {
+      "key": "gauge_perturbation_csv",
+      "relative_path": "results/girfield_formal/N2_uefbg/gauge_perturbation_metrics.csv",
+      "size_bytes": 556333,
+      "sha256": "afeca6f2ba3588d0c82e7866ad7363a7c0e3a7a8ddb0977e730c34cf3af7c261"
+    },
+    {
+      "key": "gauge_perturbation_json",
+      "relative_path": "results/girfield_formal/N2_uefbg/gauge_perturbation_metrics.json",
+      "size_bytes": 1128730,
+      "sha256": "e02cbf113a5ec113a9ad93de0547224560ff36d35860ac62850d3ca51e46c9d9"
+    },
+    {
+      "key": "uefbg_metadata_csv",
+      "relative_path": "results/girfield_formal/N2_uefbg/uefbg_metadata.csv",
+      "size_bytes": 60840,
+      "sha256": "9654ccf204a72cc8d4c7d95714ef0bc9bc5a53ef594aa4dd60bb4fca67b501f8"
+    },
+    {
+      "key": "external_registry_csv",
+      "relative_path": "results/girfield_formal/N3_external/external_baseline_registry.csv",
+      "size_bytes": 1975,
+      "sha256": "820512683176e229428a90cc350d9a9e4be23b4eba6400c3c7b91fc8ee43b637"
+    },
+    {
+      "key": "external_registry_json",
+      "relative_path": "results/girfield_formal/N3_external/external_baseline_registry.json",
+      "size_bytes": 3329,
+      "sha256": "4d97794992222571660de8fce68bb637d5edf4343cbac51cbc3fc173238e685b"
+    },
+    {
+      "key": "risk_patch_csv",
+      "relative_path": "results/girfield_formal/N4_risk/risk_patch_dataset.csv",
+      "size_bytes": 3778939,
+      "sha256": "0acb0cbb7a167e5bf401ac85811adeb23f6fdb18d8daa6847570429df72ce0f0"
+    },
+    {
+      "key": "risk_calibration_csv",
+      "relative_path": "results/girfield_formal/N4_risk/risk_calibration_summary.csv",
+      "size_bytes": 730,
+      "sha256": "86d07e0145a8cf3ce253107c3e6a6c923935c7c9d5d637785f0135715cdfc1fc"
+    },
+    {
+      "key": "risk_calibration_json",
+      "relative_path": "results/girfield_formal/N4_risk/risk_calibration_summary.json",
+      "size_bytes": 1172,
+      "sha256": "5361538089c1bd350bb6d179c2eec132ba9802c185109ef576602ecb44795e63"
+    },
+    {
+      "key": "main_table_csv",
+      "relative_path": "results/girfield_formal/N5_paper/girfield_main_table.csv",
+      "size_bytes": 5652,
+      "sha256": "2b0232cdca3f08a2b7e9b28358a1925c37814853d124db957dc0d1e1a86f811f"
+    },
+    {
+      "key": "main_table_json",
+      "relative_path": "results/girfield_formal/N5_paper/girfield_main_table.json",
+      "size_bytes": 13186,
+      "sha256": "2e6c4584a7f1f38210e33589fd578e88fe4c8142b88d627bad678ff1078e4e48"
+    },
+    {
+      "key": "main_table_md",
+      "relative_path": "results/girfield_formal/N5_paper/girfield_main_table.md",
+      "size_bytes": 1161,
+      "sha256": "5de7ad0027d2ac83d36e5564fe6f80a29509092f96298e3fd53674a208482ad5"
+    },
+    {
+      "key": "stat_figure",
+      "relative_path": "results/girfield_formal/N5_paper/fig_psnr_vs_scorr.png",
+      "size_bytes": 12334,
+      "sha256": "984fef7ff50d81c2aef4f5c174909672c56a1941184b0c3d5a66ac689a7ad727"
+    },
+    {
+      "key": "gauge_figure",
+      "relative_path": "results/girfield_formal/N5_paper/fig_gauge_perturbation_bar.png",
+      "size_bytes": 15505,
+      "sha256": "d72746e141b9e7a26d6e6a8cec916b25e22b34ab1660161f5e3faf50a0463a63"
+    },
+    {
+      "key": "risk_figure",
+      "relative_path": "results/girfield_formal/N5_paper/fig_risk_reliability.png",
+      "size_bytes": 28795,
+      "sha256": "3b1a1380d90efbe6286952029e2c10555d82e040832ca4e3395b38adce2d3dff"
+    },
+    {
+      "key": "failure_grid",
+      "relative_path": "results/girfield_formal/N5_paper/fig_psnr_misranking_failure_grid.png",
+      "size_bytes": 704661,
+      "sha256": "db7545aa89c0b5e0f6945b6ae7ec09f46dda0473b9c2b362ff2ce272358e25c7"
+    },
+    {
+      "key": "report_md",
+      "relative_path": "docs/GIR_FIELD_FORMAL_PROTOCOL_REPORT.md",
+      "size_bytes": 2072,
+      "sha256": "e1f3e6ab2d762727007e9ba051533d9d8ce5281df8633aa8189b5378ae5b5931"
+    }
+  ]
+}

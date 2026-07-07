@@ -1,0 +1,215 @@
+{
+  "pipeline": "GIR-Field relaxed pipeline",
+  "created_at_unix": 1783313585.1881547,
+  "protocol": {
+    "name": "GIR-Field relaxed evidence pipeline",
+    "claim_scope": "relaxed-routing-evidence-not-paper-grade-final",
+    "no_main_training": true,
+    "dgb_revival_allowed": false,
+    "uses_frozen_checkpoints": true,
+    "max_images_per_split": 64,
+    "bootstrap_samples": 1000,
+    "risk_patch_size": 32,
+    "risk_max_patches": 8000,
+    "lpips_policy": "not_computed_if_package_missing; do_not_fabricate",
+    "brisque_policy": "appendix_only_if_available; do_not_fabricate",
+    "external_baseline_policy": "reuse locally verified Retinexformer/Zero-DCE++/KinD++ artifacts; no web SOTA update in relaxed run"
+  },
+  "phases": [
+    {
+      "id": "N0",
+      "name": "evidence_cleaning_and_freeze"
+    },
+    {
+      "id": "N1",
+      "name": "p3c_m4j_m4j_es_statistical_reaudit"
+    },
+    {
+      "id": "N2",
+      "name": "uefbg_gauge_perturbation_benchmark"
+    },
+    {
+      "id": "N3",
+      "name": "external_baseline_registry_and_output_only_eval"
+    },
+    {
+      "id": "N4",
+      "name": "recoverability_risk_calibration_probe"
+    },
+    {
+      "id": "N5",
+      "name": "paper_grade_tables_figures_claim_report"
+    }
+  ],
+  "file_count": 28,
+  "files": [
+    {
+      "key": "source_copy",
+      "relative_path": "docs/source/A1_after_master_prompt_QA_experiment_audit_next_top_tier_innovations_20260706.md",
+      "size_bytes": 32916,
+      "sha256": "cc10a4d4835f02aa824774a1f445f031f7bcee88a548558baf6e29c27484e81e"
+    },
+    {
+      "key": "execution_plan_md",
+      "relative_path": "docs/GIR_FIELD_RELAXED_EXECUTION_PLAN_ZH.md",
+      "size_bytes": 1093,
+      "sha256": "f1a46e5a3aa6e2ee4a4d127aa2c815b65cfd4595a7104cf24358c5d7b22fb175"
+    },
+    {
+      "key": "evidence_manifest_csv",
+      "relative_path": "results/girfield_relaxed/N0_evidence/evidence_manifest.csv",
+      "size_bytes": 5189,
+      "sha256": "352848970e28df57c4349638506c0740baea414b2df3aa7e87f22086cca22aa7"
+    },
+    {
+      "key": "evidence_manifest_json",
+      "relative_path": "results/girfield_relaxed/N0_evidence/evidence_manifest.json",
+      "size_bytes": 8881,
+      "sha256": "a78c3bd9dcf388f516f8c2854572b9bad023f69668bc78c01367a43426222ae6"
+    },
+    {
+      "key": "claim_ledger_csv",
+      "relative_path": "results/girfield_relaxed/N0_evidence/claim_ledger.csv",
+      "size_bytes": 1230,
+      "sha256": "1b71b3da47ad805719a6375313d12ffc9baab0781473d914d28f1751ac942210"
+    },
+    {
+      "key": "claim_ledger_json",
+      "relative_path": "results/girfield_relaxed/N0_evidence/claim_ledger.json",
+      "size_bytes": 1858,
+      "sha256": "e2f5ff67a8fb5ade3a37c9b32638d241f759c1f806fa5fb15e5bb94e509c250d"
+    },
+    {
+      "key": "per_image_csv",
+      "relative_path": "results/girfield_relaxed/N1_statistics/per_image_metrics.csv",
+      "size_bytes": 717461,
+      "sha256": "2fdab61f638edebfb09bed642bb63a53cb2e60a0a044a5129bb91c135bcd0755"
+    },
+    {
+      "key": "per_image_json",
+      "relative_path": "results/girfield_relaxed/N1_statistics/per_image_metrics.json",
+      "size_bytes": 1490440,
+      "sha256": "9596ed56b656e3f12e533bfd670796b1d3c6cffec37dac5587d643e8385ddbb6"
+    },
+    {
+      "key": "summary_csv",
+      "relative_path": "results/girfield_relaxed/N1_statistics/variant_dataset_summary.csv",
+      "size_bytes": 16008,
+      "sha256": "8557da35fcd52f2cd7f2326a3b57282054817812ee30ae77a7beb21adff1b841"
+    },
+    {
+      "key": "summary_json",
+      "relative_path": "results/girfield_relaxed/N1_statistics/variant_dataset_summary.json",
+      "size_bytes": 31344,
+      "sha256": "10676461ef17ff2f4dafc94649f39a50347f4d7a67dbd343e5580eb16925fed9"
+    },
+    {
+      "key": "stat_tests_csv",
+      "relative_path": "results/girfield_relaxed/N1_statistics/statistical_tests.csv",
+      "size_bytes": 6462,
+      "sha256": "0d48d6e3ead888dc93f8325c38cae13853605b147f7972b9e8907185ba5653b7"
+    },
+    {
+      "key": "stat_tests_json",
+      "relative_path": "results/girfield_relaxed/N1_statistics/statistical_tests.json",
+      "size_bytes": 14621,
+      "sha256": "6e74148053cfddc9bd6933a74aab8af33b7bba28e0a5aec9dc7904dcf23e68d4"
+    },
+    {
+      "key": "gauge_perturbation_csv",
+      "relative_path": "results/girfield_relaxed/N2_uefbg/gauge_perturbation_metrics.csv",
+      "size_bytes": 70611,
+      "sha256": "4bf79f219f2b16ff11b558503bccf0b799a677977203879458ffdd65f4a88404"
+    },
+    {
+      "key": "gauge_perturbation_json",
+      "relative_path": "results/girfield_relaxed/N2_uefbg/gauge_perturbation_metrics.json",
+      "size_bytes": 143788,
+      "sha256": "ad80106c47361a42c369c0c8342302ae404c36d780ee37c7c829edf4887f90a7"
+    },
+    {
+      "key": "uefbg_metadata_csv",
+      "relative_path": "results/girfield_relaxed/N2_uefbg/uefbg_metadata.csv",
+      "size_bytes": 7710,
+      "sha256": "0b09f10f330a24c93026d78ac28862adddeaf6761e75036e57771c454192857b"
+    },
+    {
+      "key": "external_registry_csv",
+      "relative_path": "results/girfield_relaxed/N3_external/external_baseline_registry.csv",
+      "size_bytes": 1975,
+      "sha256": "820512683176e229428a90cc350d9a9e4be23b4eba6400c3c7b91fc8ee43b637"
+    },
+    {
+      "key": "external_registry_json",
+      "relative_path": "results/girfield_relaxed/N3_external/external_baseline_registry.json",
+      "size_bytes": 3329,
+      "sha256": "4d97794992222571660de8fce68bb637d5edf4343cbac51cbc3fc173238e685b"
+    },
+    {
+      "key": "risk_patch_csv",
+      "relative_path": "results/girfield_relaxed/N4_risk/risk_patch_dataset.csv",
+      "size_bytes": 1508743,
+      "sha256": "9dde6d7ce717b1b4dc0324a613d9e57461e45131f23f3c0b965b9e53b6492052"
+    },
+    {
+      "key": "risk_calibration_csv",
+      "relative_path": "results/girfield_relaxed/N4_risk/risk_calibration_summary.csv",
+      "size_bytes": 722,
+      "sha256": "17b1361e6ccaf452a4c7b5c0f8f46164dc910146c8a063c534fd49a197384b3a"
+    },
+    {
+      "key": "risk_calibration_json",
+      "relative_path": "results/girfield_relaxed/N4_risk/risk_calibration_summary.json",
+      "size_bytes": 1164,
+      "sha256": "747c2c83c5d01b38307ffb2e2be5c2f90fd524b2e10de13b44b9d7cd67e318b4"
+    },
+    {
+      "key": "main_table_csv",
+      "relative_path": "results/girfield_relaxed/N5_paper/girfield_main_table.csv",
+      "size_bytes": 5556,
+      "sha256": "3499c05bcd2f7fe1756f56edd9a2cd14b55bfd523b1816beb061e555a20a9bd5"
+    },
+    {
+      "key": "main_table_json",
+      "relative_path": "results/girfield_relaxed/N5_paper/girfield_main_table.json",
+      "size_bytes": 13090,
+      "sha256": "47195655178573d1ce7a9a68af9f3720e567d9eabd90d1b200f8e8c0770e7617"
+    },
+    {
+      "key": "main_table_md",
+      "relative_path": "results/girfield_relaxed/N5_paper/girfield_main_table.md",
+      "size_bytes": 1161,
+      "sha256": "1e6dbfd56b39a675e80b2cc9cbeb02115edba16100701841365266963166bd88"
+    },
+    {
+      "key": "stat_figure",
+      "relative_path": "results/girfield_relaxed/N5_paper/fig_psnr_vs_scorr.png",
+      "size_bytes": 13025,
+      "sha256": "01d2496f1c5b168a49e6bede336237c11183d5654ffb09ccd7dd76728cf3791f"
+    },
+    {
+      "key": "gauge_figure",
+      "relative_path": "results/girfield_relaxed/N5_paper/fig_gauge_perturbation_bar.png",
+      "size_bytes": 15329,
+      "sha256": "a1b8af601a6370bee2a06e8db1358e4b217ed9908ab0d7b9b8fc9ab507416190"
+    },
+    {
+      "key": "risk_figure",
+      "relative_path": "results/girfield_relaxed/N5_paper/fig_risk_reliability.png",
+      "size_bytes": 29352,
+      "sha256": "6354e013f17370c3703078127b5881ef29655828f3a18bde9f4b66c99415631f"
+    },
+    {
+      "key": "failure_grid",
+      "relative_path": "results/girfield_relaxed/N5_paper/fig_psnr_misranking_failure_grid.png",
+      "size_bytes": 704661,
+      "sha256": "db7545aa89c0b5e0f6945b6ae7ec09f46dda0473b9c2b362ff2ce272358e25c7"
+    },
+    {
+      "key": "report_md",
+      "relative_path": "docs/GIR_FIELD_RELAXED_PIPELINE_REPORT.md",
+      "size_bytes": 2234,
+      "sha256": "2d680089ecc0e5d89a1b8918f9e0c70ef0abd2e165a265e1b31870e9f5d34ba9"
+    }
+  ]
+}

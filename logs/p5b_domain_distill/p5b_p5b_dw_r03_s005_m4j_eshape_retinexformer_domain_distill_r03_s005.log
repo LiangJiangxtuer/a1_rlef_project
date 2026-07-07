@@ -1,0 +1,155 @@
++ /home/user/miniconda3/envs/cutler_dinov3/bin/python scripts/train.py --config /home/user/a1_rlef_project/configs/p5b_domain_distill/p5b_p5b_dw_r03_s005_m4j_eshape_retinexformer_domain_distill_r03_s005.yml --output_dir /home/user/a1_rlef_project/experiments/p5b_p5b_dw_r03_s005_m4j_eshape_retinexformer_domain_distill_r03_s005_seed3407 --device cuda --max_steps 1000
+{"step": 1, "loss": 0.6015216112136841, "rec": 0.32750675082206726, "distill_UEFB": 0.0, "distill_LOL-v2-real-train-retinex-teacher": 0.1148776039481163, "distill_LOL-v2-synthetic-train-retinex-teacher": 0.008107410743832588, "distill": 0.12298501282930374, "phys": 0.26393914222717285, "poisson": 0.4370364248752594, "gauge": 1.1855700016021729, "e_shape": 1.1746476888656616, "id": 0.023102611303329468, "gate": 0.33025386929512024, "wtv": 0.17413543164730072}
+{"step": 100, "loss": 0.21800236403942108, "rec": 0.18229079246520996, "distill_UEFB": 0.0, "distill_LOL-v2-real-train-retinex-teacher": 0.0, "distill_LOL-v2-synthetic-train-retinex-teacher": 0.005370081402361393, "distill": 0.005370081402361393, "phys": 0.14967350661754608, "poisson": 0.07135891914367676, "gauge": 0.2516351044178009, "e_shape": 0.5495091676712036, "id": 0.020548805594444275, "gate": 0.2518942356109619, "wtv": 0.046095721423625946}
+{"step": 200, "loss": 0.24534101784229279, "rec": 0.15149427950382233, "distill_UEFB": 0.0, "distill_LOL-v2-real-train-retinex-teacher": 0.05200033634901047, "distill_LOL-v2-synthetic-train-retinex-teacher": 0.0, "distill": 0.05200033634901047, "phys": 0.1617659628391266, "poisson": 0.0791080892086029, "gauge": 0.17497187852859497, "e_shape": 0.7091672420501709, "id": 0.032204583287239075, "gate": 0.22899791598320007, "wtv": 0.044738300144672394}
+{"step": 300, "loss": 0.33101969957351685, "rec": 0.22583872079849243, "distill_UEFB": 0.0, "distill_LOL-v2-real-train-retinex-teacher": 0.06552903354167938, "distill_LOL-v2-synthetic-train-retinex-teacher": 0.0, "distill": 0.06552903354167938, "phys": 0.17633458971977234, "poisson": 0.06558360159397125, "gauge": 0.4081689715385437, "e_shape": 0.6257114410400391, "id": 0.029510799795389175, "gate": 0.2102205455303192, "wtv": 0.03885352611541748}
+{"step": 400, "loss": 0.21013106405735016, "rec": 0.1354786902666092, "distill_UEFB": 0.0, "distill_LOL-v2-real-train-retinex-teacher": 0.03930993750691414, "distill_LOL-v2-synthetic-train-retinex-teacher": 0.007509718183428049, "distill": 0.04681965708732605, "phys": 0.13112130761146545, "poisson": 0.07317706942558289, "gauge": 0.21394900977611542, "e_shape": 0.3390362858772278, "id": 0.010509840212762356, "gate": 0.29808613657951355, "wtv": 0.0315324105322361}
+{"step": 500, "loss": 0.2654403746128082, "rec": 0.1724950522184372, "distill_UEFB": 0.0, "distill_LOL-v2-real-train-retinex-teacher": 0.056713420897722244, "distill_LOL-v2-synthetic-train-retinex-teacher": 0.0, "distill": 0.056713420897722244, "phys": 0.12787948548793793, "poisson": 0.1693391054868698, "gauge": 0.3333246409893036, "e_shape": 0.4472420811653137, "id": 0.018470972776412964, "gate": 0.17373855412006378, "wtv": 0.03963892534375191}
+{"step": 600, "loss": 0.30892470479011536, "rec": 0.1916743516921997, "distill_UEFB": 0.0, "distill_LOL-v2-real-train-retinex-teacher": 0.05464324727654457, "distill_LOL-v2-synthetic-train-retinex-teacher": 0.008470623753964901, "distill": 0.06311386823654175, "phys": 0.12886933982372284, "poisson": 0.5093796253204346, "gauge": 0.400754451751709, "e_shape": 0.3836388885974884, "id": 0.0052679190412163734, "gate": 0.3291183114051819, "wtv": 0.044715672731399536}
+{"step": 700, "loss": 0.1894635260105133, "rec": 0.14315642416477203, "distill_UEFB": 0.0, "distill_LOL-v2-real-train-retinex-teacher": 0.0, "distill_LOL-v2-synthetic-train-retinex-teacher": 0.01158600952476263, "distill": 0.01158600952476263, "phys": 0.11858393251895905, "poisson": 0.05433329939842224, "gauge": 0.27341362833976746, "e_shape": 0.4820382595062256, "id": 0.03410358354449272, "gate": 0.2232201099395752, "wtv": 0.02870100736618042}
+{"step": 800, "loss": 0.20934122800827026, "rec": 0.1729402244091034, "distill_UEFB": 0.0, "distill_LOL-v2-real-train-retinex-teacher": 0.0, "distill_LOL-v2-synthetic-train-retinex-teacher": 0.0058706882409751415, "distill": 0.0058706882409751415, "phys": 0.1420336663722992, "poisson": 0.09655613452196121, "gauge": 0.27388209104537964, "e_shape": 0.4462165832519531, "id": 0.022972991690039635, "gate": 0.27291351556777954, "wtv": 0.0331374891102314}
+{"step": 900, "loss": 0.18937893211841583, "rec": 0.11741156876087189, "distill_UEFB": 0.0, "distill_LOL-v2-real-train-retinex-teacher": 0.04229634255170822, "distill_LOL-v2-synthetic-train-retinex-teacher": 0.00743680028244853, "distill": 0.04973314329981804, "phys": 0.10904543846845627, "poisson": 0.1524534523487091, "gauge": 0.12535174190998077, "e_shape": 0.28496789932250977, "id": 0.017256541177630424, "gate": 0.2835395336151123, "wtv": 0.03393623232841492}
+{"step": 1000, "loss": 0.2713457942008972, "rec": 0.17380107939243317, "distill_UEFB": 0.0, "distill_LOL-v2-real-train-retinex-teacher": 0.043615974485874176, "distill_LOL-v2-synthetic-train-retinex-teacher": 0.012186878360807896, "distill": 0.0558028519153595, "phys": 0.13675285875797272, "poisson": 0.41031065583229065, "gauge": 0.24949827790260315, "e_shape": 0.43198341131210327, "id": 0.03104068525135517, "gate": 0.24955666065216064, "wtv": 0.034639980643987656}
+{
+  "DONE": true,
+  "run_id": "p5b_p5b_dw_r03_s005_m4j_eshape_retinexformer_domain_distill_r03_s005_seed3407",
+  "command": "scripts/train.py --config /home/user/a1_rlef_project/configs/p5b_domain_distill/p5b_p5b_dw_r03_s005_m4j_eshape_retinexformer_domain_distill_r03_s005.yml --output_dir /home/user/a1_rlef_project/experiments/p5b_p5b_dw_r03_s005_m4j_eshape_retinexformer_domain_distill_r03_s005_seed3407 --device cuda --max_steps 1000",
+  "steps": 1000,
+  "elapsed_sec": 122.47113013267517,
+  "config": {
+    "seed": 3407,
+    "protocol": {
+      "stage": "P5b domain-conditioned Retinexformer distillation",
+      "variant_id": "P5B_DW_R03_S005",
+      "variant_name": "m4j_eshape_retinexformer_domain_distill_r03_s005",
+      "notes": "Keep RLEF M4J_ES heads; apply strong Retinexformer teacher distillation on real paired samples and weak distillation on synthetic paired samples."
+    },
+    "model": {
+      "base_channels": 24,
+      "e_max": 3.5,
+      "exposure_branch": true,
+      "adaptive_gauge": true,
+      "fixed_gauge": null,
+      "physics_branch": true,
+      "gate_branch": true,
+      "q_branch": false
+    },
+    "training": {
+      "batch_size": 8,
+      "max_steps": 1000,
+      "lr": 0.0002,
+      "weight_decay": 0.0001,
+      "crop_size": 128,
+      "log_every": 100,
+      "num_workers": 0,
+      "grad_clip": 1.0
+    },
+    "eval": {
+      "batch_size": 1
+    },
+    "data": {
+      "train": [
+        {
+          "type": "uefb",
+          "root": "/home/user/a1_rlef_project/data/UEFB-v2/train",
+          "crop_size": 128,
+          "augment": true,
+          "max_images": null
+        },
+        {
+          "type": "paired_rgb",
+          "low_dir": "/home/user/a1_rlef_project/data/LOL-v2/Real_captured/Train/Low",
+          "high_dir": "/home/user/a1_rlef_project/data/LOL-v2/Real_captured/Train/Normal",
+          "teacher_dir": "/home/user/a1_rlef_project/experiments/p5_retinexformer_train_teacher/real",
+          "crop_size": 128,
+          "augment": true,
+          "max_images": null,
+          "name": "LOL-v2-real-train-retinex-teacher"
+        },
+        {
+          "type": "paired_rgb",
+          "low_dir": "/home/user/a1_rlef_project/data/LOL-v2/Synthetic/Train/Low",
+          "high_dir": "/home/user/a1_rlef_project/data/LOL-v2/Synthetic/Train/Normal",
+          "teacher_dir": "/home/user/a1_rlef_project/experiments/p5_retinexformer_train_teacher/synthetic",
+          "crop_size": 128,
+          "augment": true,
+          "max_images": null,
+          "name": "LOL-v2-synthetic-train-retinex-teacher"
+        }
+      ],
+      "val": {
+        "type": "uefb",
+        "root": "/home/user/a1_rlef_project/data/UEFB-v2/test",
+        "crop_size": null,
+        "augment": false,
+        "max_images": null
+      }
+    },
+    "loss": {
+      "rec": 0.7,
+      "distill": 0.0,
+      "distill_by_dataset": {
+        "UEFB": 0.0,
+        "LOL-v2-real-train-retinex-teacher": 0.3,
+        "LOL-v2-synthetic-train-retinex-teacher": 0.05
+      },
+      "phys": 0.15,
+      "poisson": 0.05,
+      "gauge": 0.1,
+      "id": 0.02,
+      "gate": 0.02,
+      "wtv": 0.02,
+      "e_shape": 0.05,
+      "e_shape_kernel": 7
+    }
+  },
+  "metrics": {
+    "psnr": 17.574141109466552,
+    "ssim": 0.7852209941148758,
+    "lee": 0.2776898820921779,
+    "nai": 1.6236026830673218,
+    "input_psnr": 12.995622906684876,
+    "identity_drop": 4.578518207550049,
+    "q_ece": 0.45600998528301717,
+    "over": 3.448486425440933e-06,
+    "under": 0.0,
+    "E_MAE": 0.28051629608869555,
+    "E_MAE_aligned": 0.2055048094689846,
+    "E_corr": 0.43106690657627766
+  },
+  "checkpoint": "/home/user/a1_rlef_project/experiments/p5b_p5b_dw_r03_s005_m4j_eshape_retinexformer_domain_distill_r03_s005_seed3407/checkpoints/last.pth"
+}
++ /home/user/miniconda3/envs/cutler_dinov3/bin/python scripts/eval_paired.py --config /home/user/a1_rlef_project/configs/p5b_domain_distill/p5b_p5b_dw_r03_s005_m4j_eshape_retinexformer_domain_distill_r03_s005.yml --checkpoint /home/user/a1_rlef_project/experiments/p5b_p5b_dw_r03_s005_m4j_eshape_retinexformer_domain_distill_r03_s005_seed3407/checkpoints/last.pth --low_dir /home/user/a1_rlef_project/data/LOL-v2/Real_captured/Test/Low --high_dir /home/user/a1_rlef_project/data/LOL-v2/Real_captured/Test/Normal --output_dir /home/user/a1_rlef_project/experiments/p5b_p5b_dw_r03_s005_m4j_eshape_retinexformer_domain_distill_r03_s005_seed3407/paired_eval/real --device cuda
+/home/user/a1_rlef_project/scripts/eval_paired.py:18: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model=build_model(cfg).to(device); ckpt=torch.load(args.checkpoint,map_location=device); model.load_state_dict(ckpt['model'])
+{
+  "psnr": 19.365789737701416,
+  "ssim": 0.7816451638936996,
+  "lee": 0.2413820206001401,
+  "nai": 2.228519468307495,
+  "input_psnr": 9.718215217590332,
+  "identity_drop": 9.64757453918457,
+  "q_ece": 0.5558270195126533,
+  "over": 3.355555618327344e-05,
+  "under": 0.0,
+  "E_MAE": 0.3880941753089428,
+  "E_MAE_aligned": 0.24504455126821995,
+  "E_corr": 0.7280785074830055
+}
++ /home/user/miniconda3/envs/cutler_dinov3/bin/python scripts/eval_paired.py --config /home/user/a1_rlef_project/configs/p5b_domain_distill/p5b_p5b_dw_r03_s005_m4j_eshape_retinexformer_domain_distill_r03_s005.yml --checkpoint /home/user/a1_rlef_project/experiments/p5b_p5b_dw_r03_s005_m4j_eshape_retinexformer_domain_distill_r03_s005_seed3407/checkpoints/last.pth --low_dir /home/user/a1_rlef_project/data/LOL-v2/Synthetic/Test/Low --high_dir /home/user/a1_rlef_project/data/LOL-v2/Synthetic/Test/Normal --output_dir /home/user/a1_rlef_project/experiments/p5b_p5b_dw_r03_s005_m4j_eshape_retinexformer_domain_distill_r03_s005_seed3407/paired_eval/synthetic --device cuda
+/home/user/a1_rlef_project/scripts/eval_paired.py:18: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model=build_model(cfg).to(device); ckpt=torch.load(args.checkpoint,map_location=device); model.load_state_dict(ckpt['model'])
+{
+  "psnr": 17.47298092842102,
+  "ssim": 0.7504888793826103,
+  "lee": 0.3007481403835118,
+  "nai": 1.1318213933706283,
+  "input_psnr": 11.220927743911743,
+  "identity_drop": 6.252053184509277,
+  "q_ece": 0.5736032783985138,
+  "over": 2.8709129810522428e-06,
+  "under": 0.0,
+  "E_MAE": 0.5026948018372059,
+  "E_MAE_aligned": 0.39707754101604226,
+  "E_corr": 0.8652881038188934
+}

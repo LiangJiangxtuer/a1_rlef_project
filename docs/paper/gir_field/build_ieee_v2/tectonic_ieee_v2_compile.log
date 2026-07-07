@@ -1,0 +1,93 @@
+note: Running TeX ...
+warning: sections/introduction:5: Underfull \hbox (badness 2351) in paragraph at lines 4--5
+warning: sections/related_work:15: Overfull \hbox (0.50966pt too wide) in paragraph at lines 14--15
+warning: sections/experiments:63: Underfull \hbox (badness 1694) in paragraph at lines 62--63
+warning: sections/experiments:63: Underfull \hbox (badness 4060) in paragraph at lines 62--63
+warning: sections/experiments:71: Underfull \hbox (badness 1478) in paragraph at lines 70--71
+warning: sections/appendix:2: Underfull \vbox (badness 10000) has occurred while \output is active
+warning: appendix/negative_route_family_summary:9: Underfull \hbox (badness 4156) in paragraph at lines 8--9
+warning: appendix/negative_route_family_summary:10: Underfull \hbox (badness 10000) in paragraph at lines 9--10
+warning: appendix/negative_route_family_summary:10: Underfull \hbox (badness 10000) in paragraph at lines 9--10
+warning: appendix/negative_route_family_summary:11: Underfull \hbox (badness 1629) in paragraph at lines 11--11
+warning: appendix/negative_route_family_summary:12: Underfull \hbox (badness 3158) in paragraph at lines 11--12
+warning: appendix/negative_route_family_summary:12: Underfull \hbox (badness 2401) in paragraph at lines 11--12
+warning: appendix/negative_route_family_summary:12: Underfull \hbox (badness 2376) in paragraph at lines 11--12
+warning: appendix/negative_route_family_summary:13: Overfull \hbox (4.52179pt too wide) in paragraph at lines 13--13
+warning: appendix/negative_route_family_summary:15: Underfull \hbox (badness 4279) in paragraph at lines 14--15
+warning: appendix/negative_route_family_summary:16: Overfull \hbox (9.15578pt too wide) in paragraph at lines 16--16
+warning: appendix/negative_route_family_summary:16: Overfull \hbox (26.50879pt too wide) in paragraph at lines 16--16
+warning: appendix/negative_route_family_summary:17: Underfull \hbox (badness 2165) in paragraph at lines 16--17
+warning: appendix/negative_route_family_summary:19: Overfull \hbox (7.66296pt too wide) in paragraph at lines 4--19
+warning: appendix/negative_route_audit_table:12: Underfull \hbox (badness 1629) in paragraph at lines 12--12
+warning: appendix/negative_route_audit_table:13: Underfull \hbox (badness 10000) in paragraph at lines 12--13
+warning: appendix/negative_route_audit_table:13: Underfull \hbox (badness 1629) in paragraph at lines 13--13
+warning: appendix/negative_route_audit_table:14: Underfull \hbox (badness 10000) in paragraph at lines 13--14
+warning: appendix/negative_route_audit_table:23: Overfull \hbox (10.04057pt too wide) in paragraph at lines 23--23
+note: Running BibTeX on gir_field_ieee_conference.aux ...
+note: warnings were issued by BibTeX; use --print and/or --keep-logs for details.
+note: Rerunning TeX because bibtex was run ...
+warning: sections/introduction:5: Underfull \hbox (badness 2351) in paragraph at lines 4--5
+warning: sections/related_work:15: Overfull \hbox (0.50966pt too wide) in paragraph at lines 14--15
+warning: sections/experiments:63: Underfull \hbox (badness 1694) in paragraph at lines 62--63
+warning: sections/experiments:63: Underfull \hbox (badness 4060) in paragraph at lines 62--63
+warning: sections/experiments:71: Underfull \hbox (badness 1478) in paragraph at lines 70--71
+warning: sections/appendix:2: Underfull \vbox (badness 10000) has occurred while \output is active
+warning: appendix/negative_route_family_summary:9: Underfull \hbox (badness 4156) in paragraph at lines 8--9
+warning: appendix/negative_route_family_summary:10: Underfull \hbox (badness 10000) in paragraph at lines 9--10
+warning: appendix/negative_route_family_summary:10: Underfull \hbox (badness 10000) in paragraph at lines 9--10
+warning: appendix/negative_route_family_summary:11: Underfull \hbox (badness 1629) in paragraph at lines 11--11
+warning: appendix/negative_route_family_summary:12: Underfull \hbox (badness 3158) in paragraph at lines 11--12
+warning: appendix/negative_route_family_summary:12: Underfull \hbox (badness 2401) in paragraph at lines 11--12
+warning: appendix/negative_route_family_summary:12: Underfull \hbox (badness 2376) in paragraph at lines 11--12
+warning: appendix/negative_route_family_summary:13: Overfull \hbox (4.52179pt too wide) in paragraph at lines 13--13
+warning: appendix/negative_route_family_summary:15: Underfull \hbox (badness 4279) in paragraph at lines 14--15
+warning: appendix/negative_route_family_summary:16: Overfull \hbox (9.15578pt too wide) in paragraph at lines 16--16
+warning: appendix/negative_route_family_summary:16: Overfull \hbox (26.50879pt too wide) in paragraph at lines 16--16
+warning: appendix/negative_route_family_summary:17: Underfull \hbox (badness 2165) in paragraph at lines 16--17
+warning: appendix/negative_route_family_summary:19: Overfull \hbox (7.66296pt too wide) in paragraph at lines 4--19
+warning: appendix/negative_route_audit_table:12: Underfull \hbox (badness 1629) in paragraph at lines 12--12
+warning: appendix/negative_route_audit_table:13: Underfull \hbox (badness 10000) in paragraph at lines 12--13
+warning: appendix/negative_route_audit_table:13: Underfull \hbox (badness 1629) in paragraph at lines 13--13
+warning: appendix/negative_route_audit_table:14: Underfull \hbox (badness 10000) in paragraph at lines 13--14
+warning: appendix/negative_route_audit_table:23: Overfull \hbox (10.04057pt too wide) in paragraph at lines 23--23
+warning: gir_field_ieee_conference.bbl:48: Underfull \hbox (badness 10000) in paragraph at lines 42--48
+warning: gir_field_ieee_conference.bbl:48: Underfull \hbox (badness 10000) in paragraph at lines 42--48
+warning: gir_field_ieee_conference.bbl:62: Underfull \hbox (badness 10000) in paragraph at lines 56--62
+warning: gir_field_ieee_conference.bbl:62: Underfull \hbox (badness 10000) in paragraph at lines 56--62
+note: Rerunning TeX because "gir_field_ieee_conference.aux" changed ...
+warning: sections/introduction:5: Underfull \hbox (badness 2351) in paragraph at lines 4--5
+warning: sections/related_work:15: Overfull \hbox (0.50966pt too wide) in paragraph at lines 14--15
+warning: sections/experiments:63: Underfull \hbox (badness 1694) in paragraph at lines 62--63
+warning: sections/experiments:63: Underfull \hbox (badness 4060) in paragraph at lines 62--63
+warning: sections/experiments:71: Underfull \hbox (badness 1478) in paragraph at lines 70--71
+warning: sections/appendix:2: Underfull \vbox (badness 10000) has occurred while \output is active
+warning: appendix/negative_route_family_summary:9: Underfull \hbox (badness 4156) in paragraph at lines 8--9
+warning: appendix/negative_route_family_summary:10: Underfull \hbox (badness 10000) in paragraph at lines 9--10
+warning: appendix/negative_route_family_summary:10: Underfull \hbox (badness 10000) in paragraph at lines 9--10
+warning: appendix/negative_route_family_summary:11: Underfull \hbox (badness 1629) in paragraph at lines 11--11
+warning: appendix/negative_route_family_summary:12: Underfull \hbox (badness 3158) in paragraph at lines 11--12
+warning: appendix/negative_route_family_summary:12: Underfull \hbox (badness 2401) in paragraph at lines 11--12
+warning: appendix/negative_route_family_summary:12: Underfull \hbox (badness 2376) in paragraph at lines 11--12
+warning: appendix/negative_route_family_summary:13: Overfull \hbox (4.52179pt too wide) in paragraph at lines 13--13
+warning: appendix/negative_route_family_summary:15: Underfull \hbox (badness 4279) in paragraph at lines 14--15
+warning: appendix/negative_route_family_summary:16: Overfull \hbox (9.15578pt too wide) in paragraph at lines 16--16
+warning: appendix/negative_route_family_summary:16: Overfull \hbox (26.50879pt too wide) in paragraph at lines 16--16
+warning: appendix/negative_route_family_summary:17: Underfull \hbox (badness 2165) in paragraph at lines 16--17
+warning: appendix/negative_route_family_summary:19: Overfull \hbox (7.66296pt too wide) in paragraph at lines 4--19
+warning: appendix/negative_route_audit_table:12: Underfull \hbox (badness 1629) in paragraph at lines 12--12
+warning: appendix/negative_route_audit_table:13: Underfull \hbox (badness 10000) in paragraph at lines 12--13
+warning: appendix/negative_route_audit_table:13: Underfull \hbox (badness 1629) in paragraph at lines 13--13
+warning: appendix/negative_route_audit_table:14: Underfull \hbox (badness 10000) in paragraph at lines 13--14
+warning: appendix/negative_route_audit_table:23: Overfull \hbox (10.04057pt too wide) in paragraph at lines 23--23
+warning: gir_field_ieee_conference.bbl:48: Underfull \hbox (badness 10000) in paragraph at lines 42--48
+warning: gir_field_ieee_conference.bbl:48: Underfull \hbox (badness 10000) in paragraph at lines 42--48
+warning: gir_field_ieee_conference.bbl:62: Underfull \hbox (badness 10000) in paragraph at lines 56--62
+warning: gir_field_ieee_conference.bbl:62: Underfull \hbox (badness 10000) in paragraph at lines 56--62
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+note: Running xdvipdfmx ...
+note: Writing `build_ieee_v2/gir_field_ieee_conference.blg` (1.1572265625 KiB)
+note: Writing `build_ieee_v2/gir_field_ieee_conference.pdf` (306.7919921875 KiB)
+note: Writing `build_ieee_v2/gir_field_ieee_conference.bbl` (8.6669921875 KiB)
+note: Writing `build_ieee_v2/gir_field_ieee_conference.log` (21.6435546875 KiB)
+note: Writing `build_ieee_v2/gir_field_ieee_conference.aux` (13.4599609375 KiB)
+note: Writing `build_ieee_v2/gir_field_ieee_conference.out` (5.81640625 KiB)

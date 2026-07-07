@@ -1,0 +1,69 @@
+{
+  "source_dir": "results/girfield_formal/N5_paper",
+  "figures": [
+    {
+      "name": "fig_psnr_vs_scorr.png",
+      "relative_path": "docs/paper/gir_field/figures/fig_psnr_vs_scorr.png",
+      "size_bytes": 12334,
+      "sha256": "984fef7ff50d81c2aef4f5c174909672c56a1941184b0c3d5a66ac689a7ad727",
+      "pixels": [
+        1000,
+        700
+      ]
+    },
+    {
+      "name": "fig_psnr_vs_scorr.pdf",
+      "relative_path": "docs/paper/gir_field/figures/fig_psnr_vs_scorr.pdf",
+      "size_bytes": 25580,
+      "sha256": "c4cd69ce0a9446dbbcbe11e685f47a1adf40029dc17f26b9b5b00d9dfd9bd2ba"
+    },
+    {
+      "name": "fig_gauge_perturbation_bar.png",
+      "relative_path": "docs/paper/gir_field/figures/fig_gauge_perturbation_bar.png",
+      "size_bytes": 15505,
+      "sha256": "d72746e141b9e7a26d6e6a8cec916b25e22b34ab1660161f5e3faf50a0463a63",
+      "pixels": [
+        1100,
+        700
+      ]
+    },
+    {
+      "name": "fig_gauge_perturbation_bar.pdf",
+      "relative_path": "docs/paper/gir_field/figures/fig_gauge_perturbation_bar.pdf",
+      "size_bytes": 25539,
+      "sha256": "b46ad7538a7e411e498bb4ab3429d52f23bd4f0d05e1a4ffb66b9a277aa52ee6"
+    },
+    {
+      "name": "fig_psnr_misranking_failure_grid.png",
+      "relative_path": "docs/paper/gir_field/figures/fig_psnr_misranking_failure_grid.png",
+      "size_bytes": 704661,
+      "sha256": "db7545aa89c0b5e0f6945b6ae7ec09f46dda0473b9c2b362ff2ce272358e25c7",
+      "pixels": [
+        1024,
+        680
+      ]
+    },
+    {
+      "name": "fig_psnr_misranking_failure_grid.pdf",
+      "relative_path": "docs/paper/gir_field/figures/fig_psnr_misranking_failure_grid.pdf",
+      "size_bytes": 107795,
+      "sha256": "558b04716bc3e43c06a1e391a3caa2ac5566ce3cf874c145bf91605889460744"
+    },
+    {
+      "name": "fig_risk_reliability.png",
+      "relative_path": "docs/paper/gir_field/figures/fig_risk_reliability.png",
+      "size_bytes": 28795,
+      "sha256": "3b1a1380d90efbe6286952029e2c10555d82e040832ca4e3395b38adce2d3dff",
+      "pixels": [
+        1100,
+        700
+      ]
+    },
+    {
+      "name": "fig_risk_reliability.pdf",
+      "relative_path": "docs/paper/gir_field/figures/fig_risk_reliability.pdf",
+      "size_bytes": 35514,
+      "sha256": "0931c6970ef14b9ce018561970c91be4aef4de0786a3df9bd516f387fc663948"
+    }
+  ]
+}

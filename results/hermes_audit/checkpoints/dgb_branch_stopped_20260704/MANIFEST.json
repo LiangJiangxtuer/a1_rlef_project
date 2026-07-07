@@ -1,0 +1,112 @@
+{
+  "generated_at": "2026-07-04T13:07:30.013047+00:00",
+  "decision": "STOP_DGB_BRANCH_AND_CONSOLIDATE",
+  "bundle_dir": "/home/user/a1_rlef_project/results/hermes_audit/checkpoints/dgb_branch_stopped_20260704",
+  "report": "/home/user/a1_rlef_project/results/hermes_audit/reports/DGB_BRANCH_STOP_CONSOLIDATION_REPORT.md",
+  "summary_csv": "/home/user/a1_rlef_project/results/tables/dgb_branch_consolidation_summary.csv",
+  "summary_json": "/home/user/a1_rlef_project/results/tables/dgb_branch_consolidation_summary.json",
+  "files": [
+    {
+      "source": "/home/user/a1_rlef_project/results/hermes_audit/reports/DGB_BRANCH_STOP_CONSOLIDATION_REPORT.md",
+      "bundle_file": "/home/user/a1_rlef_project/results/hermes_audit/checkpoints/dgb_branch_stopped_20260704/DGB_BRANCH_STOP_CONSOLIDATION_REPORT.md",
+      "sha256": "1ce88e72bb9d46a65cca395d399cdd93c7803bbfaa54fd2e43a7aacdcbf9c987",
+      "bytes": 6354
+    },
+    {
+      "source": "/home/user/a1_rlef_project/results/hermes_audit/checkpoints/dgb_branch_stopped_20260704/P2E_GATE_PRIOR_BALANCE_REPORT.md",
+      "bundle_file": "/home/user/a1_rlef_project/results/hermes_audit/checkpoints/dgb_branch_stopped_20260704/P2E_GATE_PRIOR_BALANCE_REPORT.md",
+      "sha256": "a78359e8f1c3a9a3155a40a9016c257b43c04fdcda8ab25a5c818ee57e02384d",
+      "bytes": 6412
+    },
+    {
+      "source": "/home/user/a1_rlef_project/results/hermes_audit/checkpoints/dgb_branch_stopped_20260704/PHASE2_DGB_RLEF_CANDIDATE_TRAINING.md",
+      "bundle_file": "/home/user/a1_rlef_project/results/hermes_audit/checkpoints/dgb_branch_stopped_20260704/PHASE2_DGB_RLEF_CANDIDATE_TRAINING.md",
+      "sha256": "103897dcc56672a3cb8db1658b6d07f1b758c8040496b5b5d6bce5e49fc26157",
+      "bytes": 4316
+    },
+    {
+      "source": "/home/user/a1_rlef_project/results/hermes_audit/checkpoints/dgb_branch_stopped_20260704/README.md",
+      "bundle_file": "/home/user/a1_rlef_project/results/hermes_audit/checkpoints/dgb_branch_stopped_20260704/README.md",
+      "sha256": "120dbb5df31d3fb6d205b7cc27b0a23d6dbd4a5e5ca2d066dcb72a2ca302302e",
+      "bytes": 349
+    },
+    {
+      "source": "/home/user/a1_rlef_project/results/hermes_audit/checkpoints/dgb_branch_stopped_20260704/dgb_branch_consolidation_summary.csv",
+      "bundle_file": "/home/user/a1_rlef_project/results/hermes_audit/checkpoints/dgb_branch_stopped_20260704/dgb_branch_consolidation_summary.csv",
+      "sha256": "727b5f47d1de55f2a74a7cad80daa5bb0a1c590cda5aeee576e08a9997a14bb4",
+      "bytes": 6424
+    },
+    {
+      "source": "/home/user/a1_rlef_project/results/hermes_audit/checkpoints/dgb_branch_stopped_20260704/dgb_branch_consolidation_summary.json",
+      "bundle_file": "/home/user/a1_rlef_project/results/hermes_audit/checkpoints/dgb_branch_stopped_20260704/dgb_branch_consolidation_summary.json",
+      "sha256": "dedcd410e284b376cd886990a6ec5ea6799513e151d959f71629c81bc9bd2516",
+      "bytes": 16348
+    },
+    {
+      "source": "/home/user/a1_rlef_project/results/hermes_audit/logs/dgb_consolidation_full_suite.log",
+      "bundle_file": "/home/user/a1_rlef_project/results/hermes_audit/checkpoints/dgb_branch_stopped_20260704/dgb_consolidation_full_suite.log",
+      "sha256": "12c1b023794beaac4c8b4776810574d6d0a6fd46f50c3210a4bdc58706d5d41a",
+      "bytes": 181
+    },
+    {
+      "source": "/home/user/a1_rlef_project/results/hermes_audit/checkpoints/dgb_branch_stopped_20260704/p2b_controlled_isolation_route_diagnostics.json",
+      "bundle_file": "/home/user/a1_rlef_project/results/hermes_audit/checkpoints/dgb_branch_stopped_20260704/p2b_controlled_isolation_route_diagnostics.json",
+      "sha256": "b3430270bcda41f2cb8b029d9c154da588a7f05b67367b2577cd2cba7ea0b60c",
+      "bytes": 2456
+    },
+    {
+      "source": "/home/user/a1_rlef_project/results/hermes_audit/checkpoints/dgb_branch_stopped_20260704/p2b_controlled_isolation_summary.json",
+      "bundle_file": "/home/user/a1_rlef_project/results/hermes_audit/checkpoints/dgb_branch_stopped_20260704/p2b_controlled_isolation_summary.json",
+      "sha256": "3d9ecd2ae6051ece93d84066a4de3974825b103178203e2ce0b190dea4c7c777",
+      "bytes": 8483
+    },
+    {
+      "source": "/home/user/a1_rlef_project/results/hermes_audit/checkpoints/dgb_branch_stopped_20260704/p2c_uefb_recovery_route_diagnostics.json",
+      "bundle_file": "/home/user/a1_rlef_project/results/hermes_audit/checkpoints/dgb_branch_stopped_20260704/p2c_uefb_recovery_route_diagnostics.json",
+      "sha256": "85db62b6761ffeee5d195162dbbc7491ec986e7c8183a02df686614f4eb8faa9",
+      "bytes": 4908
+    },
+    {
+      "source": "/home/user/a1_rlef_project/results/hermes_audit/checkpoints/dgb_branch_stopped_20260704/p2c_uefb_recovery_summary.json",
+      "bundle_file": "/home/user/a1_rlef_project/results/hermes_audit/checkpoints/dgb_branch_stopped_20260704/p2c_uefb_recovery_summary.json",
+      "sha256": "45f0876e2309995af5303f2604f10101c7ed316b64a583486114989bc3533807",
+      "bytes": 16513
+    },
+    {
+      "source": "/home/user/a1_rlef_project/results/hermes_audit/checkpoints/dgb_branch_stopped_20260704/p2d_balanced_eshape_real_preserve_route_diagnostics.json",
+      "bundle_file": "/home/user/a1_rlef_project/results/hermes_audit/checkpoints/dgb_branch_stopped_20260704/p2d_balanced_eshape_real_preserve_route_diagnostics.json",
+      "sha256": "584b103b2b21753f4335a7429ba430a62fc40ffa92c921b606902f4f7f363f6f",
+      "bytes": 2465
+    },
+    {
+      "source": "/home/user/a1_rlef_project/results/hermes_audit/checkpoints/dgb_branch_stopped_20260704/p2d_balanced_eshape_real_preserve_summary.json",
+      "bundle_file": "/home/user/a1_rlef_project/results/hermes_audit/checkpoints/dgb_branch_stopped_20260704/p2d_balanced_eshape_real_preserve_summary.json",
+      "sha256": "249b6f0c32ec49f7b9ee7d077b273992c21b6c53eb1e4a736998c0cf981c4925",
+      "bytes": 13851
+    },
+    {
+      "source": "/home/user/a1_rlef_project/results/hermes_audit/checkpoints/dgb_branch_stopped_20260704/p2e_gate_prior_balance_route_diagnostics.json",
+      "bundle_file": "/home/user/a1_rlef_project/results/hermes_audit/checkpoints/dgb_branch_stopped_20260704/p2e_gate_prior_balance_route_diagnostics.json",
+      "sha256": "e788f5ccfbc51b5433301a61f8477cf1b1fe8ba2ac9a45548cc3be3f0bd9660e",
+      "bytes": 2469
+    },
+    {
+      "source": "/home/user/a1_rlef_project/results/hermes_audit/checkpoints/dgb_branch_stopped_20260704/p2e_gate_prior_balance_summary.json",
+      "bundle_file": "/home/user/a1_rlef_project/results/hermes_audit/checkpoints/dgb_branch_stopped_20260704/p2e_gate_prior_balance_summary.json",
+      "sha256": "cbca3168488c1631207d540669fdbecdb198b28accee29bec5d7eb636fadafd6",
+      "bytes": 16459
+    },
+    {
+      "source": "/home/user/a1_rlef_project/results/hermes_audit/checkpoints/dgb_branch_stopped_20260704/phase2_dgb_candidate_summary.json",
+      "bundle_file": "/home/user/a1_rlef_project/results/hermes_audit/checkpoints/dgb_branch_stopped_20260704/phase2_dgb_candidate_summary.json",
+      "sha256": "fad1d46aea18dedd6e8781916ce14b003236720f65582ace0798ac745f33807b",
+      "bytes": 3629
+    },
+    {
+      "source": "/home/user/a1_rlef_project/results/hermes_audit/checkpoints/dgb_branch_stopped_20260704/phase2_dgb_route_diagnostics.json",
+      "bundle_file": "/home/user/a1_rlef_project/results/hermes_audit/checkpoints/dgb_branch_stopped_20260704/phase2_dgb_route_diagnostics.json",
+      "sha256": "e3935265b5ca878546e632a229c6a1dab9f99e5b5330eca9730a4bb51058fcb1",
+      "bytes": 1126
+    }
+  ]
+}

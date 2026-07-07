@@ -1,0 +1,72 @@
+{
+  "teacher_exports": [
+    {
+      "dataset": "real",
+      "status": "already_present",
+      "output_dir": "/home/user/a1_rlef_project/experiments/p5_retinexformer_train_teacher/real",
+      "n": 689
+    },
+    {
+      "dataset": "synthetic",
+      "status": "already_present",
+      "output_dir": "/home/user/a1_rlef_project/experiments/p5_retinexformer_train_teacher/synthetic",
+      "n": 900
+    }
+  ],
+  "runs": [
+    {
+      "run": "p5b_p5b_dw_r03_s005_m4j_eshape_retinexformer_domain_distill_r03_s005",
+      "variant_id": "P5B_DW_R03_S005",
+      "variant_name": "m4j_eshape_retinexformer_domain_distill_r03_s005",
+      "steps": 1000,
+      "train_crop": 128,
+      "batch_size": 8,
+      "gpu": 0,
+      "elapsed_sec_train": 125.79198980331421,
+      "run_dir": "/home/user/a1_rlef_project/experiments/p5b_p5b_dw_r03_s005_m4j_eshape_retinexformer_domain_distill_r03_s005_seed3407",
+      "log": "/home/user/a1_rlef_project/logs/p5b_domain_distill/p5b_p5b_dw_r03_s005_m4j_eshape_retinexformer_domain_distill_r03_s005.log",
+      "real_distill_weight": 0.3,
+      "synthetic_distill_weight": 0.05,
+      "uefb_psnr": 17.574141109466552,
+      "uefb_ssim": 0.7852209941148758,
+      "uefb_lee": 0.2776898820921779,
+      "uefb_nai": 1.6236026830673218,
+      "uefb_input_psnr": 12.995622906684876,
+      "uefb_identity_drop": 4.578518207550049,
+      "uefb_q_ece": 0.45600998528301717,
+      "uefb_over": 3.448486425440933e-06,
+      "uefb_under": 0.0,
+      "uefb_E_MAE": 0.28051629608869555,
+      "uefb_E_MAE_aligned": 0.2055048094689846,
+      "uefb_E_corr": 0.43106690657627766,
+      "real_psnr": 19.365789737701416,
+      "real_ssim": 0.7816451638936996,
+      "real_lee": 0.2413820206001401,
+      "real_nai": 2.228519468307495,
+      "real_input_psnr": 9.718215217590332,
+      "real_identity_drop": 9.64757453918457,
+      "real_q_ece": 0.5558270195126533,
+      "real_over": 3.355555618327344e-05,
+      "real_under": 0.0,
+      "real_E_MAE": 0.3880941753089428,
+      "real_E_MAE_aligned": 0.24504455126821995,
+      "real_E_corr": 0.7280785074830055,
+      "synthetic_psnr": 17.47298092842102,
+      "synthetic_ssim": 0.7504888793826103,
+      "synthetic_lee": 0.3007481403835118,
+      "synthetic_nai": 1.1318213933706283,
+      "synthetic_input_psnr": 11.220927743911743,
+      "synthetic_identity_drop": 6.252053184509277,
+      "synthetic_q_ece": 0.5736032783985138,
+      "synthetic_over": 2.8709129810522428e-06,
+      "synthetic_under": 0.0,
+      "synthetic_E_MAE": 0.5026948018372059,
+      "synthetic_E_MAE_aligned": 0.39707754101604226,
+      "synthetic_E_corr": 0.8652881038188934,
+      "elapsed_sec_total": 145.55501556396484
+    }
+  ],
+  "promotion": [
+    false
+  ]
+}

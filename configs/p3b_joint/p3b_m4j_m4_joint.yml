@@ -1,0 +1,62 @@
+seed: 3407
+protocol:
+  stage: P3b joint training
+  variant_id: M4J
+  variant_name: m4_joint
+  notes: M4 gate joint training on UEFB-v2 + LOL-v2-real + LOL-v2-synthetic; optional
+    e_shape is an E spatial-shape repair diagnostic.
+model:
+  base_channels: 24
+  e_max: 3.5
+  exposure_branch: true
+  adaptive_gauge: true
+  fixed_gauge: null
+  physics_branch: true
+  gate_branch: true
+  q_branch: false
+training:
+  batch_size: 8
+  max_steps: 1000
+  lr: 0.0002
+  weight_decay: 0.0001
+  crop_size: 128
+  log_every: 100
+  num_workers: 0
+  grad_clip: 1.0
+eval:
+  batch_size: 1
+data:
+  train:
+  - type: uefb
+    root: /home/user/a1_rlef_project/data/UEFB-v2/train
+    crop_size: 128
+    augment: true
+    max_images: null
+  - type: paired_rgb
+    low_dir: /home/user/a1_rlef_project/data/LOL-v2/Real_captured/Train/Low
+    high_dir: /home/user/a1_rlef_project/data/LOL-v2/Real_captured/Train/Normal
+    crop_size: 128
+    augment: true
+    max_images: null
+    name: LOL-v2-real-train
+  - type: paired_rgb
+    low_dir: /home/user/a1_rlef_project/data/LOL-v2/Synthetic/Train/Low
+    high_dir: /home/user/a1_rlef_project/data/LOL-v2/Synthetic/Train/Normal
+    crop_size: 128
+    augment: true
+    max_images: null
+    name: LOL-v2-synthetic-train
+  val:
+    type: uefb
+    root: /home/user/a1_rlef_project/data/UEFB-v2/test
+    crop_size: null
+    augment: false
+    max_images: null
+loss:
+  rec: 1.0
+  phys: 0.15
+  poisson: 0.05
+  gauge: 0.1
+  id: 0.02
+  gate: 0.02
+  wtv: 0.02

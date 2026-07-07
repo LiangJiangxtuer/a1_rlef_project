@@ -1,0 +1,179 @@
+{
+  "generated_at": "2026-07-04T16:22:51.271146+00:00",
+  "root": "/home/user/a1_rlef_project",
+  "decision": "S1-S4 executed as full evidence-to-paper pipeline",
+  "skip_visuals": false,
+  "n_visuals_per_split": 4,
+  "elapsed_sec": 3.7026329040527344,
+  "stages": [
+    {
+      "id": "S1",
+      "name": "Evidence freeze + paper framing",
+      "files": [
+        "/home/user/a1_rlef_project/results/paper_pipeline/s1_evidence_freeze/claim_matrix.csv",
+        "/home/user/a1_rlef_project/results/paper_pipeline/s1_evidence_freeze/claim_matrix.json",
+        "/home/user/a1_rlef_project/results/paper_pipeline/s1_evidence_freeze/EVIDENCE_FREEZE.md"
+      ],
+      "elapsed_sec": 0.0004956722259521484
+    },
+    {
+      "id": "S2",
+      "name": "Manuscript-grade main table",
+      "files": [
+        "/home/user/a1_rlef_project/results/paper_pipeline/s2_main_table/main_results_table.csv",
+        "/home/user/a1_rlef_project/results/paper_pipeline/s2_main_table/main_results_table.json",
+        "/home/user/a1_rlef_project/results/paper_pipeline/s2_main_table/main_results_table.md",
+        "/home/user/a1_rlef_project/results/paper_pipeline/s2_main_table/main_results_table.tex"
+      ],
+      "elapsed_sec": 0.0009922981262207031
+    },
+    {
+      "id": "S3",
+      "name": "Qualitative diagnostic visualization",
+      "files": [
+        "/home/user/a1_rlef_project/results/paper_pipeline/s3_visualizations/VISUALIZATION_INDEX.md",
+        "/home/user/a1_rlef_project/results/paper_pipeline/s3_visualizations/real/real_000_low00690_panel.png",
+        "/home/user/a1_rlef_project/results/paper_pipeline/s3_visualizations/real/real_001_low00691_panel.png",
+        "/home/user/a1_rlef_project/results/paper_pipeline/s3_visualizations/real/real_002_low00692_panel.png",
+        "/home/user/a1_rlef_project/results/paper_pipeline/s3_visualizations/real/real_003_low00693_panel.png",
+        "/home/user/a1_rlef_project/results/paper_pipeline/s3_visualizations/synthetic/synthetic_000_r00816405t_panel.png",
+        "/home/user/a1_rlef_project/results/paper_pipeline/s3_visualizations/synthetic/synthetic_001_r00869422t_panel.png",
+        "/home/user/a1_rlef_project/results/paper_pipeline/s3_visualizations/synthetic/synthetic_002_r00879054t_panel.png",
+        "/home/user/a1_rlef_project/results/paper_pipeline/s3_visualizations/synthetic/synthetic_003_r01058910t_panel.png"
+      ],
+      "elapsed_sec": 3.699291467666626
+    },
+    {
+      "id": "S4",
+      "name": "Appendix negative-route diagnostics",
+      "files": [
+        "/home/user/a1_rlef_project/results/paper_pipeline/s4_appendix/negative_route_summary.csv",
+        "/home/user/a1_rlef_project/results/paper_pipeline/s4_appendix/negative_route_summary.json",
+        "/home/user/a1_rlef_project/results/paper_pipeline/s4_appendix/APPENDIX_NEGATIVE_RESULTS.md"
+      ],
+      "elapsed_sec": 0.0015904903411865234
+    }
+  ],
+  "files": [
+    {
+      "path": "/home/user/a1_rlef_project/results/paper_pipeline/s1_evidence_freeze/claim_matrix.csv",
+      "relative_path": "results/paper_pipeline/s1_evidence_freeze/claim_matrix.csv",
+      "bytes": 950,
+      "sha256": "b62ccb38227ad13ba19811593859ded94198ff65fa04abdc981e25e03a25e062"
+    },
+    {
+      "path": "/home/user/a1_rlef_project/results/paper_pipeline/s1_evidence_freeze/claim_matrix.json",
+      "relative_path": "results/paper_pipeline/s1_evidence_freeze/claim_matrix.json",
+      "bytes": 1426,
+      "sha256": "a721de71544c5c1bcfee53b1e7866d08acbbcbcd17c400d7805353295ce82bc3"
+    },
+    {
+      "path": "/home/user/a1_rlef_project/results/paper_pipeline/s1_evidence_freeze/EVIDENCE_FREEZE.md",
+      "relative_path": "results/paper_pipeline/s1_evidence_freeze/EVIDENCE_FREEZE.md",
+      "bytes": 1569,
+      "sha256": "49bc99a07eb7584608ee91e28914407c6c7392b1edfd9eb87cbfdb14272360fc"
+    },
+    {
+      "path": "/home/user/a1_rlef_project/results/paper_pipeline/s2_main_table/main_results_table.csv",
+      "relative_path": "results/paper_pipeline/s2_main_table/main_results_table.csv",
+      "bytes": 1735,
+      "sha256": "5c37ca11c7d75456fa11f0dac7c81b85ea0721cf7bb25962c8b53f765002b629"
+    },
+    {
+      "path": "/home/user/a1_rlef_project/results/paper_pipeline/s2_main_table/main_results_table.json",
+      "relative_path": "results/paper_pipeline/s2_main_table/main_results_table.json",
+      "bytes": 3623,
+      "sha256": "e510c3c751f6ab6e3967a1d810d9f0e39265a862a011d9bf1e25059cb8e2a789"
+    },
+    {
+      "path": "/home/user/a1_rlef_project/results/paper_pipeline/s2_main_table/main_results_table.md",
+      "relative_path": "results/paper_pipeline/s2_main_table/main_results_table.md",
+      "bytes": 1434,
+      "sha256": "aa811468f27a685ce374c45131b825505c6cbdf997185465b04628070a79d869"
+    },
+    {
+      "path": "/home/user/a1_rlef_project/results/paper_pipeline/s2_main_table/main_results_table.tex",
+      "relative_path": "results/paper_pipeline/s2_main_table/main_results_table.tex",
+      "bytes": 938,
+      "sha256": "2fe787f5e1f1f5a8ff76a091eddbd3dd0dc032f63458da56f6fdeed5324c0fce"
+    },
+    {
+      "path": "/home/user/a1_rlef_project/results/paper_pipeline/s3_visualizations/VISUALIZATION_INDEX.md",
+      "relative_path": "results/paper_pipeline/s3_visualizations/VISUALIZATION_INDEX.md",
+      "bytes": 1219,
+      "sha256": "0b5c671fe9f2818391eb8e5f3d381026730b0322cea65e5f26ad13d141f4bae6"
+    },
+    {
+      "path": "/home/user/a1_rlef_project/results/paper_pipeline/s3_visualizations/real/real_000_low00690_panel.png",
+      "relative_path": "results/paper_pipeline/s3_visualizations/real/real_000_low00690_panel.png",
+      "bytes": 247273,
+      "sha256": "3bc55cb59be6849808517432f07dc7d42964c57ad442fdbb90a1fd0db092f512"
+    },
+    {
+      "path": "/home/user/a1_rlef_project/results/paper_pipeline/s3_visualizations/real/real_001_low00691_panel.png",
+      "relative_path": "results/paper_pipeline/s3_visualizations/real/real_001_low00691_panel.png",
+      "bytes": 248155,
+      "sha256": "bae43697f262ad4936f5b3b16f576b62e030f7e86f1e321e57dee1613e269217"
+    },
+    {
+      "path": "/home/user/a1_rlef_project/results/paper_pipeline/s3_visualizations/real/real_002_low00692_panel.png",
+      "relative_path": "results/paper_pipeline/s3_visualizations/real/real_002_low00692_panel.png",
+      "bytes": 286578,
+      "sha256": "f04b3deafda806cd05871b1fb7803a2067834b3ba297b7cace0f12e98ccd9ac5"
+    },
+    {
+      "path": "/home/user/a1_rlef_project/results/paper_pipeline/s3_visualizations/real/real_003_low00693_panel.png",
+      "relative_path": "results/paper_pipeline/s3_visualizations/real/real_003_low00693_panel.png",
+      "bytes": 285705,
+      "sha256": "cb18e4765b7c3706ac2567a13bf1c1b5a05016fb46287d4b7b18e26fffb9d0b0"
+    },
+    {
+      "path": "/home/user/a1_rlef_project/results/paper_pipeline/s3_visualizations/synthetic/synthetic_000_r00816405t_panel.png",
+      "relative_path": "results/paper_pipeline/s3_visualizations/synthetic/synthetic_000_r00816405t_panel.png",
+      "bytes": 359086,
+      "sha256": "5d17764d669278ff9b72ff695ddc3fac43dd4c1f4dd274d4f801788783f16cb5"
+    },
+    {
+      "path": "/home/user/a1_rlef_project/results/paper_pipeline/s3_visualizations/synthetic/synthetic_001_r00869422t_panel.png",
+      "relative_path": "results/paper_pipeline/s3_visualizations/synthetic/synthetic_001_r00869422t_panel.png",
+      "bytes": 312125,
+      "sha256": "2136cd5d16795d0a0478cc9fc71942a7dacf5f6645fa98a3050058157b4ccb42"
+    },
+    {
+      "path": "/home/user/a1_rlef_project/results/paper_pipeline/s3_visualizations/synthetic/synthetic_002_r00879054t_panel.png",
+      "relative_path": "results/paper_pipeline/s3_visualizations/synthetic/synthetic_002_r00879054t_panel.png",
+      "bytes": 226707,
+      "sha256": "f5629e87e574ea78e76d7e25bf0ed348c04960c71f10c8ed253f1cccbf72a86e"
+    },
+    {
+      "path": "/home/user/a1_rlef_project/results/paper_pipeline/s3_visualizations/synthetic/synthetic_003_r01058910t_panel.png",
+      "relative_path": "results/paper_pipeline/s3_visualizations/synthetic/synthetic_003_r01058910t_panel.png",
+      "bytes": 252468,
+      "sha256": "f9df82f3831444029442016e08ea8faa327d280d6e39372e906125b084802db0"
+    },
+    {
+      "path": "/home/user/a1_rlef_project/results/paper_pipeline/s4_appendix/negative_route_summary.csv",
+      "relative_path": "results/paper_pipeline/s4_appendix/negative_route_summary.csv",
+      "bytes": 947,
+      "sha256": "d67fdfe9a6705e92b084ff5ea12b2ffa4b2678e8095bbd381ff762ad50a4c16f"
+    },
+    {
+      "path": "/home/user/a1_rlef_project/results/paper_pipeline/s4_appendix/negative_route_summary.json",
+      "relative_path": "results/paper_pipeline/s4_appendix/negative_route_summary.json",
+      "bytes": 1380,
+      "sha256": "504655dea4f5f6308a62334023ea0dccf8b1ab20de0791db4314de284b963afb"
+    },
+    {
+      "path": "/home/user/a1_rlef_project/results/paper_pipeline/s4_appendix/APPENDIX_NEGATIVE_RESULTS.md",
+      "relative_path": "results/paper_pipeline/s4_appendix/APPENDIX_NEGATIVE_RESULTS.md",
+      "bytes": 1493,
+      "sha256": "cf767b3a789d8dfc2dea87cc4ed605c02588e0c49cb597e999988dda093051d7"
+    },
+    {
+      "path": "/home/user/a1_rlef_project/results/paper_pipeline/S1_S4_PIPELINE_REPORT.md",
+      "relative_path": "results/paper_pipeline/S1_S4_PIPELINE_REPORT.md",
+      "bytes": 2510,
+      "sha256": "e361dfb20a3b424b434a808ac81a181f3be6e6717376dd701b7092904f50900f"
+    }
+  ]
+}

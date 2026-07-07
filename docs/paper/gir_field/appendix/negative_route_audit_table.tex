@@ -1,0 +1,31 @@
+\begin{table*}[t]
+\centering
+\scriptsize
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llrrrrl}
+\hline
+Family & Variant & UEFB & Real & Synthetic & Promote & Audit conclusion \\
+\hline
+P5 distillation & P5\_RD\_T03 & 18.169 & 20.416 & 16.996 & False & Distillation moves trade-off. \\
+P5 distillation & P5\_RD\_T01 & 17.948 & 19.588 & 17.960 & False & Distillation moves trade-off. \\
+P5B domain distillation & P5B\_DW\_R03\_S005 & 17.574 & 19.366 & 17.473 & False & Domain distillation remains trade-off. \\
+P6 structure & P6\_MS\_M4J\_ES & 18.015 & 20.197 & 17.598 & False & Local gains, no joint gate. \\
+P6B synthetic protection & P6B\_MS\_SYN105 & 17.347 & 19.996 & 18.708 & False & Synthetic gain trades off UEFB/real. \\
+P6B synthetic protection & P6B\_MS\_SYN110 & 17.220 & 19.569 & 18.948 & False & Synthetic gain trades off UEFB/real. \\
+P6C gate protection & P6C\_MS\_GATEID005 & 17.604 & 20.456 & 17.550 & False & Gate protection moves trade-off. \\
+P6C gate protection & P6C\_MS\_GATELOW005 & 18.046 & 19.831 & 17.422 & False & Gate protection moves trade-off. \\
+P7 domain head & P7\_MS\_DGATE & 17.602 & 19.309 & 17.025 & False & Domain adapter is fragile. \\
+P7 domain head & P7\_MS\_DHEAD & 18.232 & 19.209 & 17.913 & False & Domain adapter is fragile. \\
+P7B real anchor & P7B\_DHEAD\_RA010 & 18.085 & 19.847 & 17.965 & False & Real anchor not robust. \\
+P7B real anchor & P7B\_DHEAD\_RA001 & 18.190 & 19.127 & 17.517 & False & Real anchor not robust. \\
+P7C real anchor fine & P7C\_DHEAD\_RA020 & 17.441 & 19.517 & 17.820 & False & Larger anchors unstable. \\
+P7C real anchor fine & P7C\_DHEAD\_RA015 & 17.954 & 19.082 & 17.591 & False & Larger anchors unstable. \\
+DGB consolidation & P2B\_DGB\_GAUGE\_ONLY & 17.719 & 20.432 & 18.402 & False & Split-wise gain; no promoted joint model. \\
+DGB consolidation & P2C\_DGB\_GATE\_FLOOR025 & 17.684 & 20.297 & 18.356 & False & Split-wise gain; no promoted joint model. \\
+DGB consolidation & P2B\_DGB\_ROUTE\_ONLY & 17.713 & 19.967 & 17.945 & False & Split-wise gain; no promoted joint model. \\
+\hline
+\end{tabular}%
+}
+\caption{Appendix negative-route audit. These runs are retained as design rationale and failure evidence rather than main-table positive claims. Scores are copied from frozen result tables under results/tables.}
+\label{tab:negative_route_audit}
+\end{table*}

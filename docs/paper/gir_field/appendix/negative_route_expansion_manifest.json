@@ -1,0 +1,9 @@
+{
+  "family_rows": 9,
+  "variant_rows": 32,
+  "files": [
+    "docs/paper/gir_field/appendix/negative_route_family_summary.csv",
+    "docs/paper/gir_field/appendix/negative_route_family_summary.tex",
+    "docs/paper/gir_field/sections/appendix_negative_routes_expanded.tex"
+  ]
+}

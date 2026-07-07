@@ -1,0 +1,63 @@
+{
+  "generated_at": "2026-07-04T14:32:22.635666+00:00",
+  "project_root": "/home/user/a1_rlef_project",
+  "current_default": "P3c M4J_ES e_shape=0.05",
+  "main_decision": "Stop DGB/scalar sweep routes; consolidate around interpretable exposure-field auxiliary calibration unless starting a new non-DGB route.",
+  "stop": [
+    "DGB/P2F continuation",
+    "larger real-anchor sweeps",
+    "output-level scalar distillation",
+    "rec_by_dataset scalar protection",
+    "route_floor/gate_prior/structure_preserve scalar sweeps"
+  ],
+  "keep_as_default": {
+    "variant": "P3c M4J_ES e_shape=0.05",
+    "uefb_psnr_mean": 17.914535294214883,
+    "real_psnr_mean": 20.02060646692912,
+    "synthetic_psnr_mean": 17.678273655573523
+  },
+  "keep_as_references": [
+    "P7B_DHEAD_RA010 near-miss",
+    "P2B_DGB_GAUGE_ONLY real diagnostic",
+    "P2E_ESHAPE010_GATEPRI002 synthetic diagnostic",
+    "Retinexformer official baseline"
+  ],
+  "next_stages": [
+    {
+      "priority": "P0",
+      "stage": "Evidence freeze + paper framing",
+      "duration": "0.5-1 day",
+      "gate": "claims trace to tables/reports"
+    },
+    {
+      "priority": "P1",
+      "stage": "Qualitative + diagnostic visualization",
+      "duration": "1-2 days",
+      "gate": "visual explanation value without overclaim"
+    },
+    {
+      "priority": "P2",
+      "stage": "Official/no-reference supplementary eval",
+      "duration": "1 day",
+      "gate": "use as support or limitation, not hard claim"
+    },
+    {
+      "priority": "P3",
+      "stage": "Manuscript-grade ablation table",
+      "duration": "1 day",
+      "gate": "compact core table; negative routes appendix"
+    },
+    {
+      "priority": "P4 optional",
+      "stage": "RLEF-as-aux on strong backbone",
+      "duration": "smoke then 1000-step",
+      "gate": "baseline PSNR drop <=0.2-0.3 dB and E_corr positive"
+    },
+    {
+      "priority": "P5 optional",
+      "stage": "Retinex-factorization redesign",
+      "duration": "prototype then 1000-step",
+      "gate": "beats P3c or improves diagnostics without PSNR drop"
+    }
+  ]
+}

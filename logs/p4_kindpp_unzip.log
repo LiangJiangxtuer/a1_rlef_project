@@ -1,0 +1,17 @@
+Archive:  checkpoint_download_kindpp
+   creating: checkpoint_download_extracted/checkpoint/
+   creating: checkpoint_download_extracted/checkpoint/decom_model/
+  inflating: checkpoint_download_extracted/checkpoint/decom_model/checkpoint  
+  inflating: checkpoint_download_extracted/checkpoint/decom_model/model.ckpt.data-00000-of-00001  
+  inflating: checkpoint_download_extracted/checkpoint/decom_model/model.ckpt.index  
+  inflating: checkpoint_download_extracted/checkpoint/decom_model/model.ckpt.meta  
+   creating: checkpoint_download_extracted/checkpoint/illu_model/
+  inflating: checkpoint_download_extracted/checkpoint/illu_model/checkpoint  
+  inflating: checkpoint_download_extracted/checkpoint/illu_model/model.ckpt.data-00000-of-00001  
+  inflating: checkpoint_download_extracted/checkpoint/illu_model/model.ckpt.index  
+  inflating: checkpoint_download_extracted/checkpoint/illu_model/model.ckpt.meta  
+   creating: checkpoint_download_extracted/checkpoint/restoration_model/
+  inflating: checkpoint_download_extracted/checkpoint/restoration_model/checkpoint  
+  inflating: checkpoint_download_extracted/checkpoint/restoration_model/model.ckpt.data-00000-of-00001  
+  inflating: checkpoint_download_extracted/checkpoint/restoration_model/model.ckpt.index  
+  inflating: checkpoint_download_extracted/checkpoint/restoration_model/model.ckpt.meta  

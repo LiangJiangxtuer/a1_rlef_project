@@ -1,0 +1,53 @@
+seed: 3407
+protocol:
+  stage: PHASE1_DGB_RLEF_MINIMAL_IMPLEMENTATION
+  variant_id: DGB_RLEF_MINIMAL
+  note: >-
+    Phase 1 scaffold only. This config records the intended minimal DGB-RLEF
+    route; it is not a Phase 2 training launch config and should not be used
+    for 1000-step candidate training until Phase 1 unit/report gates pass.
+model:
+  type: DGB_RLEF_MINIMAL
+  package: rlef
+  trunk: multiscale
+  trunk_blocks: 3
+  base_channels: 24
+  e_shape_weight: 0.05
+  exposure:
+    decomposition: zero_mean_shape_plus_gauge
+    shape_loss: gauge_invariant_lowpass_corr_plus_gradient
+    shape_loss_kernel: 7
+    shape_loss_beta: 0.1
+  gauge:
+    mode: image_stats
+    stats:
+      - mean_luminance
+      - std_luminance
+      - dark_ratio
+      - sat_ratio
+      - grad_mean
+      - local_contrast
+    mu_min: -1.0
+    mu_max: 2.5
+    warmup_no_anchor_steps: 300
+    ramp_start: 300
+    full_start: 700
+    real_anchor_init: 0.010
+    max_default_anchor_weight: 0.005
+  route:
+    type: recoverability_safe_router
+    safe_alpha: 0.70
+    lambda_A: 0.02
+    lambda_Q: 0.02
+    lambda_id: 0.02
+training:
+  phase1_training_allowed: false
+  phase2_candidate_training_required_before_claims: true
+forbidden:
+  teacher_distill: true
+  rec_by_dataset: true
+  real_anchor_above_0p010: true
+claims:
+  performance_claim_allowed: false
+  sota_claim_allowed: false
+  purpose: interface_correct_minimal_components_only

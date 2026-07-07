@@ -1,0 +1,147 @@
++ /home/user/miniconda3/envs/cutler_dinov3/bin/python scripts/train.py --config /home/user/a1_rlef_project/configs/p3b_joint/p3b_m4j_es_m4_joint_eshape.yml --output_dir /home/user/a1_rlef_project/experiments/p3b_m4j_es_m4_joint_eshape_seed3407 --device cuda --max_steps 1000
+{"step": 1, "loss": 0.5767886638641357, "rec": 0.32750675082206726, "phys": 0.26393914222717285, "poisson": 0.4370364248752594, "gauge": 1.1855700016021729, "e_shape": 1.1746476888656616, "id": 0.023102611303329468, "gate": 0.33025386929512024, "wtv": 0.17413543164730072}
+{"step": 100, "loss": 0.26526495814323425, "rec": 0.1711105853319168, "phys": 0.16637635231018066, "poisson": 0.09263932704925537, "gauge": 0.2170533537864685, "e_shape": 0.721717119216919, "id": 0.017613781616091728, "gate": 0.2549378573894501, "wtv": 0.06618856638669968}
+{"step": 200, "loss": 0.218958780169487, "rec": 0.13813470304012299, "phys": 0.14232678711414337, "poisson": 0.08821334689855576, "gauge": 0.15284951031208038, "e_shape": 0.6604474782943726, "id": 0.02326970547437668, "gate": 0.26341792941093445, "wtv": 0.05116555839776993}
+{"step": 300, "loss": 0.3331475257873535, "rec": 0.22587305307388306, "phys": 0.17479602992534637, "poisson": 0.06862501800060272, "gauge": 0.4052846133708954, "e_shape": 0.6320656538009644, "id": 0.03115784376859665, "gate": 0.20192357897758484, "wtv": 0.04152196645736694}
+{"step": 400, "loss": 0.19190378487110138, "rec": 0.12570315599441528, "phys": 0.12351604551076889, "poisson": 0.07549915462732315, "gauge": 0.2113698273897171, "e_shape": 0.3151308298110962, "id": 0.010717812925577164, "gate": 0.30503150820732117, "wtv": 0.03448796272277832}
+{"step": 500, "loss": 0.26109376549720764, "rec": 0.17961722612380981, "phys": 0.13600602746009827, "poisson": 0.17546477913856506, "gauge": 0.24528008699417114, "e_shape": 0.45746684074401855, "id": 0.021447760984301567, "gate": 0.18385502696037292, "wtv": 0.039748840034008026}
+{"step": 600, "loss": 0.29380902647972107, "rec": 0.1867443323135376, "phys": 0.11913423240184784, "poisson": 0.5139662623405457, "gauge": 0.37289711833000183, "e_shape": 0.3763445019721985, "id": 0.005547738634049892, "gate": 0.32193082571029663, "wtv": 0.04198639839887619}
+{"step": 700, "loss": 0.23206676542758942, "rec": 0.15167689323425293, "phys": 0.12220042198896408, "poisson": 0.05959325656294823, "gauge": 0.2884451746940613, "e_shape": 0.4846247434616089, "id": 0.0429614782333374, "gate": 0.2242942750453949, "wtv": 0.03296250104904175}
+{"step": 800, "loss": 0.2465895563364029, "rec": 0.16694054007530212, "phys": 0.1392979770898819, "poisson": 0.093966543674469, "gauge": 0.2615634799003601, "e_shape": 0.4294244050979614, "id": 0.028229812160134315, "gate": 0.2656533420085907, "wtv": 0.027539044618606567}
+{"step": 900, "loss": 0.18480247259140015, "rec": 0.12389719486236572, "phys": 0.10950516164302826, "poisson": 0.15013450384140015, "gauge": 0.15722376108169556, "e_shape": 0.2915644645690918, "id": 0.015444429591298103, "gate": 0.2920249104499817, "wtv": 0.026139607653021812}
+{"step": 1000, "loss": 0.2683263123035431, "rec": 0.17319390177726746, "phys": 0.14633232355117798, "poisson": 0.4102672338485718, "gauge": 0.25166720151901245, "e_shape": 0.42679303884506226, "id": 0.031000250950455666, "gate": 0.2533194124698639, "wtv": 0.023821331560611725}
+{
+  "DONE": true,
+  "run_id": "p3b_m4j_es_m4_joint_eshape_seed3407",
+  "command": "scripts/train.py --config /home/user/a1_rlef_project/configs/p3b_joint/p3b_m4j_es_m4_joint_eshape.yml --output_dir /home/user/a1_rlef_project/experiments/p3b_m4j_es_m4_joint_eshape_seed3407 --device cuda --max_steps 1000",
+  "steps": 1000,
+  "elapsed_sec": 211.66230177879333,
+  "config": {
+    "seed": 3407,
+    "protocol": {
+      "stage": "P3b joint training",
+      "variant_id": "M4J_ES",
+      "variant_name": "m4_joint_eshape",
+      "notes": "M4 gate joint training on UEFB-v2 + LOL-v2-real + LOL-v2-synthetic; optional e_shape is an E spatial-shape repair diagnostic."
+    },
+    "model": {
+      "base_channels": 24,
+      "e_max": 3.5,
+      "exposure_branch": true,
+      "adaptive_gauge": true,
+      "fixed_gauge": null,
+      "physics_branch": true,
+      "gate_branch": true,
+      "q_branch": false
+    },
+    "training": {
+      "batch_size": 8,
+      "max_steps": 1000,
+      "lr": 0.0002,
+      "weight_decay": 0.0001,
+      "crop_size": 128,
+      "log_every": 100,
+      "num_workers": 0,
+      "grad_clip": 1.0
+    },
+    "eval": {
+      "batch_size": 1
+    },
+    "data": {
+      "train": [
+        {
+          "type": "uefb",
+          "root": "/home/user/a1_rlef_project/data/UEFB-v2/train",
+          "crop_size": 128,
+          "augment": true,
+          "max_images": null
+        },
+        {
+          "type": "paired_rgb",
+          "low_dir": "/home/user/a1_rlef_project/data/LOL-v2/Real_captured/Train/Low",
+          "high_dir": "/home/user/a1_rlef_project/data/LOL-v2/Real_captured/Train/Normal",
+          "crop_size": 128,
+          "augment": true,
+          "max_images": null,
+          "name": "LOL-v2-real-train"
+        },
+        {
+          "type": "paired_rgb",
+          "low_dir": "/home/user/a1_rlef_project/data/LOL-v2/Synthetic/Train/Low",
+          "high_dir": "/home/user/a1_rlef_project/data/LOL-v2/Synthetic/Train/Normal",
+          "crop_size": 128,
+          "augment": true,
+          "max_images": null,
+          "name": "LOL-v2-synthetic-train"
+        }
+      ],
+      "val": {
+        "type": "uefb",
+        "root": "/home/user/a1_rlef_project/data/UEFB-v2/test",
+        "crop_size": null,
+        "augment": false,
+        "max_images": null
+      }
+    },
+    "loss": {
+      "rec": 1.0,
+      "phys": 0.15,
+      "poisson": 0.05,
+      "gauge": 0.1,
+      "id": 0.02,
+      "gate": 0.02,
+      "wtv": 0.02,
+      "e_shape": 0.05,
+      "e_shape_kernel": 7
+    }
+  },
+  "metrics": {
+    "psnr": 17.9811068611145,
+    "ssim": 0.8038888010978699,
+    "lee": 0.2660055019073188,
+    "nai": 1.664234989643097,
+    "input_psnr": 12.995622906684876,
+    "identity_drop": 4.985483946800232,
+    "q_ece": 0.41910166205465793,
+    "over": 1.8310547557121027e-06,
+    "under": 4.630533972795092e-05,
+    "E_MAE": 0.29185761863738297,
+    "E_MAE_aligned": 0.19979707964509724,
+    "E_corr": 0.43985495356749743
+  },
+  "checkpoint": "/home/user/a1_rlef_project/experiments/p3b_m4j_es_m4_joint_eshape_seed3407/checkpoints/last.pth"
+}
++ /home/user/miniconda3/envs/cutler_dinov3/bin/python scripts/eval_paired.py --config /home/user/a1_rlef_project/configs/p3b_joint/p3b_m4j_es_m4_joint_eshape.yml --checkpoint /home/user/a1_rlef_project/experiments/p3b_m4j_es_m4_joint_eshape_seed3407/checkpoints/last.pth --low_dir /home/user/a1_rlef_project/data/LOL-v2/Real_captured/Test/Low --high_dir /home/user/a1_rlef_project/data/LOL-v2/Real_captured/Test/Normal --output_dir /home/user/a1_rlef_project/experiments/p3b_m4j_es_m4_joint_eshape_seed3407/paired_eval/real --device cuda
+/home/user/a1_rlef_project/scripts/eval_paired.py:18: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model=build_model(cfg).to(device); ckpt=torch.load(args.checkpoint,map_location=device); model.load_state_dict(ckpt['model'])
+{
+  "psnr": 20.277040662765504,
+  "ssim": 0.7918556445837021,
+  "lee": 0.22181059673428535,
+  "nai": 2.326902861595154,
+  "input_psnr": 9.718215217590332,
+  "identity_drop": 10.558825459480286,
+  "q_ece": 0.5509941506385804,
+  "over": 2.976388921524631e-05,
+  "under": 0.0,
+  "E_MAE": 0.5644065717607737,
+  "E_MAE_aligned": 0.3058271846175194,
+  "E_corr": 0.6482521766424179
+}
++ /home/user/miniconda3/envs/cutler_dinov3/bin/python scripts/eval_paired.py --config /home/user/a1_rlef_project/configs/p3b_joint/p3b_m4j_es_m4_joint_eshape.yml --checkpoint /home/user/a1_rlef_project/experiments/p3b_m4j_es_m4_joint_eshape_seed3407/checkpoints/last.pth --low_dir /home/user/a1_rlef_project/data/LOL-v2/Synthetic/Test/Low --high_dir /home/user/a1_rlef_project/data/LOL-v2/Synthetic/Test/Normal --output_dir /home/user/a1_rlef_project/experiments/p3b_m4j_es_m4_joint_eshape_seed3407/paired_eval/synthetic --device cuda
+/home/user/a1_rlef_project/scripts/eval_paired.py:18: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model=build_model(cfg).to(device); ckpt=torch.load(args.checkpoint,map_location=device); model.load_state_dict(ckpt['model'])
+{
+  "psnr": 17.140526418685912,
+  "ssim": 0.7430509057641029,
+  "lee": 0.38118875357322396,
+  "nai": 1.2214265888929368,
+  "input_psnr": 11.220927743911743,
+  "identity_drop": 5.919598679542542,
+  "q_ece": 0.5765399113297462,
+  "over": 2.0593714070855638e-05,
+  "under": 0.0,
+  "E_MAE": 0.7858886558935047,
+  "E_MAE_aligned": 0.5171821771748364,
+  "E_corr": 0.7991548854112626
+}

@@ -1,0 +1,6 @@
+claim_id,claim,status,evidence,allowed_location
+C1,"RLEF should be framed as interpretable exposure-field auxiliary calibration, not SOTA restoration.",supported as framing,P4 official baselines show Retinexformer real/synthetic PSNR gap; P3c has stable E diagnostics.,main text framing + limitations
+C2,Adaptive/gauge-aware exposure modeling is preferable to fixed absolute gauge.,supported,P1 formal: adaptive is best on real/synthetic; fixed0p02 is domain-fragile.,method motivation
+C3,A-gate is the strongest early mechanism in UEFB ablation.,supported single-seed,P3 M4 gate gives best UEFB PSNR among M0-M5.,ablation discussion
+C4,Low-pass centered e_shape is the core mechanism for positive spatial E diagnostics.,supported,P3b M4J_ES and P3c 3-seed E_corr stay positive.,main method + diagnostics
+C5,DGB is not a final route.,stopped,DGB consolidation: no Phase2/P2B/P2C/P2D/P2E variant passes joint gate.,appendix negative diagnostics

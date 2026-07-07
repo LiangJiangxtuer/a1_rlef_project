@@ -1,0 +1,26 @@
+{
+  "generated_at": "2026-07-03T03:01:09.614224+00:00",
+  "phase": "Phase2 DGB candidate training",
+  "variant_id": "DGB_RLEF_MINIMAL_S3407",
+  "run_dir": "/home/user/a1_rlef_project/experiments/phase2_dgb_rlef_minimal_s3407_multiscale_image_stats_gauge_safe_router_seed3407",
+  "config": "/home/user/a1_rlef_project/configs/dgb_rlef/phase2_dgb_rlef_minimal_s3407_multiscale_image_stats_gauge_safe_router.yml",
+  "log": "/home/user/a1_rlef_project/logs/phase2_dgb_candidate/phase2_dgb_rlef_minimal_s3407_multiscale_image_stats_gauge_safe_router.log",
+  "summary_csv": "/home/user/a1_rlef_project/results/tables/phase2_dgb_candidate_summary.csv",
+  "summary_json": "/home/user/a1_rlef_project/results/tables/phase2_dgb_candidate_summary.json",
+  "route_diagnostics_json": "/home/user/a1_rlef_project/results/tables/phase2_dgb_route_diagnostics.json",
+  "report": "/home/user/a1_rlef_project/results/hermes_audit/reports/PHASE2_DGB_RLEF_CANDIDATE_TRAINING.md",
+  "metrics": {
+    "uefb_psnr": 17.75430307197571,
+    "real_psnr": 19.938993167877197,
+    "synthetic_psnr": 18.479499568939207,
+    "uefb_E_corr": 0.5276702798577025,
+    "real_E_corr": 0.6788853275775909,
+    "synthetic_E_corr": 0.8179605707526207
+  },
+  "promotion": [
+    false
+  ],
+  "decision": "no_go_for_multiseed_promotion",
+  "full_suite": "........................................................................ [ 81%]\n................                                                         [100%]\n88 passed in 19.10s",
+  "compileall": "passed (no output)"
+}

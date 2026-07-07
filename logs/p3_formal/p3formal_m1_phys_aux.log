@@ -1,0 +1,120 @@
++ /home/user/miniconda3/envs/cutler_dinov3/bin/python scripts/train.py --config /home/user/a1_rlef_project/configs/p3_formal/p3formal_m1_phys_aux.yml --output_dir /home/user/a1_rlef_project/experiments/p3formal_m1_phys_aux_seed3407 --device cuda --max_steps 1000
+{"step": 1, "loss": 0.35609832406044006, "rec": 0.3278404772281647, "phys": 0.18838566541671753}
+{"step": 100, "loss": 0.19786590337753296, "rec": 0.17865577340126038, "phys": 0.1280674934387207}
+{"step": 200, "loss": 0.1828649491071701, "rec": 0.1648501753807068, "phys": 0.12009845674037933}
+{"step": 300, "loss": 0.17233213782310486, "rec": 0.1555275321006775, "phys": 0.11203064769506454}
+{"step": 400, "loss": 0.1689906269311905, "rec": 0.15293531119823456, "phys": 0.10703545808792114}
+{"step": 500, "loss": 0.17136342823505402, "rec": 0.15463022887706757, "phys": 0.11155466735363007}
+{"step": 600, "loss": 0.16915804147720337, "rec": 0.15135706961154938, "phys": 0.1186731681227684}
+{"step": 700, "loss": 0.1809159219264984, "rec": 0.1632765531539917, "phys": 0.11759575456380844}
+{"step": 800, "loss": 0.1431540846824646, "rec": 0.12885546684265137, "phys": 0.09532414376735687}
+{"step": 900, "loss": 0.15783478319644928, "rec": 0.14168140292167664, "phys": 0.10768917202949524}
+{"step": 1000, "loss": 0.12835659086704254, "rec": 0.11583209037780762, "phys": 0.08349671214818954}
+{
+  "DONE": true,
+  "run_id": "p3formal_m1_phys_aux_seed3407",
+  "command": "scripts/train.py --config /home/user/a1_rlef_project/configs/p3_formal/p3formal_m1_phys_aux.yml --output_dir /home/user/a1_rlef_project/experiments/p3formal_m1_phys_aux_seed3407 --device cuda --max_steps 1000",
+  "steps": 1000,
+  "elapsed_sec": 148.7282693386078,
+  "config": {
+    "seed": 3407,
+    "protocol": {
+      "stage": "P3 formal",
+      "variant_id": "M1",
+      "variant_name": "phys_aux",
+      "notes": "UEFB-v2 1000-step single-seed M0-M5 mechanism ablation; paired real/synthetic tests are routing diagnostics."
+    },
+    "model": {
+      "base_channels": 24,
+      "e_max": 3.5,
+      "exposure_branch": true,
+      "adaptive_gauge": false,
+      "fixed_gauge": null,
+      "physics_branch": true,
+      "gate_branch": false,
+      "q_branch": false
+    },
+    "training": {
+      "batch_size": 8,
+      "max_steps": 1000,
+      "lr": 0.0002,
+      "weight_decay": 0.0001,
+      "crop_size": 128,
+      "log_every": 100,
+      "num_workers": 0,
+      "grad_clip": 1.0
+    },
+    "eval": {
+      "batch_size": 1
+    },
+    "data": {
+      "train": {
+        "type": "uefb",
+        "root": "/home/user/a1_rlef_project/data/UEFB-v2/train",
+        "crop_size": 128,
+        "augment": true,
+        "max_images": null
+      },
+      "val": {
+        "type": "uefb",
+        "root": "/home/user/a1_rlef_project/data/UEFB-v2/test",
+        "crop_size": null,
+        "augment": false,
+        "max_images": null
+      }
+    },
+    "loss": {
+      "rec": 1.0,
+      "phys": 0.15
+    }
+  },
+  "metrics": {
+    "psnr": 17.91304881858826,
+    "ssim": 0.8084265565872193,
+    "lee": 0.27925455320253967,
+    "nai": 1.8262741000652314,
+    "input_psnr": 12.995622906684876,
+    "identity_drop": 4.917425910949707,
+    "q_ece": 0.4074351360499859,
+    "over": 0.0,
+    "under": 3.621419411501847e-06,
+    "E_MAE": 1.03927811896801,
+    "E_MAE_aligned": 0.6114340968430042,
+    "E_corr": -0.3658402948580624
+  },
+  "checkpoint": "/home/user/a1_rlef_project/experiments/p3formal_m1_phys_aux_seed3407/checkpoints/last.pth"
+}
++ /home/user/miniconda3/envs/cutler_dinov3/bin/python scripts/eval_paired.py --config /home/user/a1_rlef_project/configs/p3_formal/p3formal_m1_phys_aux.yml --checkpoint /home/user/a1_rlef_project/experiments/p3formal_m1_phys_aux_seed3407/checkpoints/last.pth --low_dir /home/user/a1_rlef_project/data/LOL-v2/Real_captured/Test/Low --high_dir /home/user/a1_rlef_project/data/LOL-v2/Real_captured/Test/Normal --output_dir /home/user/a1_rlef_project/experiments/p3formal_m1_phys_aux_seed3407/paired_eval/real --device cuda
+Traceback (most recent call last):
+  File "/home/user/a1_rlef_project/scripts/eval_paired.py", line 8, in <module>
+    from scripts.train import build_model, evaluate
+ModuleNotFoundError: No module named 'scripts.train'
+RESUME: found existing checkpoint and UEFB metrics under /home/user/a1_rlef_project/experiments/p3formal_m1_phys_aux_seed3407
++ /home/user/miniconda3/envs/cutler_dinov3/bin/python scripts/eval_paired.py --config /home/user/a1_rlef_project/configs/p3_formal/p3formal_m1_phys_aux.yml --checkpoint /home/user/a1_rlef_project/experiments/p3formal_m1_phys_aux_seed3407/checkpoints/last.pth --low_dir /home/user/a1_rlef_project/data/LOL-v2/Real_captured/Test/Low --high_dir /home/user/a1_rlef_project/data/LOL-v2/Real_captured/Test/Normal --output_dir /home/user/a1_rlef_project/experiments/p3formal_m1_phys_aux_seed3407/paired_eval/real --device cuda
+/home/user/a1_rlef_project/scripts/eval_paired.py:18: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model=build_model(cfg).to(device); ckpt=torch.load(args.checkpoint,map_location=device); model.load_state_dict(ckpt['model'])
+{
+  "psnr": 16.39550308227539,
+  "ssim": 0.6148400467634201,
+  "lee": 0.7691474394500255,
+  "nai": 2.358065458536148,
+  "input_psnr": 9.718215217590332,
+  "identity_drop": 6.677287864685058,
+  "q_ece": 0.6380017450451851,
+  "over": 3.500000043459295e-06,
+  "under": 9.305555568062119e-07
+}
++ /home/user/miniconda3/envs/cutler_dinov3/bin/python scripts/eval_paired.py --config /home/user/a1_rlef_project/configs/p3_formal/p3formal_m1_phys_aux.yml --checkpoint /home/user/a1_rlef_project/experiments/p3formal_m1_phys_aux_seed3407/checkpoints/last.pth --low_dir /home/user/a1_rlef_project/data/LOL-v2/Synthetic/Test/Low --high_dir /home/user/a1_rlef_project/data/LOL-v2/Synthetic/Test/Normal --output_dir /home/user/a1_rlef_project/experiments/p3formal_m1_phys_aux_seed3407/paired_eval/synthetic --device cuda
+/home/user/a1_rlef_project/scripts/eval_paired.py:18: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model=build_model(cfg).to(device); ckpt=torch.load(args.checkpoint,map_location=device); model.load_state_dict(ckpt['model'])
+{
+  "psnr": 13.177919015884399,
+  "ssim": 0.5940635624527931,
+  "lee": 0.7358166047185659,
+  "nai": 1.1099185866117478,
+  "input_psnr": 11.220927743911743,
+  "identity_drop": 1.9569912719726563,
+  "q_ece": 0.577272291481495,
+  "over": 0.0,
+  "under": 4.521122718870174e-08
+}

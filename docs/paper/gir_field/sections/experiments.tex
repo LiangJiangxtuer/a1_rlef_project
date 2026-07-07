@@ -1,0 +1,78 @@
+\section{Experiments}
+\label{sec:experiments}
+
+\subsection{Protocol}
+
+We evaluate the proposed gauge-identifiability analysis under a formal frozen-evidence protocol. No new backbone training is performed, no DGB/P2F route is revived, and all internal methods use existing checkpoints. The full local evaluation includes 500 UEFB-v2 test images, 100 LOL-v2-real test images, and 100 LOL-v2-synthetic test images. With 9 internal variants, this produces 6300 per-image records. We use 5000 bootstrap samples for confidence intervals, paired Wilcoxon signed-rank tests~\cite{wilcoxon1945ranking} for paired comparisons, and Benjamini--Hochberg correction~\cite{benjamini1995fdr} for false-discovery-rate control.
+
+The internal variants are M4, M4J, M4J\_ES, three P3c $e\_shape=0.05$ seeds, and three P3d $e\_shape=0.10$ seeds. External black-box baselines are Retinexformer~\cite{cai2023retinexformer}, Zero-DCE++~\cite{li2021zerodcepp}, and KinD++~\cite{zhang2019kind}. For black-box methods, internal exposure-field metrics are reported as N/A.
+
+\subsection{Main results}
+
+\begin{table*}[t]
+\centering
+\small
+\begin{tabular}{lrrrrrr}
+\hline
+Method & UEFB PSNR & UEFB $S_{corr}$ & Real PSNR & Real $S_{corr}$ & Syn. PSNR & Syn. $S_{corr}$ \\
+\hline
+M4 A-gate & 18.6530 & -0.1393 & 17.4113 & -0.3314 & 13.9632 & -0.3372 \\
+M4J joint & 18.0818 & 0.2818 & 19.5807 & 0.5007 & 16.5085 & 0.3690 \\
+M4J\_ES & 17.9811 & 0.4399 & 20.2770 & 0.6483 & 17.1405 & 0.7992 \\
+P3c $e=0.05$ (3 seeds) & 17.9145 & 0.4361 & 20.0206 & 0.7075 & 17.6783 & 0.8407 \\
+P3d $e=0.10$ (3 seeds) & 18.1108 & 0.4491 & 19.8749 & 0.6856 & 17.6263 & 0.8347 \\
+KinD++ & -- & N/A & 22.2109 & N/A & 19.2594 & N/A \\
+Retinexformer & -- & N/A & 22.7939 & N/A & 25.6690 & N/A \\
+Zero-DCE++ & -- & N/A & 18.4907 & N/A & 17.5764 & N/A \\
+\hline
+\end{tabular}
+\caption{Formal full frozen-evidence results. Internal-field metrics are only reported for methods with explicit exposure-field predictions. Black-box baselines are output-only.}
+\label{tab:main_results}
+\end{table*}
+
+Table~\ref{tab:main_results} shows that RGB fidelity and exposure-field identifiability can disagree. M4 obtains the strongest UEFB PSNR among the internal mechanisms but has negative $S_{corr}$ on all three internal-field splits. M4J\_ES and P3c reduce this contradiction: they do not outperform strong restoration baselines in fidelity, but they provide substantially more coherent exposure-shape predictions.
+
+\subsection{Centered E-shape improves exposure-field identifiability}
+
+\begin{table*}[t]
+\centering
+\small
+\begin{tabular}{llccc}
+\hline
+Comparison & Metric & Delta & 95\% CI & FDR $q$ \\
+\hline
+M4J\_ES--M4J, UEFB & $S_{corr}$ & +0.1581 & [0.1369, 0.1791] & $2.18\times10^{-43}$ \\
+M4J\_ES--M4J, Real & PSNR & +0.6963 & [0.4141, 0.9664] & $1.57\times10^{-5}$ \\
+M4J\_ES--M4J, Synthetic & PSNR & +0.6321 & [0.4182, 0.8559] & $6.04\times10^{-8}$ \\
+M4J\_ES--M4J, Synthetic & $S_{corr}$ & +0.4301 & [0.3499, 0.5160] & $1.72\times10^{-17}$ \\
+\hline
+\end{tabular}
+\caption{Paired statistical tests for centered E-shape calibration. Positive deltas indicate improvement by M4J\_ES over M4J.}
+\label{tab:eshape_stats}
+\end{table*}
+
+The central positive result is that M4J\_ES significantly improves gauge-free exposure-shape correlation over M4J. On UEFB-v2, the $S_{corr}$ improvement is +0.1581 with a 95\% bootstrap confidence interval of [0.1369, 0.1791] and FDR-corrected $q=2.18\times10^{-43}$. The same mechanism also improves real PSNR by +0.6963 dB and synthetic PSNR by +0.6321 dB. Thus, centered E-shape calibration is not merely an interpretability regularizer; in this setting it improves exposure-field identifiability while preserving or improving paired fidelity.
+
+\subsection{PSNR-only ranking can select the wrong exposure field}
+
+M4J\_ES has lower UEFB PSNR than M4 (17.9811 versus 18.6530), but it improves UEFB $S_{corr}$ by +0.5792 relative to M4, with 95\% CI [0.5361, 0.6230] and FDR-corrected $q=3.52\times10^{-64}$. This is the main empirical justification for UEFB-G: a PSNR-only benchmark would rank M4 above M4J\_ES, while a gauge-controlled benchmark reveals that M4 learns an exposure shape with the wrong sign.
+
+\subsection{Gauge perturbation validates metric separation}
+
+The gauge perturbation benchmark confirms that the proposed metrics separate global gauge error from local shape error. A global shift of +0.5 produces E\_MAE=0.5000 and Gauge\_MAE=0.5000, but S\_MAE=0.0000 and $S_{corr}=1.0000$. A local zero-mean shape distortion produces S\_MAE=0.2026 and $S_{corr}=0.6027$ while Gauge\_MAE remains 0.0000. The mixed perturbation combines both effects. This sanity check is important because it shows that UEFB-G is not simply adding more metrics; it operationalizes distinct failure modes.
+
+\subsection{E-shape weight trade-off}
+
+The three-seed comparison between P3c ($e\_shape=0.05$) and P3d ($e\_shape=0.10$) shows that a stronger shape weight is not automatically better. P3d slightly improves UEFB PSNR and $S_{corr}$, but P3c is more stable on real and synthetic splits: P3c has Real $S_{corr}=0.7075$ and Synthetic $S_{corr}=0.8407$, compared with 0.6856 and 0.8347 for P3d. We therefore keep P3c $e\_shape=0.05$ as the default and treat P3d as a stronger-shape control.
+
+\subsection{External baselines and claim boundary}
+
+Retinexformer remains substantially stronger in RGB fidelity: it obtains 22.7939 PSNR on LOL-v2-real and 25.6690 PSNR on LOL-v2-synthetic, compared with 20.0206 and 17.6783 for P3c. This gap prevents any SOTA restoration claim. The contribution of GIR-Field is instead a problem definition and evaluation framework for gauge-identifiable exposure-field learning.
+
+\subsection{Recoverability risk is diagnostic, not solved}
+
+The recoverability risk probe reaches AUC=0.7658 for M4J\_ES and AUC=0.7655 for P3c seed3407, suggesting that harmful local enhancement is predictable from image and field statistics. However, calibration remains weak: ECE is approximately 0.281 for both variants. We therefore use recoverability risk as diagnostic evidence and do not claim that a calibrated risk head solves enhancement.
+
+\subsection{Summary of supported and unsupported claims}
+
+The formal protocol supports three claims: (1) centered exposure-shape calibration improves gauge-free field identifiability; (2) UEFB-G exposes PSNR-only misranking; and (3) global gauge and local shape errors can be separated by the proposed metric decomposition. It does not support claims that DGB-RLEF is SOTA, that DGB resolves the tri-domain trade-off, that P3c/M4J\_ES outperforms Retinexformer, or that recoverability risk is solved.

@@ -1,0 +1,23 @@
+\begin{table*}[t]
+\centering
+\scriptsize
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrlrlrl}
+\hline
+Family & N & Best real variant & Real & Best synthetic variant & Synthetic & Audit conclusion \\
+\hline
+P5 distillation & 2 & P5\_RD\_T03 & 20.416 & P5\_RD\_T01 & 17.960 & Teacher distillation improves one split at a time and can depress synthetic fidelity; it is not a mechanism-level fix for gauge identifiability. \\
+P5B domain distillation & 1 & P5B\_DW\_R03\_S005 & 19.366 & P5B\_DW\_R03\_S005 & 17.473 & Domain-weighted distillation uses domain-specific weighting and therefore weakens the clean mechanism claim while still failing to dominate all splits. \\
+P6 structure & 1 & P6\_MS\_M4J\_ES & 20.197 & P6\_MS\_M4J\_ES & 17.598 & Structural backbone changes capacity and improves local behavior, but the gains are architecture-specific rather than an identifiable exposure-field principle. \\
+P6B synthetic protection & 4 & P6B\_MS\_SYN105 & 19.996 & P6B\_MS\_SYN125 & 19.115 & Increasing synthetic reconstruction protection raises synthetic PSNR but trades away UEFB and real performance, exposing a reconstruction-weight trade-off. \\
+P6C gate protection & 4 & P6C\_MS\_GATEID005 & 20.456 & P6C\_MS\_GATEID010 & 17.890 & Gate and identity protection can recover isolated split scores, yet the scalar gate remains a fragile controller rather than a calibrated recoverability mechanism. \\
+P7 domain head & 3 & P7\_MS\_DGATE & 19.309 & P7\_MS\_DAFFINE\_GATE & 18.124 & Domain adapters and affine gates are domain-fragile: improving one domain can damage another and does not produce a stable joint model. \\
+P7B real anchor & 3 & P7B\_DHEAD\_RA010 & 19.847 & P7B\_DHEAD\_RA005 & 18.008 & Small real-anchor weights give local real/synthetic changes but do not dominate P3c or justify stronger real-anchor claims. \\
+P7C real anchor fine & 3 & P7C\_DHEAD\_RA020 & 19.517 & P7C\_DHEAD\_RA020 & 17.820 & Larger real anchors remain unstable and are not a safe continuation path under the claim boundary. \\
+DGB consolidation & 11 & P2B\_DGB\_GAUGE\_ONLY & 20.432 & P2E\_ESHAPE010\_GATEPRI002 & 18.683 & DGB routing showed split-wise gains but no row was promoted; the branch is retained as stopped evidence against router revival. \\
+\hline
+\end{tabular}%
+}
+\caption{Family-level negative-route summary. The table emphasizes why these branches were not promoted: the best real and synthetic variants are often different, and the family-level conclusion remains a trade-off rather than a robust mechanism.}
+\label{tab:negative_route_family_summary}
+\end{table*}

@@ -1,0 +1,10 @@
+method,role,evidence_level,uefb_psnr,real_psnr,synthetic_psnr,uefb_E_corr,real_E_corr,synthetic_E_corr,decision,main_claim_allowed,note
+M0 restorer_only,minimal restorer baseline,single-seed ablation,17.378734716415405,15.306243162155152,12.564085321426392,0.0,,,mainline ablation / route evidence,False,baseline for mechanism ablation
+M4 A-gate,strong UEFB mechanism,single-seed ablation,18.653046085357666,17.411298198699953,13.963236708641052,-0.1393017480619601,,,mainline ablation / route evidence,True,A-gate improves UEFB but no paired-domain maturity
+M4J joint,joint-training bridge,single-seed route evidence,18.081791761398314,19.580696802139283,16.508465394973754,0.2817509212537552,0.5007488341629505,0.3690364879556,mainline ablation / route evidence,True,joint UEFB+LOL training improves paired fidelity
+M4J_ES seed3407,E-shape route evidence,single-seed route evidence,17.9811068611145,20.277040662765504,17.140526418685912,0.43985495356749743,0.6482521766424179,0.7991548854112626,mainline ablation / route evidence,True,low-pass centered E-shape turns E correlations positive
+P3c M4J_ES e_shape=0.05,conservative default,3-seed default,17.914535294214883,20.02060646692912,17.678273655573523,0.4361369502673236,0.7074678050478299,0.84072034517924,current conservative default,True,main RLEF default; interpretable exposure-field auxiliary calibration
+Retinexformer,official baseline,official-code eval,,22.79388285636902,25.668988761901854,,,,official baseline comparison,False,restoration baseline only; no RLEF interpretability heads
+Zero-DCE++,official baseline,official-code eval,,18.490733785629274,17.57644090652466,,,,official baseline comparison,False,restoration baseline only; no RLEF interpretability heads
+KinD++,official baseline,official-code eval,,22.210949687957765,19.259352045059202,,,,official baseline comparison,False,restoration baseline only; no RLEF interpretability heads
+DGB branch,diagnostic branch,stopped consolidation,17.863255617141725,20.431721687316895,18.683455123901368,,,,stopped; diagnostic only,False,No DGB candidate passed the joint UEFB/real/synthetic gate; use as negative-route evidence only.

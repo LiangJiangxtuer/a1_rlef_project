@@ -1,0 +1,36 @@
+[
+  {
+    "status": "ok",
+    "n_train": 7000,
+    "n_test": 3000,
+    "positive_rate_train": 0.13171428442001343,
+    "positive_rate_test": 0.14133333333333334,
+    "logistic_auc": 0.7658007881167234,
+    "logistic_ece": 0.2807872076183558,
+    "logistic_acc@0.5": 0.673,
+    "A_mean_auc": 0.2879336106879175,
+    "Q_risk_auc": 0.523257134067737,
+    "sat_pred_auc": 0.4770184504277511,
+    "E_abs_auc": 0.30693886968240947,
+    "S_abs_auc": 0.507521350931677,
+    "features": "mean_low,mean_pred,grad_low,A_mean,Q_risk,E_abs,S_abs,sat_pred",
+    "variant_id": "M4J_ES"
+  },
+  {
+    "status": "ok",
+    "n_train": 7000,
+    "n_test": 3000,
+    "positive_rate_train": 0.13171428442001343,
+    "positive_rate_test": 0.14133333333333334,
+    "logistic_auc": 0.7654675231454353,
+    "logistic_ece": 0.2809492608259121,
+    "logistic_acc@0.5": 0.6743333333333333,
+    "A_mean_auc": 0.2879336106879175,
+    "Q_risk_auc": 0.523257134067737,
+    "sat_pred_auc": 0.4770184504277511,
+    "E_abs_auc": 0.30693886968240947,
+    "S_abs_auc": 0.507521350931677,
+    "features": "mean_low,mean_pred,grad_low,A_mean,Q_risk,E_abs,S_abs,sat_pred",
+    "variant_id": "P3C_E0050_S3407"
+  }
+]

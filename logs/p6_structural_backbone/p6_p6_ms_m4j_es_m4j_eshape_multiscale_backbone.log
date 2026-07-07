@@ -1,0 +1,149 @@
++ /home/user/miniconda3/envs/cutler_dinov3/bin/python scripts/train.py --config /home/user/a1_rlef_project/configs/p6_structural_backbone/p6_p6_ms_m4j_es_m4j_eshape_multiscale_backbone.yml --output_dir /home/user/a1_rlef_project/experiments/p6_p6_ms_m4j_es_m4j_eshape_multiscale_backbone_seed3407 --device cuda --max_steps 1000
+{"step": 1, "loss": 0.515013575553894, "rec": 0.2649596929550171, "phys": 0.29046210646629333, "poisson": 0.36360663175582886, "gauge": 1.3387945890426636, "e_shape": 0.9568678736686707, "id": 0.021734455600380898, "gate": 0.18719883263111115, "wtv": 0.12013202160596848}
+{"step": 100, "loss": 0.27070102095603943, "rec": 0.18531747162342072, "phys": 0.14090539515018463, "poisson": 0.15222516655921936, "gauge": 0.3133476972579956, "e_shape": 0.3765993118286133, "id": 0.012286659330129623, "gate": 0.27329254150390625, "wtv": 0.03800865635275841}
+{"step": 200, "loss": 0.23516583442687988, "rec": 0.15703319013118744, "phys": 0.1275961697101593, "poisson": 0.17446886003017426, "gauge": 0.2458658069372177, "e_shape": 0.37769460678100586, "id": 0.020120637491345406, "gate": 0.27242299914360046, "wtv": 0.04737985134124756}
+{"step": 300, "loss": 0.3309307396411896, "rec": 0.23016661405563354, "phys": 0.18064188957214355, "poisson": 0.17015856504440308, "gauge": 0.46137797832489014, "e_shape": 0.2593343257904053, "id": 0.03597397729754448, "gate": 0.22632333636283875, "wtv": 0.04047102853655815}
+{"step": 400, "loss": 0.25397229194641113, "rec": 0.16933992505073547, "phys": 0.14073525369167328, "poisson": 0.23929211497306824, "gauge": 0.3427508473396301, "e_shape": 0.2159191220998764, "id": 0.018422048538923264, "gate": 0.270221471786499, "wtv": 0.03567776083946228}
+{"step": 500, "loss": 0.25795435905456543, "rec": 0.17121295630931854, "phys": 0.15478144586086273, "poisson": 0.0828455463051796, "gauge": 0.23318105936050415, "e_shape": 0.5927088856697083, "id": 0.022741694003343582, "gate": 0.26946067810058594, "wtv": 0.029214587062597275}
+{"step": 600, "loss": 0.24633587896823883, "rec": 0.15619602799415588, "phys": 0.12624847888946533, "poisson": 0.09660466015338898, "gauge": 0.39103788137435913, "e_shape": 0.4042125344276428, "id": 0.006059289909899235, "gate": 0.31518757343292236, "wtv": 0.03164951503276825}
+{"step": 700, "loss": 0.1845605969429016, "rec": 0.12035347521305084, "phys": 0.11003115028142929, "poisson": 0.10879835486412048, "gauge": 0.16243654489517212, "e_shape": 0.40227702260017395, "id": 0.010529647581279278, "gate": 0.2504696846008301, "wtv": 0.03425075113773346}
+{"step": 800, "loss": 0.2574986219406128, "rec": 0.17142243683338165, "phys": 0.12409813702106476, "poisson": 0.36237263679504395, "gauge": 0.26748988032341003, "e_shape": 0.33299779891967773, "id": 0.022626079618930817, "gate": 0.23752719163894653, "wtv": 0.03704410046339035}
+{"step": 900, "loss": 0.22937820851802826, "rec": 0.1603119820356369, "phys": 0.10993365943431854, "poisson": 0.030298592522740364, "gauge": 0.16759537160396576, "e_shape": 0.5477398037910461, "id": 0.01325939130038023, "gate": 0.3093065917491913, "wtv": 0.023170892149209976}
+{"step": 1000, "loss": 0.2521876096725464, "rec": 0.15968534350395203, "phys": 0.11619799584150314, "poisson": 0.027320824563503265, "gauge": 0.3918958604335785, "e_shape": 0.5657027363777161, "id": 0.02233855426311493, "gate": 0.26937782764434814, "wtv": 0.01987522467970848}
+{
+  "DONE": true,
+  "run_id": "p6_p6_ms_m4j_es_m4j_eshape_multiscale_backbone_seed3407",
+  "command": "scripts/train.py --config /home/user/a1_rlef_project/configs/p6_structural_backbone/p6_p6_ms_m4j_es_m4j_eshape_multiscale_backbone.yml --output_dir /home/user/a1_rlef_project/experiments/p6_p6_ms_m4j_es_m4j_eshape_multiscale_backbone_seed3407 --device cuda --max_steps 1000",
+  "steps": 1000,
+  "elapsed_sec": 104.09988379478455,
+  "config": {
+    "seed": 3407,
+    "protocol": {
+      "stage": "P6 stronger-backbone RLEF integration",
+      "variant_id": "P6_MS_M4J_ES",
+      "variant_name": "m4j_eshape_multiscale_backbone",
+      "notes": "Keep M4J_ES exposure/A-gate/E-shape heads; replace the restoration trunk with a multiscale backbone. No teacher/output-level distillation."
+    },
+    "model": {
+      "base_channels": 24,
+      "e_max": 3.5,
+      "exposure_branch": true,
+      "adaptive_gauge": true,
+      "fixed_gauge": null,
+      "physics_branch": true,
+      "gate_branch": true,
+      "q_branch": false,
+      "backbone": "multiscale",
+      "backbone_blocks": 3
+    },
+    "training": {
+      "batch_size": 8,
+      "max_steps": 1000,
+      "lr": 0.0002,
+      "weight_decay": 0.0001,
+      "crop_size": 128,
+      "log_every": 100,
+      "num_workers": 0,
+      "grad_clip": 1.0
+    },
+    "eval": {
+      "batch_size": 1
+    },
+    "data": {
+      "train": [
+        {
+          "type": "uefb",
+          "root": "/home/user/a1_rlef_project/data/UEFB-v2/train",
+          "crop_size": 128,
+          "augment": true,
+          "max_images": null
+        },
+        {
+          "type": "paired_rgb",
+          "low_dir": "/home/user/a1_rlef_project/data/LOL-v2/Real_captured/Train/Low",
+          "high_dir": "/home/user/a1_rlef_project/data/LOL-v2/Real_captured/Train/Normal",
+          "crop_size": 128,
+          "augment": true,
+          "max_images": null,
+          "name": "LOL-v2-real-train"
+        },
+        {
+          "type": "paired_rgb",
+          "low_dir": "/home/user/a1_rlef_project/data/LOL-v2/Synthetic/Train/Low",
+          "high_dir": "/home/user/a1_rlef_project/data/LOL-v2/Synthetic/Train/Normal",
+          "crop_size": 128,
+          "augment": true,
+          "max_images": null,
+          "name": "LOL-v2-synthetic-train"
+        }
+      ],
+      "val": {
+        "type": "uefb",
+        "root": "/home/user/a1_rlef_project/data/UEFB-v2/test",
+        "crop_size": null,
+        "augment": false,
+        "max_images": null
+      }
+    },
+    "loss": {
+      "rec": 1.0,
+      "phys": 0.15,
+      "poisson": 0.05,
+      "gauge": 0.1,
+      "id": 0.02,
+      "gate": 0.02,
+      "wtv": 0.02,
+      "e_shape": 0.05,
+      "e_shape_kernel": 7
+    }
+  },
+  "metrics": {
+    "psnr": 18.01507918548584,
+    "ssim": 0.8042977310419083,
+    "lee": 0.26751686445623635,
+    "nai": 1.7051438660621643,
+    "input_psnr": 12.995622906684876,
+    "identity_drop": 5.019456279754639,
+    "q_ece": 0.4218419110774994,
+    "over": 1.413981207406323e-06,
+    "under": 0.0,
+    "E_MAE": 0.26866154417395594,
+    "E_MAE_aligned": 0.1937878990396857,
+    "E_corr": 0.46372391109215094
+  },
+  "checkpoint": "/home/user/a1_rlef_project/experiments/p6_p6_ms_m4j_es_m4j_eshape_multiscale_backbone_seed3407/checkpoints/last.pth"
+}
++ /home/user/miniconda3/envs/cutler_dinov3/bin/python scripts/eval_paired.py --config /home/user/a1_rlef_project/configs/p6_structural_backbone/p6_p6_ms_m4j_es_m4j_eshape_multiscale_backbone.yml --checkpoint /home/user/a1_rlef_project/experiments/p6_p6_ms_m4j_es_m4j_eshape_multiscale_backbone_seed3407/checkpoints/last.pth --low_dir /home/user/a1_rlef_project/data/LOL-v2/Real_captured/Test/Low --high_dir /home/user/a1_rlef_project/data/LOL-v2/Real_captured/Test/Normal --output_dir /home/user/a1_rlef_project/experiments/p6_p6_ms_m4j_es_m4j_eshape_multiscale_backbone_seed3407/paired_eval/real --device cuda
+/home/user/a1_rlef_project/scripts/eval_paired.py:18: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model=build_model(cfg).to(device); ckpt=torch.load(args.checkpoint,map_location=device); model.load_state_dict(ckpt['model'])
+{
+  "psnr": 20.196916770935058,
+  "ssim": 0.7847263890504838,
+  "lee": 0.21442044503986835,
+  "nai": 2.404168084859848,
+  "input_psnr": 9.718215217590332,
+  "identity_drop": 10.47870156288147,
+  "q_ece": 0.5365916293859482,
+  "over": 2.4430555622529937e-05,
+  "under": 0.0,
+  "E_MAE": 0.35339568242430686,
+  "E_MAE_aligned": 0.2716810696572065,
+  "E_corr": 0.6288594188913703
+}
++ /home/user/miniconda3/envs/cutler_dinov3/bin/python scripts/eval_paired.py --config /home/user/a1_rlef_project/configs/p6_structural_backbone/p6_p6_ms_m4j_es_m4j_eshape_multiscale_backbone.yml --checkpoint /home/user/a1_rlef_project/experiments/p6_p6_ms_m4j_es_m4j_eshape_multiscale_backbone_seed3407/checkpoints/last.pth --low_dir /home/user/a1_rlef_project/data/LOL-v2/Synthetic/Test/Low --high_dir /home/user/a1_rlef_project/data/LOL-v2/Synthetic/Test/Normal --output_dir /home/user/a1_rlef_project/experiments/p6_p6_ms_m4j_es_m4j_eshape_multiscale_backbone_seed3407/paired_eval/synthetic --device cuda
+/home/user/a1_rlef_project/scripts/eval_paired.py:18: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model=build_model(cfg).to(device); ckpt=torch.load(args.checkpoint,map_location=device); model.load_state_dict(ckpt['model'])
+{
+  "psnr": 17.59765707015991,
+  "ssim": 0.7592092883586884,
+  "lee": 0.3095694976858795,
+  "nai": 1.2588043957948685,
+  "input_psnr": 11.220927743911743,
+  "identity_drop": 6.376729316711426,
+  "q_ece": 0.578538883626461,
+  "over": 4.295066569284245e-06,
+  "under": 0.0,
+  "E_MAE": 0.5490597989596426,
+  "E_MAE_aligned": 0.48398508489131925,
+  "E_corr": 0.8119656559824944
+}

@@ -1,0 +1,6 @@
+claim_id,claim,status,primary_artifacts,allowed_in_main,forbidden_overclaim
+C1_centered_shape_positive,Centered/gauge-invariant E-shape improves exposure-shape identifiability relative to M4J.,to_test_in_N1,N1_statistics/statistical_tests.csv,True,E_corr improvement guarantees superior restoration
+C2_psnr_can_mislead,UEFB-G/E-A-Q exposes PSNR-only misranking such as M4 high PSNR but weak/wrong shape.,to_test_in_N1_N2,"N1_statistics, N2_uefbg",True,PSNR is invalid for all LLIE
+C3_dgb_no_joint_resolution,DGB/P5/P6/P7 move trade-offs but do not resolve tri-domain balance under current evidence.,frozen_prior_audit,dgb_branch_consolidation_summary; final_ablation_table,False,DGB-RLEF is SOTA or resolves tri-domain trade-off
+C4_external_blackbox_boundary,External black-box baselines can be compared on output metrics but not internal E/S/Gauge metrics.,to_register_in_N3,N3_external/external_baseline_registry.csv,True,black-box methods failed E_corr because they lack internal E-map
+C5_recoverability_risk_probe,A lightweight output/field risk probe can test whether recoverability risk is calibratable without reviving DGB router.,to_test_in_N4,N4_risk/risk_calibration_summary.csv,False,risk head solves enhancement

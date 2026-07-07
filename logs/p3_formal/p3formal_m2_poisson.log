@@ -1,0 +1,122 @@
++ /home/user/miniconda3/envs/cutler_dinov3/bin/python scripts/train.py --config /home/user/a1_rlef_project/configs/p3_formal/p3formal_m2_poisson.yml --output_dir /home/user/a1_rlef_project/experiments/p3formal_m2_poisson_seed3407 --device cuda --max_steps 1000
+{"step": 1, "loss": 0.3677205741405487, "rec": 0.3278404772281647, "phys": 0.18838566541671753, "poisson": 0.17316386103630066, "wtv": 0.1482030749320984}
+{"step": 100, "loss": 0.1961694061756134, "rec": 0.1726164072751999, "phys": 0.12589102983474731, "poisson": 0.07143072783946991, "wtv": 0.05488976836204529}
+{"step": 200, "loss": 0.19498108327388763, "rec": 0.17134706676006317, "phys": 0.12673060595989227, "poisson": 0.07084576040506363, "wtv": 0.054107069969177246}
+{"step": 300, "loss": 0.17758141458034515, "rec": 0.1576204150915146, "phys": 0.10948632657527924, "poisson": 0.05325350910425186, "wtv": 0.043769340962171555}
+{"step": 400, "loss": 0.1804751306772232, "rec": 0.1602429300546646, "phys": 0.11181449890136719, "poisson": 0.05215255171060562, "wtv": 0.04261942580342293}
+{"step": 500, "loss": 0.18396277725696564, "rec": 0.1639036387205124, "phys": 0.11458808183670044, "poisson": 0.043945230543613434, "wtv": 0.03368360549211502}
+{"step": 600, "loss": 0.16913233697414398, "rec": 0.14930099248886108, "phys": 0.11546522378921509, "poisson": 0.03847648575901985, "wtv": 0.029386775568127632}
+{"step": 700, "loss": 0.18131552636623383, "rec": 0.1619633436203003, "phys": 0.1159886047244072, "poisson": 0.030561283230781555, "wtv": 0.021290535107254982}
+{"step": 800, "loss": 0.14762939512729645, "rec": 0.13163325190544128, "phys": 0.09410759061574936, "poisson": 0.029386550188064575, "wtv": 0.02053392492234707}
+{"step": 900, "loss": 0.15957750380039215, "rec": 0.1417352259159088, "phys": 0.10422448813915253, "poisson": 0.034509703516960144, "wtv": 0.024156391620635986}
+{"step": 1000, "loss": 0.12971289455890656, "rec": 0.11604495346546173, "phys": 0.08216829597949982, "poisson": 0.02115585468709469, "wtv": 0.014245187863707542}
+{
+  "DONE": true,
+  "run_id": "p3formal_m2_poisson_seed3407",
+  "command": "scripts/train.py --config /home/user/a1_rlef_project/configs/p3_formal/p3formal_m2_poisson.yml --output_dir /home/user/a1_rlef_project/experiments/p3formal_m2_poisson_seed3407 --device cuda --max_steps 1000",
+  "steps": 1000,
+  "elapsed_sec": 150.66125106811523,
+  "config": {
+    "seed": 3407,
+    "protocol": {
+      "stage": "P3 formal",
+      "variant_id": "M2",
+      "variant_name": "poisson",
+      "notes": "UEFB-v2 1000-step single-seed M0-M5 mechanism ablation; paired real/synthetic tests are routing diagnostics."
+    },
+    "model": {
+      "base_channels": 24,
+      "e_max": 3.5,
+      "exposure_branch": true,
+      "adaptive_gauge": false,
+      "fixed_gauge": null,
+      "physics_branch": true,
+      "gate_branch": false,
+      "q_branch": false
+    },
+    "training": {
+      "batch_size": 8,
+      "max_steps": 1000,
+      "lr": 0.0002,
+      "weight_decay": 0.0001,
+      "crop_size": 128,
+      "log_every": 100,
+      "num_workers": 0,
+      "grad_clip": 1.0
+    },
+    "eval": {
+      "batch_size": 1
+    },
+    "data": {
+      "train": {
+        "type": "uefb",
+        "root": "/home/user/a1_rlef_project/data/UEFB-v2/train",
+        "crop_size": 128,
+        "augment": true,
+        "max_images": null
+      },
+      "val": {
+        "type": "uefb",
+        "root": "/home/user/a1_rlef_project/data/UEFB-v2/test",
+        "crop_size": null,
+        "augment": false,
+        "max_images": null
+      }
+    },
+    "loss": {
+      "rec": 1.0,
+      "phys": 0.15,
+      "poisson": 0.05,
+      "wtv": 0.02
+    }
+  },
+  "metrics": {
+    "psnr": 17.89131669807434,
+    "ssim": 0.8089352349042892,
+    "lee": 0.2711033066883683,
+    "nai": 1.7839800590276718,
+    "input_psnr": 12.995622906684876,
+    "identity_drop": 4.895693786621094,
+    "q_ece": 0.3976258573681116,
+    "over": 0.0,
+    "under": 0.0,
+    "E_MAE": 1.8329850402474404,
+    "E_MAE_aligned": 0.23038691040314735,
+    "E_corr": -0.10418134256295161
+  },
+  "checkpoint": "/home/user/a1_rlef_project/experiments/p3formal_m2_poisson_seed3407/checkpoints/last.pth"
+}
++ /home/user/miniconda3/envs/cutler_dinov3/bin/python scripts/eval_paired.py --config /home/user/a1_rlef_project/configs/p3_formal/p3formal_m2_poisson.yml --checkpoint /home/user/a1_rlef_project/experiments/p3formal_m2_poisson_seed3407/checkpoints/last.pth --low_dir /home/user/a1_rlef_project/data/LOL-v2/Real_captured/Test/Low --high_dir /home/user/a1_rlef_project/data/LOL-v2/Real_captured/Test/Normal --output_dir /home/user/a1_rlef_project/experiments/p3formal_m2_poisson_seed3407/paired_eval/real --device cuda
+Traceback (most recent call last):
+  File "/home/user/a1_rlef_project/scripts/eval_paired.py", line 8, in <module>
+    from scripts.train import build_model, evaluate
+ModuleNotFoundError: No module named 'scripts.train'
+RESUME: found existing checkpoint and UEFB metrics under /home/user/a1_rlef_project/experiments/p3formal_m2_poisson_seed3407
++ /home/user/miniconda3/envs/cutler_dinov3/bin/python scripts/eval_paired.py --config /home/user/a1_rlef_project/configs/p3_formal/p3formal_m2_poisson.yml --checkpoint /home/user/a1_rlef_project/experiments/p3formal_m2_poisson_seed3407/checkpoints/last.pth --low_dir /home/user/a1_rlef_project/data/LOL-v2/Real_captured/Test/Low --high_dir /home/user/a1_rlef_project/data/LOL-v2/Real_captured/Test/Normal --output_dir /home/user/a1_rlef_project/experiments/p3formal_m2_poisson_seed3407/paired_eval/real --device cuda
+/home/user/a1_rlef_project/scripts/eval_paired.py:18: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model=build_model(cfg).to(device); ckpt=torch.load(args.checkpoint,map_location=device); model.load_state_dict(ckpt['model'])
+{
+  "psnr": 16.688868007659913,
+  "ssim": 0.6332144883275032,
+  "lee": 0.7021692472696305,
+  "nai": 2.312658762931824,
+  "input_psnr": 9.718215217590332,
+  "identity_drop": 6.97065279006958,
+  "q_ece": 0.6399277803301812,
+  "over": 1.3194444363762159e-06,
+  "under": 3.0555555895261933e-07
+}
++ /home/user/miniconda3/envs/cutler_dinov3/bin/python scripts/eval_paired.py --config /home/user/a1_rlef_project/configs/p3_formal/p3formal_m2_poisson.yml --checkpoint /home/user/a1_rlef_project/experiments/p3formal_m2_poisson_seed3407/checkpoints/last.pth --low_dir /home/user/a1_rlef_project/data/LOL-v2/Synthetic/Test/Low --high_dir /home/user/a1_rlef_project/data/LOL-v2/Synthetic/Test/Normal --output_dir /home/user/a1_rlef_project/experiments/p3formal_m2_poisson_seed3407/paired_eval/synthetic --device cuda
+/home/user/a1_rlef_project/scripts/eval_paired.py:18: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model=build_model(cfg).to(device); ckpt=torch.load(args.checkpoint,map_location=device); model.load_state_dict(ckpt['model'])
+{
+  "psnr": 13.340277523994446,
+  "ssim": 0.5983738493919373,
+  "lee": 0.7068440735712648,
+  "nai": 1.1401101702451706,
+  "input_psnr": 11.220927743911743,
+  "identity_drop": 2.1193497800827026,
+  "q_ece": 0.5749986845254899,
+  "over": 0.0,
+  "under": 0.0
+}
