@@ -1,0 +1,10 @@
+{
+  "DONE": true,
+  "out_dir": "results/uefbg_v1/internal_methods",
+  "validation_status": "PASS",
+  "n_rows": 6300,
+  "n_variants": 9,
+  "n_datasets": 3,
+  "manifest": "results/uefbg_v1/internal_methods/manifest.json",
+  "report": "results/uefbg_v1/internal_methods/report_cards.md"
+}

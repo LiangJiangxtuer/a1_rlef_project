@@ -1,0 +1,11 @@
+{
+  "DONE": true,
+  "out_dir": "results/uefbg_external_adapters",
+  "n_rows": 1200,
+  "n_summary_rows": 12,
+  "validation_status": "PASS",
+  "per_image_csv": "results/uefbg_external_adapters/external_adapter_per_image.csv",
+  "summary_csv": "results/uefbg_external_adapters/external_adapter_summary.csv",
+  "report": "results/uefbg_external_adapters/EXTERNAL_FIELD_ADAPTER_STUDY_REPORT.md",
+  "uefbg_bundle": "results/uefbg_external_adapters/uefbg_v1_bundle"
+}

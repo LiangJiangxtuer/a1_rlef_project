@@ -1,0 +1,104 @@
+{
+  "audit_date": "2026-07-07",
+  "repo_head_audited": "9ac323672b57e866eecadecb99958a144d1e2c70",
+  "overall_verdict": "Scientifically promising and correctly claim-calibrated, but not yet top-tier-ready without public benchmark hardening and cross-method or strong-backbone validation.",
+  "current_supported_claims": [
+    {
+      "claim": "Centered E-shape improves gauge-free exposure-field identifiability over M4J.",
+      "status": "supported",
+      "key_evidence": "UEFB S_corr delta +0.1581, 95% CI [0.1369, 0.1791], FDR q=2.18e-43"
+    },
+    {
+      "claim": "PSNR-only ranking can select physically incoherent exposure fields.",
+      "status": "supported",
+      "key_evidence": "M4 UEFB PSNR 18.6530 but S_corr -0.1393; M4J_ES UEFB PSNR 17.9811 but S_corr 0.4399"
+    },
+    {
+      "claim": "UEFB-G metric decomposition separates global gauge from local shape distortion.",
+      "status": "supported_as_protocol_sanity",
+      "key_evidence": "Global shift: S_MAE 0 and S_corr 1; local shape distortion changes S metrics while Gauge_MAE remains 0"
+    },
+    {
+      "claim": "Recoverability risk has signal but is not calibrated.",
+      "status": "diagnostic_only",
+      "key_evidence": "AUC about 0.766, ECE about 0.281"
+    }
+  ],
+  "unsupported_claims": [
+    "GIR-Field/RLEF is SOTA LLIE",
+    "M4J_ES/P3c beats Retinexformer",
+    "DGB resolves tri-domain trade-off",
+    "Recoverability risk is solved",
+    "UEFB-G is already a public benchmark"
+  ],
+  "top_tier_blockers": [
+    "UEFB-G is still a local protocol rather than a public evaluator/dataset package",
+    "External field-aware method coverage is missing",
+    "Output fidelity is far below Retinexformer on synthetic LOL-v2",
+    "2024-2026 literature refresh is citation-level, not baseline-run-level",
+    "Recoverability risk calibration is weak"
+  ],
+  "recommended_iteration": {
+    "north_star": "Benchmark-first + strong-baseline-compatible field probe",
+    "phases": [
+      {
+        "id": "I1",
+        "name": "UEFB-G Benchmark v1 public package",
+        "priority": "P0",
+        "deliverables": [
+          "scripts/uefbg_eval.py",
+          "configs/uefbg/protocol_v1.yaml",
+          "docs/UEFB_G_DATASET_CARD.md",
+          "docs/UEFB_G_EVALUATOR_SPEC.md",
+          "tests/test_uefbg_evaluator_contract.py",
+          "results/uefbg_v1/internal_methods"
+        ],
+        "go_no_go": "GO if evaluator runs standalone without RLEF internals and reproduces current metrics within tolerance."
+      },
+      {
+        "id": "I2",
+        "name": "External field-aware adapter study",
+        "priority": "P1",
+        "deliverables": [
+          "src/rlef/adapters/exposure_field_adapters.py",
+          "scripts/run_uefbg_external_adapters.py",
+          "docs/EXTERNAL_FIELD_ADAPTER_PROTOCOL.md",
+          "results/uefbg_external_adapters"
+        ],
+        "go_no_go": "GO if at least two external/semiexternal methods produce defensible field proxies with nontrivial S/Gauge behavior."
+      },
+      {
+        "id": "I3",
+        "name": "Strong-backbone-compatible GIR probe",
+        "priority": "P1",
+        "deliverables": [
+          "scripts/run_gir_strong_backbone_probe.py",
+          "docs/GIR_STRONG_BACKBONE_PROBE_REPORT.md",
+          "results/gir_strong_backbone_probe"
+        ],
+        "go_no_go": "GO if output PSNR stays within <=0.3 dB of frozen strong backbone while S_corr improves over naive illumination proxy."
+      },
+      {
+        "id": "I4",
+        "name": "Recoverability calibration upgrade",
+        "priority": "P2",
+        "deliverables": [
+          "scripts/run_recoverability_calibration.py",
+          "docs/RECOVERABILITY_CALIBRATION_AUDIT.md",
+          "results/recoverability_calibration_v1"
+        ],
+        "go_no_go": "Main-paper GO only if ECE <=0.08 and AUC >=0.78 on held-out split; otherwise appendix only."
+      },
+      {
+        "id": "I5",
+        "name": "Paper v2 rewrite",
+        "priority": "P2_after_I1_and_I2_or_I3",
+        "deliverables": [
+          "docs/paper/gir_field_v2/"
+        ],
+        "go_no_go": "Proceed to top-tier submission only after I1 plus I2 or I3 succeeds."
+      }
+    ],
+    "immediate_next_step": "Build UEFB-G public evaluator v1 and rerun current internal methods through it."
+  }
+}

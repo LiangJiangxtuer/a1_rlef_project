@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "n_rows": 6300,
+  "n_variants": 9,
+  "n_datasets": 3,
+  "variants": [
+    "M4",
+    "M4J",
+    "M4J_ES",
+    "P3C_E0050_S2027",
+    "P3C_E0050_S3407",
+    "P3C_E0050_S42",
+    "P3D_E0100_S2027",
+    "P3D_E0100_S3407",
+    "P3D_E0100_S42"
+  ],
+  "datasets": [
+    "real",
+    "synthetic",
+    "uefb"
+  ],
+  "output_only_rows": 0,
+  "field_aware_rows": 6300,
+  "partial_field_rows": 0
+}

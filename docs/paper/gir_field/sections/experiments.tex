@@ -69,6 +69,12 @@ The three-seed comparison between P3c ($e\_shape=0.05$) and P3d ($e\_shape=0.10$
 
 Retinexformer remains substantially stronger in RGB fidelity: it obtains 22.7939 PSNR on LOL-v2-real and 25.6690 PSNR on LOL-v2-synthetic, compared with 20.0206 and 17.6783 for P3c. This gap prevents any SOTA restoration claim. The contribution of GIR-Field is instead a problem definition and evaluation framework for gauge-identifiable exposure-field learning.
 
+\subsection{External field-aware adapter study}
+
+To test whether UEFB-G is only self-referential to our own internal field, we add an external adapter study on frozen P4 baseline outputs. For a black-box prediction $P$, low-light input $L$, and paired reference $H$, the adapter defines $\hat{E}=\log(Y_P+\epsilon)-\log(Y_L+\epsilon)$ and compares it with $E^{gt}=\log(Y_H+\epsilon)-\log(Y_L+\epsilon)$. This is an adapter-derived luminance-gain proxy, not a claim that the external method exposes this exact internal variable. Table~\ref{tab:external_adapter} shows that Retinexformer has strong low-pass adapter-field shape agreement ($S_{corr}=0.9547/0.9893$ on real/synthetic), while Zero-DCE++ has moderate shape agreement but large gauge error. Thus UEFB-G can be used in two modes: explicit internal-field evaluation for methods such as GIR-Field, and adapter-field analysis for black-box enhancers under a clearly stated proxy boundary.
+
+\input{tables/external_adapter_lowpass_table}
+
 \subsection{Recoverability risk is diagnostic, not solved}
 
 The recoverability risk probe reaches AUC=0.7658 for M4J\_ES and AUC=0.7655 for P3c seed3407, suggesting that harmful local enhancement is predictable from image and field statistics. However, calibration remains weak: ECE is approximately 0.281 for both variants. We therefore use recoverability risk as diagnostic evidence and do not claim that a calibrated risk head solves enhancement.

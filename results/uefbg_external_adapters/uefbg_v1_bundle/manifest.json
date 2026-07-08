@@ -1,0 +1,66 @@
+{
+  "benchmark": "UEFB-G",
+  "version": "i2-v1",
+  "created_at_unix": 1783473766.6141722,
+  "protocol": {
+    "name": "UEFB-G external field-aware adapter protocol",
+    "version": "i2-v1",
+    "adapter_claim_boundary": "adapter-derived luminance gain proxy, not internal field proof"
+  },
+  "source_metrics_path": "results/uefbg_external_adapters/external_adapter_per_image.csv",
+  "n_input_rows": 1200,
+  "validation": {
+    "status": "PASS",
+    "errors": [],
+    "n_rows": 1200,
+    "n_variants": 6,
+    "n_datasets": 2,
+    "variants": [
+      "KinD++__log_ratio_lowpass_r8",
+      "KinD++__log_ratio_raw",
+      "Retinexformer__log_ratio_lowpass_r8",
+      "Retinexformer__log_ratio_raw",
+      "Zero-DCE++__log_ratio_lowpass_r8",
+      "Zero-DCE++__log_ratio_raw"
+    ],
+    "datasets": [
+      "real",
+      "synthetic"
+    ],
+    "output_only_rows": 0,
+    "field_aware_rows": 1200,
+    "partial_field_rows": 0
+  },
+  "files": [
+    {
+      "key": "input_metrics_csv",
+      "path": "results/uefbg_external_adapters/uefbg_v1_bundle/input_metrics.csv",
+      "size_bytes": 974640,
+      "sha256": "bbe59709c18760d7f39d676e1c811125c29e63ce8af04cdff68d9f898dbb251d"
+    },
+    {
+      "key": "summary_csv",
+      "path": "results/uefbg_external_adapters/uefbg_v1_bundle/summary.csv",
+      "size_bytes": 7703,
+      "sha256": "c9cbb418833b1f7c09b277045306a36acad6de98a6c88d2cfc3651c3494a650d"
+    },
+    {
+      "key": "summary_json",
+      "path": "results/uefbg_external_adapters/uefbg_v1_bundle/summary.json",
+      "size_bytes": 17840,
+      "sha256": "16c1d5a271be5278d7f2d15022cf362a05653b2f1ab9a1443263a34d51a69058"
+    },
+    {
+      "key": "validation_json",
+      "path": "results/uefbg_external_adapters/uefbg_v1_bundle/validation.json",
+      "size_bytes": 460,
+      "sha256": "c78d95e82ed0b22bbba7b8de2ecc77b982fe45c0e53e66989ca31df27c5aa7a0"
+    },
+    {
+      "key": "report_cards_md",
+      "path": "results/uefbg_external_adapters/uefbg_v1_bundle/report_cards.md",
+      "size_bytes": 1747,
+      "sha256": "7e97f32944fdbbc056c87e3b8c7ae542fc42344cbfa6d9951417b27d7b4b3f33"
+    }
+  ]
+}

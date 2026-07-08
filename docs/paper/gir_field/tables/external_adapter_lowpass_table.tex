@@ -1,0 +1,22 @@
+\begin{table}[t]
+\centering
+\caption{External field-aware adapter study on frozen P4 baseline outputs. Values use the low-pass log-luminance-ratio adapter. KinD++ is shown for completeness but its executed official script is high-assisted.}
+\label{tab:external_adapter}
+\scriptsize
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lccccc}
+\hline
+Method & Split & PSNR$\uparrow$ & $S_{corr}\uparrow$ & S\_MAE$\downarrow$ & Gauge\_MAE$\downarrow$ \\
+\hline
+Retinexformer & Real & 22.7939 & 0.9547 & 0.0591 & 0.1827 \\
+Retinexformer & Synthetic & 25.6690 & 0.9893 & 0.0657 & 0.1265 \\
+Zero-DCE++ & Real & 18.4907 & 0.6590 & 0.1744 & 0.4859 \\
+Zero-DCE++ & Synthetic & 17.5764 & 0.7998 & 0.2912 & 0.4812 \\
+KinD++$^{\dagger}$ & Real & 22.2109 & 0.9445 & 0.0833 & 0.1161 \\
+KinD++$^{\dagger}$ & Synthetic & 19.2594 & 0.9228 & 0.1683 & 0.1944 \\
+\hline
+\end{tabular}
+}
+\vspace{2pt}
+\footnotesize{$^{\dagger}$High-assisted under the executed official KinD++ script; not counted as blind external support.}
+\end{table}

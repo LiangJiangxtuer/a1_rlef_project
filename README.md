@@ -19,7 +19,8 @@ The repository does **not** claim SOTA low-light image enhancement and does **no
 Compiled drafts:
 
 ```text
-docs/paper/gir_field/build_ieee_v3/gir_field_ieee_conference.pdf      # IEEE-style conference draft, 8 pages
+docs/paper/gir_field/build_i2_ieee/gir_field_ieee_conference.pdf      # latest IEEE-style draft with I2 external adapter study, 8 pages
+docs/paper/gir_field/build_ieee_v3/gir_field_ieee_conference.pdf      # previous IEEE-style conference draft, 8 pages
 docs/paper/gir_field/build_article_v3/gir_field_full_paper_skeleton.pdf # article-style draft, 12 pages
 ```
 
@@ -66,6 +67,43 @@ Validation summary:
 formal validation: PASS
 focused/full repository tests from the final protocol stage: PASS
 paper package validation: PASS
+```
+
+## Latest benchmark-hardening experiments
+
+Recent audit/iteration artifacts:
+
+```text
+docs/GIR_FIELD_FULL_AUDIT_AND_ITERATION_PLAN_20260707.md
+docs/GIR_FIELD_RECENT_EXPERIMENTS_AUDIT_AND_SYNC_SUMMARY_20260708.md
+docs/UEFB_G_V1_PUBLIC_EVALUATOR_REPORT.md
+docs/I2_EXTERNAL_FIELD_ADAPTER_STUDY_REPORT_20260708.md
+```
+
+I1 UEFB-G public evaluator:
+
+```text
+scripts/uefbg_eval.py
+scripts/run_uefbg_benchmark_v1.py
+configs/uefbg/protocol_v1.yaml
+results/uefbg_v1/internal_methods/
+```
+
+I2 external field-aware adapter study:
+
+```text
+src/rlef/adapters/exposure_field_adapters.py
+scripts/run_uefbg_external_adapters.py
+docs/EXTERNAL_FIELD_ADAPTER_PROTOCOL.md
+results/uefbg_external_adapters/
+```
+
+Key I2 low-pass adapter result:
+
+```text
+Retinexformer S_corr: real=0.9547, synthetic=0.9893
+Zero-DCE++ S_corr:   real=0.6590, synthetic=0.7998
+Full repository regression after I2: 133 passed in 24.07s
 ```
 
 ## Important directories

@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "n_rows": 1200,
+  "n_variants": 6,
+  "n_datasets": 2,
+  "variants": [
+    "KinD++__log_ratio_lowpass_r8",
+    "KinD++__log_ratio_raw",
+    "Retinexformer__log_ratio_lowpass_r8",
+    "Retinexformer__log_ratio_raw",
+    "Zero-DCE++__log_ratio_lowpass_r8",
+    "Zero-DCE++__log_ratio_raw"
+  ],
+  "datasets": [
+    "real",
+    "synthetic"
+  ],
+  "output_only_rows": 0,
+  "field_aware_rows": 1200,
+  "partial_field_rows": 0
+}

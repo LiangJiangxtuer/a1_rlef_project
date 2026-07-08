@@ -1,0 +1,28 @@
+name: UEFB-G public evaluator protocol
+version: v1
+claim_scope: gauge-controlled exposure-field evaluation
+primary_use: evaluate output-only and optional field-aware low-light enhancement submissions
+required_base_columns:
+  - variant_id
+  - dataset
+  - name
+output_metrics:
+  - psnr
+  - ssim
+  - lee
+  - nai
+  - identity_drop
+  - q_ece
+  - over
+  - under
+field_metrics:
+  - E_MAE
+  - S_MAE
+  - Gauge_MAE
+  - S_corr
+reporting_modes:
+  - output_only
+  - field_aware
+black_box_policy: black-box enhancers are valid output-only submissions and are not assigned internal-field scores
+field_policy: field-aware submissions must report the full field metric quartet or are rejected as partial-field reports
+claim_boundary: UEFB-G evaluates gauge/shape identifiability and output metrics; it does not by itself imply SOTA LLIE

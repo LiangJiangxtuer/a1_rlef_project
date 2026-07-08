@@ -1,0 +1,36 @@
+note: Running TeX ...
+warning: sections/introduction:5: Underfull \hbox (badness 2351) in paragraph at lines 4--5
+warning: sections/related_work:15: Overfull \hbox (0.50966pt too wide) in paragraph at lines 14--15
+warning: sections/experiments:63: Underfull \hbox (badness 1694) in paragraph at lines 62--63
+warning: sections/experiments:63: Underfull \hbox (badness 4060) in paragraph at lines 62--63
+warning: sections/experiments:71: Underfull \hbox (badness 1478) in paragraph at lines 70--71
+note: Running BibTeX on gir_field_ieee_conference.aux ...
+note: warnings were issued by BibTeX; use --print and/or --keep-logs for details.
+note: Rerunning TeX because bibtex was run ...
+warning: sections/introduction:5: Underfull \hbox (badness 2351) in paragraph at lines 4--5
+warning: sections/related_work:15: Overfull \hbox (0.50966pt too wide) in paragraph at lines 14--15
+warning: sections/experiments:63: Underfull \hbox (badness 1694) in paragraph at lines 62--63
+warning: sections/experiments:63: Underfull \hbox (badness 4060) in paragraph at lines 62--63
+warning: sections/experiments:71: Underfull \hbox (badness 1478) in paragraph at lines 70--71
+warning: gir_field_ieee_conference.bbl:48: Underfull \hbox (badness 10000) in paragraph at lines 42--48
+warning: gir_field_ieee_conference.bbl:48: Underfull \hbox (badness 10000) in paragraph at lines 42--48
+warning: gir_field_ieee_conference.bbl:62: Underfull \hbox (badness 10000) in paragraph at lines 56--62
+warning: gir_field_ieee_conference.bbl:62: Underfull \hbox (badness 10000) in paragraph at lines 56--62
+note: Rerunning TeX because "gir_field_ieee_conference.aux" changed ...
+warning: sections/introduction:5: Underfull \hbox (badness 2351) in paragraph at lines 4--5
+warning: sections/related_work:15: Overfull \hbox (0.50966pt too wide) in paragraph at lines 14--15
+warning: sections/experiments:63: Underfull \hbox (badness 1694) in paragraph at lines 62--63
+warning: sections/experiments:63: Underfull \hbox (badness 4060) in paragraph at lines 62--63
+warning: sections/experiments:71: Underfull \hbox (badness 1478) in paragraph at lines 70--71
+warning: gir_field_ieee_conference.bbl:48: Underfull \hbox (badness 10000) in paragraph at lines 42--48
+warning: gir_field_ieee_conference.bbl:48: Underfull \hbox (badness 10000) in paragraph at lines 42--48
+warning: gir_field_ieee_conference.bbl:62: Underfull \hbox (badness 10000) in paragraph at lines 56--62
+warning: gir_field_ieee_conference.bbl:62: Underfull \hbox (badness 10000) in paragraph at lines 56--62
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+note: Running xdvipdfmx ...
+note: Writing `build_i2_ieee/gir_field_ieee_conference.aux` (14.16015625 KiB)
+note: Writing `build_i2_ieee/gir_field_ieee_conference.pdf` (312.6640625 KiB)
+note: Writing `build_i2_ieee/gir_field_ieee_conference.out` (6.048828125 KiB)
+note: Writing `build_i2_ieee/gir_field_ieee_conference.blg` (1.1572265625 KiB)
+note: Writing `build_i2_ieee/gir_field_ieee_conference.bbl` (8.6669921875 KiB)
+note: Writing `build_i2_ieee/gir_field_ieee_conference.log` (19.69140625 KiB)
